@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2ecb44e-df27-479a-a25f-717893f4a4c9" name="Default" comment="Updated Education and Timeline">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/timeline.html" beforeDir="false" afterPath="$PROJECT_DIR$/timeline.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QnNri7vqHwt5rwryaizlMNSmbE" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/img/bg" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="C:\Users\Tahsin\Desktop\boqinggong.github.io-master" />
+      <recent name="C:\Users\Tahsin\Desktop\boqinggong.github.io-master\assets\img\bg" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2ecb44e-df27-479a-a25f-717893f4a4c9" name="Default" comment="" />
+      <created>1541239674526</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541239674526</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Photoplay Project section updated">
+      <created>1542647565786</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542647565786</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added space after selected projects">
+      <created>1542647822527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542647822527</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated Designation">
+      <created>1543293286841</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543293286841</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added google scolar and researchgate links">
+      <created>1543724735479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543724735479</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated Publication">
+      <created>1543724811847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543724811847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated Publication and Bio">
+      <created>1543724879606</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543724879606</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated Publication and Bio.">
+      <created>1543724993860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543724993860</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Changed scholar and researchgate icon">
+      <created>1543728179432</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543728179432</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added ICACEE presentation">
+      <created>1543732090952</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543732090952</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added ICACEE presentation">
+      <created>1543732295130</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543732295130</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added ICACEE presentation">
+      <created>1543732313525</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1543732313525</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added ICACEE presentation">
+      <created>1543732613020</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543732613020</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updated Publication and Timeline">
+      <created>1544185378314</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1544185378315</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updated Publication and Timeline">
+      <created>1544185894793</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544185894793</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Updated homepage background">
+      <created>1544944908504</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1544944908504</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Updated Bio">
+      <created>1544945035276</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544945035276</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added two links in resources">
+      <created>1555830635612</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1555830635613</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated index background image">
+      <created>1556030818439</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1556030818439</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updated index background image">
+      <created>1556030989011</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1556030989011</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Updated index background image">
+      <created>1556031039433</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1556031039433</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Updated index background image">
+      <created>1556031288290</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1556031288290</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Updated resources background image">
+      <created>1556031912040</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1556031912040</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated resources and index background images">
+      <created>1556032059994</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1556032059994</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Updated Education and Timeline">
+      <created>1568404073430</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1568404073430</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Photoplay Project section updated" />
+    <MESSAGE value="Added space after selected projects" />
+    <MESSAGE value="Updated Designation" />
+    <MESSAGE value="Added google scolar and researchgate links" />
+    <MESSAGE value="Updated Publication" />
+    <MESSAGE value="Updated Publication and Bio" />
+    <MESSAGE value="Updated Publication and Bio." />
+    <MESSAGE value="Changed scholar and researchgate icon" />
+    <MESSAGE value="Added ICACEE presentation" />
+    <MESSAGE value="Updated Publication and Timeline" />
+    <MESSAGE value="Updated homepage background" />
+    <MESSAGE value="Updated Bio" />
+    <MESSAGE value="Added two links in resources" />
+    <MESSAGE value="Updated index background image" />
+    <MESSAGE value="Updated resources background image" />
+    <MESSAGE value="Updated resources and index background images" />
+    <MESSAGE value="Updated Education and Timeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Education and Timeline" />
+  </component>
+</project>
