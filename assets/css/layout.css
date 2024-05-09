@@ -1,0 +1,31 @@
+.project-item {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    opacity: 0.8;
+}
+
+.project-details {
+    background-color: #f8f9fa; /* Light background to separate entries */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.btn-group .btn {
+    margin-right: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-group .btn:hover {
+    background-color: #117a8b; /* Darker shade for button hover */
+    color: #ffffff;
+}
+
+.btn-info.active, .btn-info:active {
+    background-color: #17a2b8;
+    color: #fff;
+}
