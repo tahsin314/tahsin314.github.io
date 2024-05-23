@@ -10,14 +10,9 @@ var message = "tickle",
   fontsize = 60,
   x_text, y_text; // x and y coordinates of the text
 
-//function preload() {
-//  font = loadFont('data/AgencyFB-Reg-48.vlw');
-//}
-
-
 function setup() {
   createCanvas(560,560);
-  background(255);
+  background("#CAF0F8");
   frameRate(rate);
   textFont("Arial");
   textSize(58);
@@ -29,12 +24,11 @@ function setup() {
     line(0, i*line_len, width, i*line_len);
   }
  
- //if(mousePressed) rate = rate+5; 
 }
 
 function draw() {
   tot++;
-  background(255);
+  background("#CAF0F8");
   frameRate(rate);
   //if(mousePressed) frameRate(10);
   for(var i=0; i<=iter_step; i++) {
@@ -78,10 +72,7 @@ function needle_draw(x, y, angle) {
       continue;
     }
   }
-  
-  //print("Iteration",tot);
-  //text(str(tot*1.0/var_count, x_text, y_text));
-  //delay(1000);
+
 }
 
 function intersect(x1_i, y1_i, x1_f, y1_f, x2_i, y2_i, x2_f, y2_f) {

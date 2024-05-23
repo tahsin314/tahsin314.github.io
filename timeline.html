@@ -1,526 +1,420 @@
 <!DOCTYPE html>
-<!--
-                                   _       _   
-								  | |     | |    
-  Designed and Coded By           | | __ _| |__  
- / _ \ \ /\ / /\ \ /\ / /\ \ /\ / / |/ _` | '_ \ 
-| (_) \ V  V /  \ V  V /  \ V  V /| | (_| | |_) |
- \___/ \_/\_/    \_/\_/    \_/\_/ |_|\__,_|_.__/ 
 
-http://themeforest.net/user/owwwlab/
-                                          
--->
 <html lang="en" dir="ltr" itemscope itemtype="http://schema.org/WebPage">
-<!-- #####Begin head-->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- globalise scripting and styling content language-->
     <meta name="Content-Type-Script" content="text/javascript">
     <meta name="Content-Type-Style" content="text/css">
-    <!-- author of this doc-->
     <meta name="author" content="owwwlab.com">
-    <!-- ################################-->
-    <!-- #### add SEO metadata here-->
-    <!-- ################################-->
-    <!-- #####Begin styles-->
-    <!-- stylesheets	-->
     <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" href="/assets/img/icon/pi.png">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <!-- Load extra page specific css-->
-    <!-- Overwrite vendors-->
     <link href="assets/css/vendors/vendors-overwrites.css" rel="stylesheet" type="text/css">
     <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
     <link href="assets/css/timeline.css" rel="stylesheet" type="text/css">
     <link href="assets/css/demo1.css" rel="stylesheet" type="text/css">
-    <!-- #####End styles-->
-    <!-- #####Begin JS-->
-    <!-- add your scripts to the end of the page for sake of page load speed-->
-    <!-- scripts that need to be at head section-->
     <script src="assets/js/vendors/jquery.min.js" type="text/javascript"></script>
-    <!-- #####End JS-->
-    <!-- #####Begin load google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <!-- #####End load google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <title>Timeline - Tahsin Mostafiz </title>
-</head>
-<!-- #####End head-->
+    <style>
+        body {
+            font-family: 'Oswald', 'sans-serif';
+            background-color: #1c1c1c; /* Dark background color for contrast */
+            color: #f8f8f8; /* Light text color for readability */
+        }
 
-<body class="fullwidth sticky-header">
+        a {
+            color: red; /* Set all links to red color */
+            text-decoration: none; /* Optional: Remove underline from links */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Optional: Add underline on hover */
+        }
+        h1, h2, h3, h4, p {
+            font-family: 'Oswald', 'sans-serif';
+        }
+        h1 {
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 36px;
+        }
+        h3 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .vt-content a {
+            color: #8B0000;
+            text-decoration: none;
+        }
+        .vt-content a:hover {
+            text-decoration: underline;
+        }
+        .page-title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 36px;
+        }
+    </style>
+
+</head>
+
+<body class="fullwidth sticky-header" style="background-color: #2d2b2e;">
     <div id="wrapper" class="regular-layout">
-        <header id="header" class=" trans header-personal-1">
+        <header id="header" class="trans header-personal-1">
             <div class="head-main text-center">
                 <div class="container">
                     <div class="logo-wrapper visible-sticky">
-                        <!-- standard Logo-->
                         <a href="index.html" class="standard-logo text-logo"><img src="assets/img/Pro_pic.jpg" alt="Tahsin Mostafiz">
                             <div class="text-wrapper">
-                                <h1 class="title">Tahsin <span> Mostafiz</span></h1>
+                                <h1 class="title">Tahsin <span>Mostafiz</span></h1>
                             </div>
                         </a>
                     </div>
-                    <!-- primary navigation-->
                     <ul id="primary-menu">
-                        <li class="current-menu-item"><a href="index.html" title="Home"><span>Home</span></a>
-                        </li>
-                        <li><a href="/#publications_all" data-target="#publications_all"><span>Publications</span></a>
-                        </li>
-                        <!--<li class="nav-item">-->
-                        <!--<a href="/#publications_all" data-target="publications_all">-->
-
-                        <!--<span>Publications</span>-->
-                        <!--</a>-->
-                        <!--</li>-->
-
-                        <li><a href="/#projects_all" data-target="#projects_all" title="Projects"><span>Projects</span></a>
-                        </li>
-
-                        <li><a href="timeline.html" title="Timeline"><span>Timeline</span></a>
-                        </li>
-
-                        <!--li><a href="teaching.html" title="Teaching"><span>Teaching</span></a>
-              </li-->
-                        <li><a href="resources.html" title="Resources"><span>Resources</span></a>
-                        </li>
-                        <li><a href="blog.html" title="Blog"><span>Blog</span></a>
-                        </li>
-
+                        <li class="current-menu-item"><a href="index.html" title="Home"><span>Home</span></a></li>
+                        <li><a href="/#publications_all" data-target="#publications_all"><span>Publications</span></a></li>
+                        <li><a href="/#projects_all" data-target="#projects_all" title="Projects"><span>Projects</span></a></li>
+                        <li><a href="timeline.html" title="Timeline"><span>Timeline</span></a></li>
+                        <li><a href="resources.html" title="Resources"><span>Resources</span></a></li>
+                        <li><a href="blog.html" title="Blog"><span>Blog</span></a></li>
                     </ul>
-                    <!-- #####Begin icons beside menu-->
                     <div class="header-icons">
-                        <!-- #####Begin mobile menu trigger-->
                         <div class="ol-mobile-trigger hamburger hamburger--elastic">
                             <div class="hamburger-box">
                                 <div class="hamburger-inner"></div>
                             </div>
                         </div>
-                        <!-- #####End mobile menu trigger-->
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- #####Begin contents-->
         <section id="contents">
-            <!-- #####Begin page head-->
-            <div class="page-head h-250 center-it ov-grad1-alpha-50 parallax-layer dark" data-img-src="assets/img/bg/buet.png" data-parallax-mode="mode-title">
+            <div class="page-head h-250 center-it ov-grad1-alpha-50 parallax-layer dark" data-img-src="assets/img/bg/buet.png" data-parallax-mode="mode-title"></div>
+            <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
+                <div class="cd-h-timeline__events">
+                    <div class="vertical-timeline">
 
-            </div>
-
-
-            <!-- #####################################################################
-##################################################################### -->
-
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <script>
-                    document.getElementsByTagName("html")[0].className += " js";
-                </script>
-                <link rel="stylesheet" href="assets/css/style.css">
-                <title>Horizontal Timeline | CodyHouse</title>
-            </head>
-
-            <body>
-                <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
-                    <div class="cd-h-timeline__container container">
-                        <div class="cd-h-timeline__dates">
-                            <div class="cd-h-timeline__line">
-                                <ol>
-                                    <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">July 2023</a></li>
-                                    <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date--selected">Jan 2021</a></li>
-                                    <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date">August 2020</a></li>
-                                    <li><a href="#0" data-date="16/01/2014" class="cd-h-timeline__date cd-h-timeline__date">February 2020</a></li>
-                                    <li><a href="#0" data-date="28/02/2014" class="cd-h-timeline__date">December 2019</a></li>
-                                    <li><a href="#0" data-date="20/04/2014" class="cd-h-timeline__date">October 2019</a></li>
-                                    <li><a href="#0" data-date="20/05/2014" class="cd-h-timeline__date">August 2019</a></li>
-                                    <li><a href="#0" data-date="09/07/2014" class="cd-h-timeline__date">June 2019</a></li>
-                                    <li><a href="#0" data-date="30/08/2014" class="cd-h-timeline__date">December 2018</a></li>
-                                    <!-- <li><a href="#0" data-date="15/09/2014" class="cd-h-timeline__date">December 2018</a></li> -->
-                                    <!-- <li><a href="#0" data-date="01/11/2014" class="cd-h-timeline__date">November 2018</a></li> -->
-                                    <li><a href="#0" data-date="10/12/2014" class="cd-h-timeline__date">March 2017</a></li>
-                                    <li><a href="#0" data-date="19/01/2015" class="cd-h-timeline__date">February 2017</a></li>
-                                    <li><a href="#0" data-date="03/03/2015" class="cd-h-timeline__date">2016 and before</a></li>
-                                </ol>
-
-                                <span class="cd-h-timeline__filling-line" aria-hidden="true"></span>
+                        <div class="vt-step vt-left vt-orange">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
                             </div>
-                            <!-- .cd-h-timeline__line -->
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">May 03, 2024</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Graduated with a Masters Degree!</h3>
+                                    <p>I graduated with a Masters degree in the ECE department of University of Florida. Lost a lot of blood, broke several several bones and went through tremendous physical and mental pain duirng this time. I am so proud that I did not quit. </p>
+                                    <div class="img-side shadow">
+                                        <img src="assets/img/grad_pic.jpg" class="full-width">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+
+                        <!-- Event 1 -->
+                        <div class="vt-step vt-right vt-blue">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">July 24, 2023</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Married the Most Amazing Girl in the whole world!</h3>
+                                    <p>The title says it all! Her name is Trina, the love of my life.</p>
+                                    <div class="img-side shadow">
+                                        <img src="assets/img/A3A08892.jpg" class="full-width">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- .cd-h-timeline__dates -->
 
-                        <ul>
-                            <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--prev cd-h-timeline__navigation--inactive">Prev</a></li>
-                            <li><a href="#0" class="text-replace cd-h-timeline__navigation cd-h-timeline__navigation--next">Next</a></li>
-                        </ul>
-                    </div>
-                    <!-- .cd-h-timeline__container -->
-
-                    <div class="cd-h-timeline__events">
-                        <ol>
-
-                            <li class="cd-h-timeline__event cd-h-timeline__event--selected text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Married the Most Amazing Girl in the whole world!</h2>
-                                    <em class="cd-h-timeline__event-date">24 July 2023</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        The title says it all! Her name is Trina, the love of my life. 
-                                        <div class="img-side shadow"><img src="assets/img/A3A08892.jpg" class="full-width"></div>
-                                    </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Joined FICS Lab as a Graduate Research Assistant</h2>
-                                    <em class="cd-h-timeline__event-date">Januray 2021</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        I started working under the supervision of Professor <a href="https://faculty.eng.ufl.edu/navid-asadi/people/"
-                                        style="color: blue; text-decoration: none">Navid Asadi</a> in the <a href="https://fics.institute.ufl.edu/"
-                                        style="color: blue; text-decoration: none">FICS</a> lab in the department of <a href="https://www.ece.ufl.edu/"
-                                        style="color: blue; text-decoration: none">ECE, University of Florida</a>. I am currently working on physical assurance for AI and package security. 
-                                    </p>
+                        <!-- Event 2 -->
+                        <div class="vt-step vt-left vt-orange">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">January 2021</h2>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">SIIM-ISIC Melanoma Classification 2020</h2>
-                                    <em class="cd-h-timeline__event-date">August 2020</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        The objective of this competition was to identify melanoma in images of skin lesions. This was a binary classification problem where we had to predict whether the melanoma condition in a provided image is benign or malignant. Our combined effort got us
-                                        <b>253rd</b> position (<b>top 8%</b>) on the Private Leaderboard among 3,314 teams. This was my first bronze medal in any Kaggle competition and second medal overall. My detailed analysis and codes are available
-                                        <a href="https://github.com/tahsin314/Melanoma_Classification_2020">here</a> in my github repo. A lot of credits goes to my amazing team partners <a href="http://innat.github.io/">Mohammad Innat</a> and <a href="https://github.com/udday2014">Uday Kamal</a>.
-                                        Innat's well explained solution is availble <a href="https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175721">here</a>.
-                                    </p>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Web Application Project Got Accepted at SIIM</h2>
-                                    <em class="cd-h-timeline__event-date">February 2020</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        Intracranial Hemorrhage (ICH), which refers to bleeding inside the cranium, is a serious health problem requiring rapid and intensive medical intervention. In case of an emergency, it is necessary to urgently diagnose the subtype of IC from brain Computed
-                                        Tomography (CT) scans. However, in hospital emergency rooms in low-resource countries, a skilled radiologist is almost non-existent, and an emergency medical officer has to make this urgent and critical decision.
-                                        This may lead to missed diagnosis, especially in the case of subarachnoid hemorrhage which often shows subtle changes in the CT image. In this work, we have developed a web-based AI-tool for generating colorful
-                                        heat-maps over the grayscale anatomical 2D CT image slices identifying the possible regions of the subtype of acute IC. The tool can be used by radiologists for AI-based assistance for making a more accurate and
-                                        faster diagnosis. Our <a href="https://github.com/tahsin314/Intracranial_Hemorrhage_Web_App">Web Application for Intracranial Hemorrhage Detection</a> got accepted at the
-                                        <a href="https://siim.org/default.aspx">Society for Imaging in Informatics (SIIM) 2020</a> Conference. Currently, the project is being supported by <a href="https://brainstation-23.com/">BrainStation 23</a>. They
-                                        have deployed a web tool called <a href="https://www.radassist.net/">RadAssit</a> using our deep learning model. Also, this project was supervised by <a href="http://bme.buet.ac.bd/?teams=dr-taufiq-hasan">Dr. Taufiq Hasan</a>                                        and <a href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/2936930/paul-nagy">Dr. Paul Nagy</a>.
-                                    </p>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Joined FICS Lab as a Graduate Research Assistant</h3>
+                                    <p>I started working under the supervision of Professor <a href="https://faculty.eng.ufl.edu/navid-asadi/people/">Navid Asadi</a> in the <a href="https://fics.institute.ufl.edu/">FICS</a> lab in the department of <a href="https://www.ece.ufl.edu/">ECE, University of Florida</a>. I am currently working on physical assurance for AI and package security.</p>
                                 </div>
-                            </li>
+                            </div>
+                        </div>
 
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Joined AI Samurai Japan Limited</h2>
-                                    <em class="cd-h-timeline__event-date">December 2019</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        AI Samurai Japan Limited is a sister concern of <a href="https://www.chowagiken.co.jp/">Chowagiken Compnany Limited</a> Japan, a startup born from Hokkaido University laboratories with the mission of "Putting research
-                                        into practical use and making it useful to society". They are focused on employing the cutting edge AI tools of times into practical uses. Currently, I am working in this company as a Machine Learning Engineer.
-                                    </p>
+                        <!-- Event 3 -->
+                        <div class="vt-step vt-right vt-pink">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">August 2020</h2>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Joined mHealth Lab</h2>
-                                    <em class="cd-h-timeline__event-date">October 2019</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        <a href="https://mhealth.buet.ac.bd/">mHealth Lab</a> is working towards developing biomedical signal processing and machine learning algorithms for remote health monitoring, and prototyping innovative mHealth devices
-                                        for improving people’s health, overall well-being and quality of life. This lab is founded and maintained by the<a href="http://bme.buet.ac.bd/">Biomedical Engineering Department</a> of BUET. I worked as a Research
-                                        Assistant(RA) there.
-                                    </p>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container" style="background-image: url('');">
-                                    <h2 class="cd-h-timeline__event-title">APTOS 2019 Blindness Detection Competition</h2>
-                                    <em class="cd-h-timeline__event-date">August, 2019</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        <span> Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina). It can be cured if treated at an early stage. Otherwise, it could lead to permanent blindness. Detection of the stage of diabetic retinopathy is a challenginging task even for the doctors. <a href="https://aravind.org/" target="_blank">Aravind Eye Hospital</a> in India collected thousands of retinopathy images and hosted <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/" target="_blank">this</a> competition for the detection of level of DR in these images. In this competition, we secured the position 37 on Private and 55 among 2943 teams on Public leaderboard. Our model scored <b>0.829</b> on the public <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/leaderboard" target="_blank"> LB and <b>0.926</b> on Private LB. </a> Codes are available <a href="https://github.com/tahsin314/40th_place_solution_aptos2019-blindness-detection" target="_blank">here.</a></h3> <b></b></a><span class="block-elem"></span></span>
-                                    </p>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">SIIM-ISIC Melanoma Classification 2020</h3>
+                                    <p>The objective of this competition was to identify melanoma in images of skin lesions. This was a binary classification problem where we had to predict whether the melanoma condition in a provided image is benign or malignant. Our combined effort got us <b>253rd</b> position (<b>top 8%</b>) on the Private Leaderboard among 3,314 teams. This was my first bronze medal in any Kaggle competition and second medal overall. My detailed analysis and codes are available <a href="https://github.com/tahsin314/Melanoma_Classification_2020">here</a> in my github repo. A lot of credits goes to my amazing team partners <a href="http://innat.github.io/">Mohammad Innat</a> and <a href="https://github.com/udday2014">Uday Kamal</a>. Innat's well explained solution is availble <a href="https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175721">here</a>.</p>
                                 </div>
-                            </li>
+                            </div>
+                        </div>
 
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Got myself admitted in Masters Program</h2>
-                                    <em class="cd-h-timeline__event-date">June 19</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        <span> I got myself admitted in the Masters Program of EEE Department, BUET in June 2019. So far I've taken courses on <i>Modern Power System</i>, <i>Optical Fiber</i>, <i>Biomedical Signal Processing</i>, <i>Digital Image Processing</i>.</span></span>
-                                    </p>
+                        <!-- Event 4 -->
+                        <div class="vt-step vt-left vt-navy-blue">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">February 2020</h2>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Published Research Article on Pathology Extraction from EHR</h2>
-                                    <em class="cd-h-timeline__event-date">December 2018</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        Extraction of relevant pathological terms from radiology reports is important for correct image label generation and disease population studies. We published a paper titled <b>Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</b>                                        where we compared the performance of some known application program interface (APIs) for the task of thoracic abnormality extraction from radiology reports. We explored several medical domain specific annotation
-                                        tools like Medical Text Indexer(MTI) with Non-MEDLINE and Mesh On Demand(MOD) options and generic Natural Language Understanding (NLU) API provided by the IBM cloud. Our results showed that although MTI and MOD
-                                        are intended for extracting medical terms, their performance is worst compared to generic extraction API like IBM NLU. Finally, we trained a DNN-based Named Entity Recognition (NER) model to extract the key concept
-                                        words from radiology reports. Our model outperformed the medical specific and generic API performance by a large margin. Our results demonstrated the inadequacy of generic APIs for pathology extraction task and
-                                        establish the importance of domain specific model training for improved results. The paper is available <a href="https://arxiv.org/abs/1812.02305" target="_blank">here</a>.
-                                    </p>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Joined Semion Limited</h2>
-                                    <em class="cd-h-timeline__event-date">March 2017</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        Semion Limited is a startup founded by <a href="https://www.linkedin.com/in/khalid-ashraf-2b8a4a33/" target="_blank">Dr. Khalid Ashraf</a>. The primary goal of this company is to create and promote services in the
-                                        health sector through digitization of patient and their associated data management. The digitization process is backed up by tremendous technological advancement and customization through constant research and development.
-                                        They also develop artificial intelligence based algorithms for automating abnormality detection and assisting dotors. I worked as a <b>Machine Learning Researcher</b> there.
-                                    </p>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Web Application Project Got Accepted at SIIM</h3>
+                                    <p>Intracranial Hemorrhage (ICH), which refers to bleeding inside the cranium, is a serious health problem requiring rapid and intensive medical intervention. In case of an emergency, it is necessary to urgently diagnose the subtype of IC from brain Computed Tomography (CT) scans. However, in hospital emergency rooms in low-resource countries, a skilled radiologist is almost non-existent, and an emergency medical officer has to make this urgent and critical decision. This may lead to missed diagnosis, especially in the case of subarachnoid hemorrhage which often shows subtle changes in the CT image. In this work, we have developed a web-based AI-tool for generating colorful heat-maps over the grayscale anatomical 2D CT image slices identifying the possible regions of the subtype of acute IC. The tool can be used by radiologists for AI-based assistance for making a more accurate and faster diagnosis. Our <a href="https://github.com/tahsin314/Intracranial_Hemorrhage_Web_App">Web Application for Intracranial Hemorrhage Detection</a> got accepted at the <a href="https://siim.org/default.aspx">Society for Imaging in Informatics (SIIM) 2020</a> Conference. Currently, the project is being supported by <a href="https://brainstation-23.com/">BrainStation 23</a>. They have deployed a web tool called <a href="https://www.radassist.net/">RadAssit</a> using our deep learning model. Also, this project was supervised by <a href="http://bme.buet.ac.bd/?teams=dr-taufiq-hasan">Dr. Taufiq Hasan</a> and <a href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/2936930/paul-nagy">Dr. Paul Nagy</a>.</p>
                                 </div>
-                            </li>
+                            </div>
+                        </div>
 
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Graduated in EEE from BUET</h2>
-                                    <em class="cd-h-timeline__event-date">February, 2017</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        I completed my graduation from the Electrical and Electronic Engineering(EEE) department of Bangladesh University of Engineering and Technology(BUET) in February 2017.
-                                    </p>
+                        <!-- Event 5 -->
+                        <div class="vt-step vt-right vt-green">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">December 2019</h2>
                                 </div>
-                            </li>
-
-                            <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Worked as a Writer and Editor at Zero2Inf</h2>
-                                    <em class="cd-h-timeline__event-date">February 2013 - June 2015</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        I worked as a non-paid Writer and Editor at <a href="http://bn.z2i.org/" target="_blank"><i>Zero2Infinity</i></a>, a monthly science magazine from March 2013 to June 2015
-                                    </p>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
                                 </div>
-                            </li>
-
-                            <!-- <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                                    <em class="cd-h-timeline__event-date">January 29th, 2015</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                                        reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Joined AI Samurai Japan Limited</h3>
+                                    <p>AI Samurai Japan Limited is a sister concern of <a href="https://www.chowagiken.co.jp/">Chowagiken Compnany Limited</a> Japan, a startup born from Hokkaido University laboratories with the mission of "Putting research into practical use and making it useful to society". They are focused on employing the cutting edge AI tools of times into practical uses. Currently, I am working in this company as a Machine Learning Engineer.</p>
                                 </div>
-                            </li> -->
+                            </div>
+                        </div>
 
-                            <!-- <li class="cd-h-timeline__event text-component">
-                                <div class="cd-h-timeline__event-content container">
-                                    <h2 class="cd-h-timeline__event-title">Event title here</h2>
-                                    <em class="cd-h-timeline__event-date">March 3rd, 2015</em>
-                                    <p class="cd-h-timeline__event-description color-contrast-medium">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi
-                                        reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                                    </p>
+                        <!-- Event 6 -->
+                        <div class="vt-step vt-left vt-light-blue">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">October 2019</h2>
                                 </div>
-                            </li> -->
-                        </ol>
-                    </div>
-                    <!-- .cd-h-timeline__events -->
-                </section>
-                <script src="assets/js/util.js"></script>
-                <!-- util functions included in the CodyHouse framework -->
-                <script src="assets/js/swipe-content.js"></script>
-                <!-- A Vanilla JavaScript plugin to detect touch interactions -->
-                <script src="assets/js/main.js"></script>
-            </body>
-            <!-- #####################################################################
-##################################################################### -->
-
-            <style>
-                body {
-                    font-family: 'Source Sans Pro', Helvetica Neue, Helvetica, Arial, sans-serif;
-                    font-size: 16px;
-                    line-height: 1.75;
-                }
-                
-                #timeline {
-                    display: flex;
-                    background-color: #031625;
-                    &:hover {
-                        .tl-item {
-                            width: 23.3333%;
-                        }
-                    }
-                }
-                
-                .tl-item {
-                    transform: translate3d(0, 0, 0);
-                    position: relative;
-                    width: 25%;
-                    height: 100vh;
-                    min-height: 600px;
-                    color: #fff;
-                    overflow: hidden;
-                    transition: width 0.5s ease;
-                    &:before,
-                    &:after {
-                        transform: translate3d(0, 0, 0);
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        height: 100%;
-                    }
-                    &:after {
-                        background: transparentize(#031625, 0.15);
-                        opacity: 1;
-                        transition: opacity 0.5s ease;
-                    }
-                    &:before {
-                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
-                        z-index: 1;
-                        opacity: 0;
-                        transform: translate3d(0, 0, 0) translateY(50%);
-                        transition: opacity 0.5s ease, transform 0.5s ease;
-                    }
-                    &:hover {
-                        width: 30% !important;
-                        &:after {
-                            opacity: 0;
-                        }
-                        &:before {
-                            opacity: 1;
-                            transform: translate3d(0, 0, 0) translateY(0);
-                            transition: opacity 1s ease, transform 1s ease 0.25s;
-                        }
-                        .tl-content {
-                            opacity: 1;
-                            transform: translateY(0);
-                            transition: all 0.75s ease 0.5s;
-                        }
-                        .tl-bg {
-                            filter: grayscale(0);
-                        }
-                    }
-                }
-                
-                .tl-content {
-                    transform: translate3d(0, 0, 0) translateY(25px);
-                    position: relative;
-                    z-index: 1;
-                    text-align: center;
-                    margin: 0 1.618em;
-                    top: 55%;
-                    opacity: 0;
-                    h1 {
-                        font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
-                        text-transform: uppercase;
-                        color: #1779cf;
-                        font-size: 1.44rem;
-                        font-weight: normal;
-                    }
-                }
-                
-                .tl-year {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(-50%);
-                    z-index: 1;
-                    border-top: 1px solid #fff;
-                    border-bottom: 1px solid #fff;
-                    p {
-                        font-family: 'Pathway Gothic One', Helvetica Neue, Helvetica, Arial, sans-serif;
-                        font-size: 1.728rem;
-                        line-height: 0;
-                    }
-                }
-                
-                .tl-bg {
-                    transform: translate3d(0, 0, 0);
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    background-size: cover;
-                    background-position: center center;
-                    transition: filter 0.5s ease;
-                    filter: grayscale(100%);
-                }
-            </style>
-            <footer id="footer">
-                <div id="footer-main" class="text-center">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-md-offset-3">
-                                <div class="heading-with-sub m-bottom-50">
-                                    <h3 class="title sans-font m-bottom-30"><a href="index.html" style="color:gray" title="Home">Tahsin Mostafiz</a></h3>
-                                    <h4 class="subtitle">Contact me via <a href="mailto:tahsin314@gmail.com" style="color:gray"><b>m.tahsinmostafiz@ufl.edu</b></a>.</h4>
-                                    <div class="row">
-                                        <div class="span10 offset1">
-                                            <div class="social-icons">
-                                                <!--<h1>Horizontal Social Icon List</h1>-->
-                                                <ul>
-                                                    <li>
-                                                        <a class="ai ai-google-scholar big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://scholar.google.com/citations?user=1gDQkNIAAAAJ&hl=en&authuser=1" target="_blank"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="ai ai-researchgate big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.researchgate.net/profile/Tahsin_Mostafiz" target="_blank"></i>
-                                                        </a>
-                                                    </li>
-                                                    <!--<li><a class="fa fa-facebook-official w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.facebook.com/tahsin.mostafiz" target="_blank"></i></a></li>-->
-                                                    <!--<li><a class="fa fa-instagram w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.instagram.com/tahsin_mostafiz/" target="_blank"></i></a></li>-->
-                                                    <li>
-                                                        <a class="fa fa-linkedin w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.linkedin.com/in/tahsin-mostafiz-276292141/" target="_blank"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="fa fa-youtube w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.youtube.com/channel/UCsA63C_GRkhkMVE7LOjODCA/" target="_blank"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="fa fa-github w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.github.com/tahsin314" target="_blank"></i>
-                                                        </a>
-                                                    </li>
-
-
-                                                    <!--<li><a href="https://facebook.com"><i class="icon-facebook"></i></a></li>-->
-                                                    <!--<li><a href="https://instagram.com"><i class="icon-instagram"></i></a></li>-->
-                                                    <!--<li><a href="https://pinterest.com"><i class="icon-pinterest"></i></a></li>-->
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
                                 </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Joined mHealth Lab</h3>
+                                    <p><a href="https://mhealth.buet.ac.bd/">mHealth Lab</a> is working towards developing biomedical signal processing and machine learning algorithms for remote health monitoring, and prototyping innovative mHealth devices for improving people’s health, overall well-being and quality of life. This lab is founded and maintained by the <a href="http://bme.buet.ac.bd/">Biomedical Engineering Department</a> of BUET. I worked as a Research Assistant (RA) there.</p>
+                                </div>
+                            </div>
+                        </div>
 
-                                <!--div class="sp-line-0"></div>
-                <ul class="m-top-30 social-icons shape-circle skin-white hover-dark">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div-->
+                        <!-- Event 7 -->
+                        <div class="vt-step vt-right vt-orange">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">August 2019</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">APTOS 2019 Blindness Detection Competition</h3>
+                                    <p>Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina). It can be cured if treated at an early stage. Otherwise, it could lead to permanent blindness. Detection of the stage of diabetic retinopathy is a challenging task even for the doctors. <a href="https://aravind.org/" target="_blank">Aravind Eye Hospital</a> in India collected thousands of retinopathy images and hosted <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/" target="_blank">this</a> competition for the detection of level of DR in these images. In this competition, we secured the position 37 on Private and 55 among 2943 teams on Public leaderboard. Our model scored <b>0.829</b> on the public <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/leaderboard" target="_blank"> LB and <b>0.926</b> on Private LB.</a> Codes are available <a href="https://github.com/tahsin314/40th_place_solution_aptos2019-blindness-detection" target="_blank">here.</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 8 -->
+                        <div class="vt-step vt-left vt-pink">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">June 19</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Got myself admitted in Masters Program</h3>
+                                    <p>I got myself admitted in the Masters Program of EEE Department, BUET in June 2019. So far I've taken courses on <i>Modern Power System</i>, <i>Optical Fiber</i>, <i>Biomedical Signal Processing</i>, <i>Digital Image Processing</i>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 9 -->
+                        <div class="vt-step vt-right vt-navy-blue">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">December 2018</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Published Research Article on Pathology Extraction from EHR</h3>
+                                    <p>Extraction of relevant pathological terms from radiology reports is important for correct image label generation and disease population studies. We published a paper titled <b>Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</b> where we compared the performance of some known application program interface (APIs) for the task of thoracic abnormality extraction from radiology reports. We explored several medical domain specific annotation tools like Medical Text Indexer (MTI) with Non-MEDLINE and Mesh On Demand (MOD) options and generic Natural Language Understanding (NLU) API provided by the IBM cloud. Our results showed that although MTI and MOD are intended for extracting medical terms, their performance is worst compared to generic extraction API like IBM NLU. Finally, we trained a DNN-based Named Entity Recognition (NER) model to extract the key concept words from radiology reports. Our model outperformed the medical specific and generic API performance by a large margin. Our results demonstrated the inadequacy of generic APIs for pathology extraction task and establish the importance of domain specific model training for improved results. The paper is available <a href="https://arxiv.org/abs/1812.02305" target="_blank">here</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 10 -->
+                        <div class="vt-step vt-left vt-orange">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">March 2017</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Joined Semion Limited</h3>
+                                    <p>Semion Limited is a startup founded by <a href="https://www.linkedin.com/in/khalid-ashraf-2b8a4a33/" target="_blank">Dr. Khalid Ashraf</a>. The primary goal of this company is to create and promote services in the health sector through digitization of patient and their associated data management. The digitization process is backed up by tremendous technological advancement and customization through constant research and development. They also develop artificial intelligence based algorithms for automating abnormality detection and assisting dotors. I worked as a <b>Machine Learning Researcher</b> there.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 11 -->
+                        <div class="vt-step vt-right vt-blue">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">February 2017</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Graduated in EEE from BUET</h3>
+                                    <p>I completed my graduation from the Electrical and Electronic Engineering (EEE) department of Bangladesh University of Engineering and Technology (BUET) in February 2017.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 12 -->
+                        <div class="vt-step vt-left vt-green">
+                            <div class="vt-column">
+                                <div class="vt-start-point"></div>
+                                <div class="vt-end-point"></div>
+                            </div>
+                            <div class="vt-content card">
+                                <div class="vt-header">
+                                    <h2 class="vt-cat">February 2013 - June 2015</h2>
+                                </div>
+                                <div class="vt-splitter">
+                                    <div class="vt-line"></div>
+                                </div>
+                                <div class="vt-body">
+                                    <h3 class="vt-title">Worked as a Writer and Editor at Zero2Inf</h3>
+                                    <p>I worked as a non-paid Writer and Editor at <a href="http://bn.z2i.org/" target="_blank"><i>Zero2Infinity</i></a>, a monthly science magazine from March 2013 to June 2015.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </section>
+        </section>
+
+        <footer id="footer">
+            <div id="footer-main" class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="heading-with-sub m-bottom-50">
+                                <h3 class="title sans-font m-bottom-30"><a href="index.html" style="color:gray" title="Home">Tahsin Mostafiz</a></h3>
+                                <h4 class="subtitle">Contact me via <a href="mailto:tahsin314@gmail.com" style="color:gray"><b>m.tahsinmostafiz@ufl.edu</b></a>.</h4>
+                                <div class="row">
+                                    <div class="span10 offset1">
+                                        <div class="social-icons">
+                                            <ul>
+                                                <li>
+                                                    <a class="ai ai-google-scholar big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://scholar.google.com/citations?user=1gDQkNIAAAAJ&hl=en&authuser=1" target="_blank"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="ai ai-researchgate big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.researchgate.net/profile/Tahsin_Mostafiz" target="_blank"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-linkedin w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.linkedin.com/in/tahsin-mostafiz-276292141/" target="_blank"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-youtube w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.youtube.com/channel/UCsA63C_GRkhkMVE7LOjODCA/" target="_blank"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="fa fa-github w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.github.com/tahsin314" target="_blank"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <!-- #####Begin scripts-->
+
     <script src="assets/js/vendors/vendors.js"></script>
-    <!-- Local Revolution tools-->
-    <!-- Only for local and can be removed on server-->
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
@@ -530,8 +424,7 @@ http://themeforest.net/user/owwwlab/
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
     <script type="text/javascript" src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/timeline.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
-    <!-- #####End scripts-->
 </body>
-
 </html>

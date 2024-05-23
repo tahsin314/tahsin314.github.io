@@ -1,0 +1,51 @@
+#footer {
+    background-color: #282c34; /* Dark background for contrast */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+#footer a {
+    color: #17a2b8; /* A refreshing cyan hue for links */
+    transition: color 0.3s;
+}
+
+#footer a:hover {
+    color: #0f899e; /* Darker shade on hover */
+}
+
+.social-icons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #ffffff; /* White color icons */
+    font-size: 30px; /* Larger font for visibility */
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: #ffdd59; /* Bright yellow for hover effect */
+}
+
+.title {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #adb5bd; /* Light grey for subtitle */
+}
+
+.social-icons .ai, .social-icons .fa {
+    transition: transform 0.3s ease;
+}
+
+.social-icons .ai:hover, .social-icons .fa:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+}

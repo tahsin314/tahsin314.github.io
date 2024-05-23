@@ -33,6 +33,30 @@
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
+    <style>
+      body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between; /* Ensures the footer stays at the bottom */
+      }
+      #sketch-holder {
+          flex: 1;
+          display: flex;
+          justify-content: center; /* Centers the sketch horizontally */
+          align-items: flex-end; /* Aligns the sketch just above the footer */
+      }
+      canvas {
+          border: 1px solid #000; /* Optional: adds a border around the canvas */
+      }
+      footer {
+          width: 100%;
+          padding: 20px 0;
+          text-align: center;
+          background-color: #f2f2f2; /* Light grey background for the footer */
+      }
+  </style>
     <!-- #####End load google fonts-->
     <title> Tahsin Mostafiz </title>
    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
@@ -186,7 +210,6 @@ In 1901, Italian mathematician Mario Lazzarini performed Buffon&#39;s needle exp
 <p>At this point, you may ask, what is the application of this experiment in our life. The answer is <code>NOTHING!</code>. It&#39;s just a demonstration of the beauty of ⁡π. Normally you can&#39;t relate throwing needle to a plane randomly to ⁡π but as you&#39;ve seen by now, they are related. The  more you'll try, the more you'll get closer to <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{120}&space;\large&space;\pi" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\dpi{120}&space;\large&space;\pi" title="\large \pi" /></a> . It's inevitable. You can't just escape it. It's coming for you.</p>
 <p>Isn&#39;t that just beautiful?</p>
 
-
                       </ul>
 
                   </div>
@@ -220,6 +243,10 @@ In 1901, Italian mathematician Mario Lazzarini performed Buffon&#39;s needle exp
         <!--</section>-->
       <!--</section>-->
       <!-- #####End contents-->
+      <body>
+        <div id="sketch-holder">
+            <!-- p5.js will automatically attach the canvas to this div -->
+        </div>
       <footer id="footer">
         <div id="footer-main" class="text-center">
           <div class="container">
@@ -258,6 +285,8 @@ In 1901, Italian mathematician Mario Lazzarini performed Buffon&#39;s needle exp
         </div>
     </div>
       </footer>
+      <script src="Buffon.js"></script>
+      </body>
       <!--</section>>-->
     <!--</div>-->
     <!-- #####Begin scripts-->
