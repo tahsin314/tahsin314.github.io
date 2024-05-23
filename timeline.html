@@ -33,35 +33,79 @@
         a:hover {
             text-decoration: underline; /* Optional: Add underline on hover */
         }
+
         h1, h2, h3, h4, p {
             font-family: 'Oswald', 'sans-serif';
         }
+
         h1 {
             font-size: 48px;
         }
+
         h2 {
             font-size: 36px;
         }
+
         h3 {
             font-size: 32px;
         }
+
         p {
             font-size: 16px;
         }
+
         .vt-content a {
             color: #8B0000;
             text-decoration: none;
         }
+
         .vt-content a:hover {
             text-decoration: underline;
         }
+
         .page-title {
             text-align: center;
             margin-top: 20px;
             font-size: 36px;
         }
-    </style>
 
+        @media (max-width: 768px) {
+            .vt-step {
+                display: block;
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .vt-column {
+                display: none;
+            }
+
+            .vt-content {
+                width: 100%;
+                margin: 0;
+            }
+
+            .vt-right .vt-cat,
+            .vt-left .vt-cat,
+            .vt-right .vt-body,
+            .vt-left .vt-body {
+                text-align: center !important;
+                padding: 10px !important;
+            }
+
+            .vt-header {
+                padding: 10px !important;
+            }
+
+            .vt-splitter {
+                display: none;
+            }
+
+            .vt-body {
+                padding: 10px !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="fullwidth sticky-header" style="background-color: #2d2b2e;">
@@ -97,11 +141,14 @@
 
         <section id="contents">
             <div class="page-head h-250 center-it ov-grad1-alpha-50 parallax-layer dark" data-img-src="assets/img/bg/buet.png" data-parallax-mode="mode-title"></div>
+            <div class="page-title">
+                <h1 class="page-title" style="font-size: 48px; margin-bottom: 20px;">My Timeline</h1>    
+            </div>
             <section class="cd-h-timeline js-cd-h-timeline margin-bottom-md">
                 <div class="cd-h-timeline__events">
                     <div class="vertical-timeline">
 
-                        <div class="vt-step vt-left vt-orange">
+                        <div class="vt-step vt-left vt-green">
                             <div class="vt-column">
                                 <div class="vt-start-point"></div>
                                 <div class="vt-end-point"></div>
@@ -115,13 +162,14 @@
                                 </div>
                                 <div class="vt-body">
                                     <h3 class="vt-title">Graduated with a Masters Degree!</h3>
-                                    <p>I graduated with a Masters degree in the ECE department of University of Florida. Lost a lot of blood, broke several several bones and went through tremendous physical and mental pain duirng this time. I am so proud that I did not quit. </p>
+                                    <p>I graduated with a Masters degree in the ECE department of University of Florida. Lost a lot of blood, broke several bones and went through tremendous physical and mental pain during this time. I am so proud that I did not quit.</p>
+                                    
                                     <div class="img-side shadow">
                                         <img src="assets/img/grad_pic.jpg" class="full-width">
                                     </div>
                                 </div>
                             </div>
-                        </div>    
+                        </div>
 
                         <!-- Event 1 -->
                         <div class="vt-step vt-right vt-blue">
@@ -138,7 +186,8 @@
                                 </div>
                                 <div class="vt-body">
                                     <h3 class="vt-title">Married the Most Amazing Girl in the whole world!</h3>
-                                    <p>The title says it all! Her name is Trina, the love of my life.</p>
+                                    <p>The title says it all! Her name is Trina, the love of my life. </p>
+                                    
                                     <div class="img-side shadow">
                                         <img src="assets/img/A3A08892.jpg" class="full-width">
                                     </div>
@@ -162,6 +211,7 @@
                                 <div class="vt-body">
                                     <h3 class="vt-title">Joined FICS Lab as a Graduate Research Assistant</h3>
                                     <p>I started working under the supervision of Professor <a href="https://faculty.eng.ufl.edu/navid-asadi/people/">Navid Asadi</a> in the <a href="https://fics.institute.ufl.edu/">FICS</a> lab in the department of <a href="https://www.ece.ufl.edu/">ECE, University of Florida</a>.</p>
+
                                 </div>
                             </div>
                         </div>
