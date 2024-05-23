@@ -36,10 +36,11 @@
 }
 
 @media screen and (max-width: 767px) {
-    .vertical-timeline {
+    .vertical-timeline::before {
         display: none;
     }
 }
+
 
 
 .vt-column {
