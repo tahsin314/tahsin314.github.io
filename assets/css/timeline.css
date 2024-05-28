@@ -82,6 +82,94 @@
     bottom: -3.5px;
 }
 
+
+body {
+    font-family: 'Oswald', 'sans-serif';
+    background-color: #1c1c1c; /* Dark background color for contrast */
+    color: #f8f8f8; /* Light text color for readability */
+}
+
+a {
+    color: red; /* Set all links to red color */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Oswald', 'sans-serif';
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px; /* Title Size*/
+}
+
+p {
+    font-size: 16px; /* Description*/
+}
+
+.vt-content a {
+    color: #8B0000;
+    text-decoration: none;
+}
+
+.vt-content a:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .vt-step {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .vt-column {
+        display: none;
+    }
+
+    .vt-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .vt-right .vt-cat,
+    .vt-left .vt-cat,
+    .vt-right .vt-body,
+    .vt-left .vt-body {
+        text-align: center !important;
+        padding: 10px !important;
+    }
+
+    .vt-header {
+        padding: 10px !important;
+    }
+
+    .vt-splitter {
+        display: none;
+    }
+
+    .vt-body {
+        padding: 10px !important;
+    }
+}
+
 /* content */
 .vt-content {
     position: relative;
@@ -106,13 +194,14 @@
 }
 
 .vt-header .vt-cat {
-    font-size: 48px;
+    font-size: 32px;
     display: block;
 }
 
 .vt-body p {
     margin: 10px 0px 0px 0px;
     font-size: 32px;
+    color: white;
     /* font-size: .9rem; */
 }
 
