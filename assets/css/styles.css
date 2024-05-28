@@ -18985,8 +18985,7 @@ iframe {
     .intro-box .content-side:before {
         content: none;
     }
-    .intro-box .img-side,
-    .intro-box .content-side {}
+
     .intro-box .img-side:after,
     .intro-box .content-side:after {
         content: none;
@@ -19014,7 +19013,6 @@ iframe {
     #header .cart {
         display: none;
     }
-    .vc-card {}
     .vc-card.mini-card .vc-card-wrapper {
         padding: 40px 10px 0 20px;
     }

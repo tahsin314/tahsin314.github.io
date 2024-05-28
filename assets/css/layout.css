@@ -1,6 +1,158 @@
+body {
+    font-family: 'Oswald', 'sans-serif';
+    background-color: #1c1c1c; /* Dark background color for contrast */
+    color: #fbfbfb; /* Light text color for readability */
+}
+
+a {
+    color: red; /* Set all links to red color */
+    text-decoration: none; /* Optional: Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+h1, h2, h3, h4, p, li {
+    font-family: 'Oswald', 'sans-serif';
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.vt-content a {
+    color: #8B0000;
+    text-decoration: none;
+}
+
+.vt-content a:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+}
+
+@media (max-width: 768px) {
+    .vertical-timeline::before {
+        display: none;
+    }
+}
+
+.about-section, .education-section, .publications-section, .projects-section {
+    color: #fbfbfb; /* Light text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.about-section {
+    background-color: #262827; /* Dark background for About Me */
+}
+
+.about-section h3.with-sideline {
+    color: #ffffff; /* Set the color of the Education title to white */
+}
+
+/* For Research Interests */
+.about-section h4.with-sideline {
+    color: #ffffff; /* Set the color of the Research Interests title to white */
+}
+
+/* For About Me section paragraph text */
+.about-section p {
+    color: #ffffff; /* Set the color of the paragraph text to white */
+}
+
+/* For links inside the About Me section */
+.about-section a {
+    color: gray; /* Ensure links remain blue */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.about-section a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+
+/* For CV */
+.cv-section h3.with-sideline {
+    color: #ffffff; /* Set the color of the CV title to white */
+}
+
+.education-section {
+    background-color: #3a3a3a; /* Darker gray background for Education */
+    font-size: 22px; /* Larger font size */
+    color: #fbfbfb; /* Light text color for readability */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+.education-section h3.with-sideline {
+    color: #ffffff; /* Set the color of the Education title to white */
+}
+
+
+.icon-box.ib-edu .title,
+.icon-box.ib-edu .subtitle,
+.icon-box.ib-edu .description {
+    color: #fbfbfb; /* Light text color for readability */
+    font-size: 16px; /* Larger font size for text */
+}
+
+.icon-box.ib-edu .oli-diploma {
+    color: #388E8E; /* Set the color of the diploma icon */
+}
+
+
+.publications-section h3.with-sideline {
+    color: #ffffff; /* Set the color of the Education title to white */
+}
+
+.publications-section {
+    background-color: #646060; /* Dark background for Major Publications */
+}
+
+.projects-section {
+    background-color: #2a2a2a; /* Dark background for Selected Projects section */
+}
+
+.projects-section h3.with-sideline {
+    color: #ffffff; /* Set the color of the Education title to white */
+}
+
 .project-item {
     margin-bottom: 20px;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: #3a3a3a; /* Card background color */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
 
 .project-item:hover {
@@ -8,24 +160,10 @@
     opacity: 0.8;
 }
 
-.project-details {
-    background-color: #f8f9fa; /* Light background to separate entries */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+.project-details b {
+    color: #fbfbfb; /* Ensure bold text is visible */
 }
 
-.btn-group .btn {
-    margin-right: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
+/* Footer section background */
+/*  */
 
-.btn-group .btn:hover {
-    background-color: #117a8b; /* Darker shade for button hover */
-    color: #ffffff;
-}
-
-.btn-info.active, .btn-info:active {
-    background-color: #17a2b8;
-    color: #fff;
-}
