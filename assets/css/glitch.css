@@ -1,0 +1,34 @@
+body {
+    background-color: #000; /* Cyberpunk background */
+    color: #0f0; /* Green text */
+    font-family: monospace; /* Monospace font for a techy look */
+  }
+  
+  .glitch {
+    position: relative;
+    animation: glitch 1s infinite alternate ease-in-out;
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: none;
+    }
+    25% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% var(--glitch-y)); /* Simulate vertical glitch lines */
+    }
+    50% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, var(--glitch-x) 0); /* Simulate horizontal glitch lines */
+    }
+    75% {
+      clip-path: polygon(0 0, 100% 0, 100% var(--glitch-y), 0% 0);
+    }
+    100% {
+      clip-path: polygon(0 var(--glitch-x), 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+  
+  :root {
+    --glitch-x: 50px; /* Adjust horizontal glitch distance */
+    --glitch-y: 20px; /* Adjust vertical glitch distance */
+  }
+  

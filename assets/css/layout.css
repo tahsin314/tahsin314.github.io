@@ -1,8 +1,15 @@
 body {
-    font-family: 'Oswald', 'sans-serif';
-    background-color: #1c1c1c; /* Dark background color for contrast */
-    color: #fbfbfb; /* Light text color for readability */
-}
+    /* font-family: 'Oswald', 'sans-serif';
+    /* background-color: #1c1c1c;  Dark background color for contrast    */
+    /* color: #fbfbfb; Light text color for readability */ 
+    background-color: #262323; /* Enhanced dark background */
+    font-family: "Share Tech Mono", monospace;
+    color: #D3D3D3; /* Bright cyan for high contrast */
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center; */
+  }
+  
 
 a {
     color: red; /* Set all links to red color */
@@ -62,6 +69,13 @@ li {
     }
 }
 
+/* Responsive adjustments if necessary */
+@media (max-width: 768px) {
+    .intro-box {
+        flex-direction: column; /* Stacks the image and content vertically on smaller screens */
+    }
+}
+
 .about-section, .education-section, .publications-section, .projects-section {
     color: #fbfbfb; /* Light text color for readability */
     padding: 20px;
@@ -69,6 +83,49 @@ li {
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust spacing */
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    background: rgba(49, 47, 47, 0.6);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;
+}
+
+.container-footer {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-around; Adjust spacing */
+    /* z-index: 1; */
+    /* width: 80%; */
+    /* padding: 20px; */
+    background: rgba(248, 242, 242, 0.6);
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.5); */
+    /* border-radius: 10px; */
+    /* color: white; */
+}
+
+.vcenter, .content-side {
+    position: relative;
+    z-index: 1; /* Ensures these elements are above the canvas */
+}
+
+
+.intor-box-wrapper {
+    position: relative; /* This setting helps with positioning inner elements absolutely */
+    height: 100%;       /* Ensure it takes the full height of its parent */
+    z-index: 5;         /* Above the canvas but under the image */
+    padding: 20px;
+    background: #262323; /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Adds depth */
+}
+
 
 .about-section {
     background-color: #262827; /* Dark background for About Me */
@@ -105,7 +162,7 @@ li {
 }
 
 .education-section {
-    background-color: #3a3a3a; /* Darker gray background for Education */
+    background-color: #262323; /* Darker gray background for Education */
     font-size: 22px; /* Larger font size */
     color: #fbfbfb; /* Light text color for readability */
     padding: 20px;
@@ -163,6 +220,85 @@ li {
 .project-details b {
     color: #fbfbfb; /* Ensure bold text is visible */
 }
+
+#canvasContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.img-side {
+    max-width: 300px;  /* Limit the width to avoid it taking too much space */
+    position: relative; /* Position it absolutely within its parent */
+    top: 50%;           /* Center it vertically */
+    left: 0px;         /* Give some left margin from the canvas */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    z-index: 10;        /* Ensure it's above the terrain canvas */
+    flex: 1; /* Allows the image side to take up space flexibly */
+    padding: 10px; /* Spacing around the image */
+}
+
+.info-cards {
+    background-color: rgba(16, 15, 15, 0.1); /* Transparent background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Adjust based on preference */
+    height: 220%;
+}
+
+.info-card {
+    background-color: rgba(16, 15, 15, 0.1); /* Transparent background */
+    color: white; /* Set text color for visibility */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    width: 100%; /* Width adjustment to fit side by side, considering padding/margin */
+    /* min-height: 10vh; */
+    margin: 10px; /* Margin for spacing */
+    float: left; /* Align side by side */
+    height: 10%; /* Increased height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Evenly space children */
+    align-items: center; /* Center children horizontally */
+  }
+
+
+.info-card h1, .info-card p {
+    margin: 5px 0; /* Small margin for spacing */
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+.title h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.title p {
+    font-size: 16px;
+    color: #ccc; /* Lighter text for the subtitle */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-card {
+      width: 100%; /* Full width for small screens */
+      margin-bottom: 20px; /* Additional bottom margin for stacking */
+    }
+  }
 
 /* Footer section background */
 /*  */

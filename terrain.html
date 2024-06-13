@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Terrain Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body, html { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script>
+        let cols, rows;
+        let scl = 20; // Scale
+        let w = 2000;
+        let h = 1600;
+
+        let terrain;
+        let flying = 0.0;
+
+        function setup() {
+            createCanvas(1000, 1000, WEBGL);
+            cols = w / scl;
+            rows = h / scl;
+            terrain = new Array(cols).fill().map(() => new Array(rows));
+        }
+
+        function draw() {
+            flying -= 0.1;
+            background(0);
+            strokeWeight(2); // Adjust the size of the points
+
+            let yoff = flying;
+            for (let y = 0; y < rows; y++) {
+                let xoff = 0.5;
+                for (let x = 0; x < cols; x++) {
+                    terrain[x][y] = map(noise(xoff, yoff), 0, 1, -100, 250);
+                    xoff += 0.15;
+                }
+                yoff += 0.15;
+            }
+
+            translate(0, 50);
+            rotateX(PI / 3);
+            translate(-w / 2, -h / 2);
+            for (let y = 0; y < rows - 1; y++) {
+                for (let x = 0; x < cols; x++) {
+                    push();
+                    translate(x * scl, y * scl, terrain[x][y]);
+                    stroke(getColor(terrain[x][y])); // Color based on height
+                    point();
+                    pop();
+                }
+            }
+        }
+
+        function getColor(z) {
+            const colors = [
+                color(0, 0, 0),     // Black
+                color(78, 0, 103),  // Dark purple
+                color(128, 38, 143), // Purple
+                color(180, 54, 148), // Lighter purple
+                color(229, 80, 128), // Pinkish
+                color(251, 142, 102),// Light pink
+                color(253, 231, 37)  // Bright yellow
+            ];
+
+            let t = map(z, -200, 250, 0, 1); // Normalize z to [0, 1]
+            if (t < 0.17) return lerpColor(colors[0], colors[1], map(t, 0, 0.17, 0, 1));
+            else if (t < 0.34) return lerpColor(colors[1], colors[2], map(t, 0.17, 0.34, 0, 1));
+            else if (t < 0.51) return lerpColor(colors[2], colors[3], map(t, 0.34, 0.51, 0, 1));
+            else if (t < 0.68) return lerpColor(colors[3], colors[4], map(t, 0.51, 0.68, 0, 1));
+            else if (t < 0.85) return lerpColor(colors[4], colors[5], map(t, 0.68, 0.85, 0, 1));
+            else return lerpColor(colors[5], colors[6], map(t, 0.85, 1.0, 0, 1));
+        }
+    </script>
+</body>
+</html>

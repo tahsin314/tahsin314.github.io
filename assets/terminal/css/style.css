@@ -1,0 +1,185 @@
+@import url("https:/*fonts.googleapis.com/css?family=Space+Mono");
+@import url("https:/*fonts.googleapis.com/css?family=Share+Tech+Mono");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.terminal {
+  width: 100%; /* Reduced from 100% for better visibility and centered appearance */
+  height: 500px; /* Set a fixed height */
+  /* overflow-y: auto; Allow vertical scrolling */
+  margin: 0 auto; /* Center the terminal horizontally */
+  background: rgba(49, 47, 47, 0.); /* Adjust opacity for slight transparency */
+}
+
+.terminal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 3px
+  );
+  pointer-events: none; /* Non-interactive */
+  opacity: 0.25; /* Adjust opacity for visibility */
+}
+
+.terminal h1 {
+  color: #00eaff; /* Ensuring header matches body color */
+  padding: 0 0.75em;
+  background-color: rgba(21, 41, 31, 0.8);
+  border: 3px solid rgba(21, 41, 31, 0.8);
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff; /* Adding glow to headers */
+}
+
+.terminal h1.main__title {
+  color: #00eaff; /* Ensuring header matches body color */
+  padding: 0 0.75em;
+  background-color: rgba(21, 39, 41, 0.8);
+  border: 3px solid rgba(21, 39, 31, 0.8);
+  margin-bottom: 1em;
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff; /* Adding glow to headers */
+}
+
+
+.terminal .main__container {
+  position: relative;
+  padding: 1.9em 2.4em;
+  max-width: 900px;
+  min-height: 10vh;
+  height: 550px;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: 0 0.5em;
+  color: #00eaff; /* Bright green for high contrast */
+  background-color: rgba(49, 47, 47, 0.);
+  background-image: linear-gradient(transparent 50%, rgba(11, 17, 9, 0.1) 50%), radial-gradient(transparent 65%, rgba(2, 9, 1, 0.6) 100%);
+  text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff; /* Adding glow to headers */
+}
+
+.terminal .main__container::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.5;
+  transform: translate3D(0, 0, 0);
+  width: 100%;
+  height: 150px;
+  mix-blend-mode: screen;
+  background-color: rgba(49, 47, 47, 0.);
+  background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.5) 50%), linear-gradient(to top, #050f05, rgba(0, 0, 0, 0) 110%);
+  background-size: 15px 15px, 100%;
+  animation: scan 2.5s linear infinite, blink 0.6s infinite;
+}
+
+.terminal block {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  mix-blend-mode: screen;
+  opacity: 0.65;
+  background-size: 100 100;
+  animation: flicker 240ms infinite;
+  background: repeating-linear-gradient(rgba(10, 27, 41, 0.3) 1px, rgba(10, 27, 41, 0.1) 2px, rgba(0, 0, 0, 0) 5px);
+}
+
+.scanlines {
+  position: relative;
+  overflow: hidden;
+  color: #00eaff; /* Updated to match new text color */
+}
+
+.scanlines::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 2px,
+    rgba(0, 0, 0, 0.5) 2px,
+    rgba(0, 0, 0, 0.5) 3px
+  );
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+@keyframes blink {
+  0% { opacity: 0.7; }
+  15% { opacity: 0.4; }
+  20% { opacity: 0.7; }
+  23% { opacity: 0.3; }
+  27% { opacity: 0.7; }
+  50% { opacity: 0.8; }
+  60% { opacity: 0.5; }
+  61% { opacity: 0.8; }
+  62% { opacity: 0.6; }
+  67% { opacity: 0.7; }
+  69% { opacity: 0.4; }
+  77% { opacity: 0.7; }
+  80% { opacity: 0.3; }
+  100% { opacity: 0.7; }
+}
+
+@keyframes scan {
+  0% { transform: translate3D(0, -100px, 0); }
+  100% { transform: translate3D(0, 600px, 0); }
+}
+
+@keyframes flicker {
+  0% { transform: translateY(1px); }
+  50% { transform: translateY(0px); }
+  100% { transform: translateY(1px); }
+}
+
+#dynamic-text {
+  width: 100%;
+  height: 600px; /* Ensure enough height to avoid overflow */
+  overflow-y: hidden; /* Allow vertical scrolling if necessary */
+  overflow-x: hidden; /* Hide horizontal overflow */
+  text-align: left; /* Align text to the left */
+  white-space: normal;  
+  padding: 20px;
+  /* box-sizing: border-box; */
+  font-family: 'VT323', monospace; /* Retro, typewriter-like font */
+  color: #FFA07A;
+  font-size: 28px; /* Adjust font size as necessary*/
+  line-height: 1.25; /* Line height for better readability*/
+  /* background: #262323; Dark background for terminal effect */
+  /* color: #FFF; Light text color */
+  /* border: 1px solid #FFF; Optional border */
+  margin: 0 auto; /* Center the container horizontally */
+  text-shadow: 0 0 10px #FF6347, 0 0 20px #FF6347, 0 0 30px #FF6347, 0 0 40px #FF6347; /* Vibrant red-orange glow */
+  animation: blink 1s scan 1s iteration-count direction fill-mode;
+}
+
+.cursor {
+  font-weight: bold;
+  color: #FFA07A; /* Matching cursor color */
+  animation: blink-animation 0.7s steps(1) infinite;
+}
+
+@keyframes blink-animation {
+  50% { opacity: 0; }
+}
+
