@@ -95,16 +95,21 @@ li {
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     border-radius: 10px;
     color: white;
+    width: 0 auto;
+    height: 0 auto;
+    margin-top: 0 auto;
+    margin-bottom: 0 auto;
 }
 
 .container-footer {
     /* display: flex; */
-    /* align-items: center; */
+    align-items: center;
     /* justify-content: space-around; Adjust spacing */
     /* z-index: 1; */
     /* width: 80%; */
     /* padding: 20px; */
     background: rgba(248, 242, 242, 0.6);
+    text-align: center; /* Keeps text centered within the container */
     /* box-shadow: 0 4px 8px rgba(0,0,0,0.5); */
     /* border-radius: 10px; */
     /* color: white; */
@@ -131,14 +136,6 @@ li {
     background-color: #262827; /* Dark background for About Me */
 }
 
-.about-section h3.with-sideline {
-    color: #ffffff; /* Set the color of the Education title to white */
-}
-
-/* For Research Interests */
-.about-section h4.with-sideline {
-    color: #ffffff; /* Set the color of the Research Interests title to white */
-}
 
 /* For About Me section paragraph text */
 .about-section p {
@@ -155,10 +152,14 @@ li {
     text-decoration: underline; /* Optional: Add underline on hover */
 }
 
+.research-interests {
+    list-style-type: disc;
+    padding-left: 20px; /* Adds padding to the left for indentation */
+}
 
-/* For CV */
-.cv-section h3.with-sideline {
-    color: #ffffff; /* Set the color of the CV title to white */
+.research-interests li {
+    margin-left: 20px; /* Additional margin for indentation */
+    font-size: 22px; /* Adjust font size if needed */
 }
 
 .education-section {
@@ -170,14 +171,12 @@ li {
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
-.education-section h3.with-sideline {
-    color: #ffffff; /* Set the color of the Education title to white */
-}
 
 
 .icon-box.ib-edu .title,
 .icon-box.ib-edu .subtitle,
 .icon-box.ib-edu .description {
+    margin-bottom: 5px; /* Adds bottom margin to each element to avoid overlap */
     color: #fbfbfb; /* Light text color for readability */
     font-size: 16px; /* Larger font size for text */
 }
@@ -187,9 +186,6 @@ li {
 }
 
 
-.publications-section h3.with-sideline {
-    color: #ffffff; /* Set the color of the Education title to white */
-}
 
 .publications-section {
     background-color: #646060; /* Dark background for Major Publications */
@@ -199,9 +195,6 @@ li {
     background-color: #2a2a2a; /* Dark background for Selected Projects section */
 }
 
-.projects-section h3.with-sideline {
-    color: #ffffff; /* Set the color of the Education title to white */
-}
 
 .project-item {
     margin-bottom: 20px;
@@ -218,6 +211,7 @@ li {
 }
 
 .project-details b {
+    width: 300px;
     color: #fbfbfb; /* Ensure bold text is visible */
 }
 

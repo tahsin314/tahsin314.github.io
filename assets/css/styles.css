@@ -5932,21 +5932,16 @@ h6,
     margin-bottom: 15px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {}
-
 h1.with-sideline,
 h2.with-sideline,
 h3.with-sideline,
 h4.with-sideline,
 h5.with-sideline,
 h6.with-sideline {
+    text-align: left;
     position: relative;
     padding-left: 70px;
+    color: #ffffff; /* Set the color of the Education title to white */
 }
 
 h1.with-sideline:before,
@@ -6261,13 +6256,6 @@ p.highlight {
 .dark-wrapper h6 {
     color: #fff;
 }
-
-.dark-wrapper h1.with-sideline,
-.dark-wrapper h2.with-sideline,
-.dark-wrapper h3.with-sideline,
-.dark-wrapper h4.with-sideline,
-.dark-wrapper h5.with-sideline,
-.dark-wrapper h6.with-sideline {}
 
 .dark-wrapper h1.with-sideline:before,
 .dark-wrapper h2.with-sideline:before,
@@ -10148,8 +10136,8 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 
 .icon-box.ib-v6 .ib-wrap {
     margin-left: 110px;
-    padding-right: 15px;
-    padding-top: 15px;
+    padding-right: 105px;
+    padding-top: 1px;
 }
 
 .icon-box.ib-v7 {
@@ -10412,11 +10400,19 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
 }
 
 .icon-box.ib-edu {
-    padding: 0;
+    /* display: flex; */
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden; /* Ensures overflow text is not visible */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text overflows the available space */
+    /* padding: 0; */
+    padding: 15px; /* Adds padding inside each box */
     text-align: left;
+    margin-bottom: 20px; /* Adds space between boxes */
 }
 
 .icon-box.ib-edu>i {
+    flex-shrink: 0; /* Prevents the icon from shrinking */
     float: left;
     width: 70px;
     height: 70px;
@@ -10427,27 +10423,38 @@ ul#primary-menu li.mega-menu .megamenu-wrapper:after {
     border: 1px solid #252525;
     border-radius: 50%;
     margin-bottom: 0;
+    margin-right: 20px;
 }
 
 .icon-box.ib-edu .ib-wrap {
-    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* padding-top: 10px; */
     margin-left: 90px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    padding: 0 20px; /* Adjust padding to taste, but keep it uniform on sides */
 }
 
 .icon-box.ib-edu .title {
     font-size: 14px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
-.icon-box.ib-edu .subtitle,
 .icon-box.ib-edu .description {
+    white-space: nowrap;
     font-size: 12px;
     color: #636363;
 }
 
+.icon-box.ib-edu .subtitle {
+    margin-bottom: 2px; /* Reduce or adjust the bottom margin after the subtitle */
+    font-size: 12px; /* Ensure the font size is appropriate */
+    color: #636363;
+}
+
 .icon-box.ib-edu .description {
-    margin-top: 7px;
+    margin-top: 0;
     font-family: "Play", sans-serif;
     font-family: 12px;
 }
