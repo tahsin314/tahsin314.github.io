@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const phrases = [
         "I am an AI and machine learning researcher specializing in developing deep learning models for medical imaging and natural language processing tasks.",
         "With expertise in computer vision and sequence modeling, I have co-authored several publications on patient assessment, diagnostic tools, and anomaly detection.",
-        "My work covers a range of projects, including ICU patient monitoring, object detection, and disease diagnosis support using multimodal data integration.",
-        "I’m passionate about advancing healthcare through innovative AI solutions—but let’s be honest, I sometimes spend more time procrastinating on my next research paper than actually writing it!",
-        "Despite my creative distractions, I’ve still managed to gain recognition in various deep learning competitions. Imagine what I could achieve if I stopped getting sidetracked!"
+        "My work covers a range of projects, including ICU patient monitoring, small object detection in CT images, and disease diagnosis support using multimodal data integration.",
+        "I’m passionate about advancing healthcare through innovative AI solutions. However, I sometimes spend more time procrastinating on my next research ideas than actually working on it!",
+        "Despite my creative distractions, I’ve still managed to gain recognition (mostly by my loving family members and friends LOL). Imagine what I could achieve if I stopped getting sidetracked!"
     ];
     
     let phraseIndex = 0;
