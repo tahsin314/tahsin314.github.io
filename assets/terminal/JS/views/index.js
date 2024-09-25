@@ -8,15 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
     container.appendChild(cursor); // Add cursor to the DOM
 
     const phrases = [
-        "As a master tinkerer of the virtual and physical realms,",
-        "I’ve parlayed my passion for electrical engineering from the vibrant classrooms of Bangladesh University of Engineering and Technology (BUET) to the innovative labs at the University of Florida.",
-        "From designing life-saving medical diagnostic tools to mentoring future prodigies in the art of machine learning,",
-        "my journey is punctuated with one mission: to blend technology and healthcare in ways that were once thought to be the stuff of science fiction.",
-        "When I’m not programming the next big AI breakthrough or analyzing complex datasets,",
-        "you might find me deep in the pages of a sci-fi novel, drawing inspiration for my next project,",
-        "or crafting algorithms that might one day power your smart devices.",
-        "After all, in a world increasingly run by technology, someone needs to hold the reins and ensure it's used for good—why not me?"
+        "I am an AI and machine learning researcher specializing in developing deep learning models for medical imaging and natural language processing tasks.",
+        "With expertise in computer vision and sequence modeling, I have co-authored several publications on patient assessment, diagnostic tools, and anomaly detection.",
+        "My work covers a range of projects, including ICU patient monitoring, object detection, and disease diagnosis support using multimodal data integration.",
+        "I’m passionate about advancing healthcare through innovative AI solutions—but let’s be honest, I sometimes spend more time procrastinating on my next research paper than actually writing it!",
+        "Despite my creative distractions, I’ve still managed to gain recognition in various deep learning competitions. Imagine what I could achieve if I stopped getting sidetracked!"
     ];
+    
     let phraseIndex = 0;
     let wordIndex = 0;
     let words = [];
