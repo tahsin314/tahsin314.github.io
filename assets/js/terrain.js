@@ -23,7 +23,7 @@ function setup() {
 }
 
 function draw() {
-    flying += 0.1; // Slower flying speed
+    flying += 0.05; // Slower flying speed
 
     background(33);
     strokeWeight(2);
