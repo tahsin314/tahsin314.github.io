@@ -1,7 +1,7 @@
 p5.disableFriendlyErrors = true; // disables FES
 
 let cols, rows;
-let scl = 40; // Increased Scale (lower resolution)
+let scl = 30; // Increased Scale (lower resolution)
 let w = 2000;
 let h = 1600;
 let terrain;
