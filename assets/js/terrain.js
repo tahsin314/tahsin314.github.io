@@ -39,7 +39,7 @@ function draw() {
         for (let x = 0; x < cols; x++) {
             let z = map(noise(xoff, yoff), 0, 1, -100, 250);
             stroke(getColor(z)); // Use height-based color
-            vertex(x * scl, y * scl, z); // Add vertex point
+            vertex(x * scl, y * scl, 1.5*z); // Add vertex point
             xoff += 0.1;
         }
         endShape(); // End drawing shape
@@ -47,22 +47,23 @@ function draw() {
     }
 }
 
+// Function to get CSS variable values
+function getCSSVariable(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
 function getColor(z) {
     const colors = [
-        color(0, 0, 0),
-        color(78, 0, 103),
-        color(128, 38, 143),
-        color(180, 54, 148),
-        color(229, 80, 128),
-        color(251, 142, 102),
-        color(253, 231, 37)
+        color(getCSSVariable('--color-secondary')),  // Dark green from CSS variable
+        color(getCSSVariable('--color-primary')),    // Light green from CSS variable
+        color(getCSSVariable('--color-accent')),     // Light greenish from CSS variable
+        color(getCSSVariable('--color-light')),      // Light beige from CSS variable
+        color(240, 255, 240) // Fallback for very light color (almost white)
     ];
 
     let t = map(z, -200, 250, 0, 1); // Normalize z to [0, 1]
-    if (t < 0.17) return lerpColor(colors[0], colors[1], map(t, 0, 0.17, 0, 1));
-    else if (t < 0.34) return lerpColor(colors[1], colors[2], map(t, 0.17, 0.34, 0, 1));
-    else if (t < 0.51) return lerpColor(colors[2], colors[3], map(t, 0.34, 0.51, 0, 1));
-    else if (t < 0.68) return lerpColor(colors[3], colors[4], map(t, 0.51, 0.68, 0, 1));
-    else if (t < 0.85) return lerpColor(colors[4], colors[5], map(t, 0.68, 0.85, 0, 1));
-    else return lerpColor(colors[5], colors[6], map(t, 0.85, 1.0, 0, 1));
+    if (t < 0.25) return lerpColor(colors[0], colors[1], map(t, 0, 0.25, 0, 1));
+    else if (t < 0.5) return lerpColor(colors[1], colors[2], map(t, 0.25, 0.5, 0, 1));
+    else if (t < 0.75) return lerpColor(colors[2], colors[3], map(t, 0.5, 0.75, 0, 1));
+    else return lerpColor(colors[3], colors[4], map(t, 0.75, 1.0, 0, 1));
 }

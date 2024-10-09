@@ -1,0 +1,20 @@
+/* CSS Variables */
+:root {
+    --hvh-multiplier: 1;
+    --alpha: 50;
+    --m-top: 10;
+    --p-bottom: 10;
+    --pad: 10;
+    --p-left: 10;
+    --p-right: 10;
+    --pull-up: 10;
+    --spacer: 10;
+    --spacer-xs: 5;
+    --spacer-sm: 8;
+    --primary-gradient: linear-gradient(to bottom, #4C3A51, #774360, #B25068);
+    --color-primary: #4C3A51; /* Light green */
+    --color-secondary: #774360; /* Dark green */
+    --color-accent: #B25068; /* Light greenish */
+    --color-light: #E7AB79; /* Light beige */
+    --color-dark: #1a0f1f; /* Dark background */
+}

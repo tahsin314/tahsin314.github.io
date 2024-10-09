@@ -1,1 +1,607 @@
-@charset "UTF-8";.btn,.btn-group,img{vertical-align:middle}img{border:0}body{margin:0}.btn{white-space:nowrap}.btn-toolbar .btn,.btn-toolbar .btn-group{float:left}.btn{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none}html{-webkit-tap-highlight-color:transparent}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;font-size:10px}footer,header,section{display:block}a{background-color:transparent}a:active,a:hover{outline:0}b{font-weight:700}h1{margin:.67em 0}button{margin:0;font:inherit;color:inherit}.oli{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}button{overflow:visible}button{text-transform:none}button{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner{padding:0;border:0}@media print{img{page-break-inside:avoid}*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}img{max-width:100%!important}h3,p{orphans:3;widows:3}h3{page-break-after:avoid}}.btn,.btn-info:active,.btn:active{background-image:none}body{background-color:#fff}@font-face{font-family:'Glyphicons Halflings';src:url(../fonts/glyphicons-halflings-regular.eot);src:url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),url(../fonts/glyphicons-halflings-regular.woff) format('woff'),url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')}*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:focus,a:hover{color:#23527c;text-decoration:underline}a:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}h1,h3,h4{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1,h3{margin-top:20px;margin-bottom:10px}h4{margin-top:10px;margin-bottom:10px}h1{font-size:36px}h3{font-size:24px}h4{font-size:18px}p{margin:0 0 10px}.text-center{text-align:center}ul{margin-top:0}ul{margin-bottom:10px}.container{margin-right:auto;margin-left:auto}.container{padding-right:15px;padding-left:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.col-md-3,.col-md-6,.col-md-9{position:relative;min-height:1px;padding-right:15px;padding-left:15px}@media (min-width:992px){.col-md-3,.col-md-6,.col-md-9{float:left}.col-md-9{width:75%}.col-md-6{width:50%}.col-md-3{width:25%}.col-md-offset-3{margin-left:25%}}.btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;user-select:none;border:1px solid transparent;border-radius:4px}.btn:active:focus,.btn:focus{outline:dotted thin;outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}.btn:focus,.btn:hover{color:#333;text-decoration:none}.btn:active{outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);box-shadow:inset 0 3px 5px rgba(0,0,0,.125)}.btn-info{color:#fff;background-color:#5bc0de;border-color:#46b8da}.btn-info:focus{color:#fff;background-color:#31b0d5;border-color:#1b6d85}.btn-info:active,.btn-info:hover{color:#fff;background-color:#31b0d5;border-color:#269abc}.btn-info:active:focus,.btn-info:active:hover{color:#fff;background-color:#269abc;border-color:#1b6d85}.btn-block{display:block;width:100%}.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle){border-radius:0}.btn-group{position:relative;display:inline-block}.btn-group>.btn{position:relative;float:left}.btn-group>.btn:active,.btn-group>.btn:focus,.btn-group>.btn:hover{z-index:2}.btn-group .btn+.btn{margin-left:-1px}.btn-toolbar{margin-left:-5px}.btn-toolbar>.btn-group{margin-left:5px}.btn-group>.btn:first-child{margin-left:0}.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-top-right-radius:0;border-bottom-right-radius:0}.btn-group>.btn:last-child:not(:first-child){border-top-left-radius:0;border-bottom-left-radius:0}.btn-toolbar:after,.btn-toolbar:before,.clearfix:after,.clearfix:before,.container:after,.container:before,.row:after,.row:before{display:table;content:" "}.btn-toolbar:after,.clearfix:after,.container:after,.row:after{clear:both}@-ms-viewport{width:device-width}.fa-li{text-align:center}@font-face{font-family:FontAwesome;src:url(../fonts/fontawesome-webfont.eot?v=4.5.0);src:url(../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format('embedded-opentype'),url(../fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'),url(../fonts/fontawesome-webfont.woff?v=4.5.0) format('woff'),url(../fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype'),url(../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal}.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.fa-ul{padding-left:0;margin-left:2.14285714em;list-style-type:none}.fa-ul>li{position:relative}.fa-li{position:absolute;left:-2.14285714em;width:2.14285714em;top:.14285714em}.fa-github:before{content:"\f09b"}.fa-files-o:before{content:"\f0c5"}.fa-linkedin:before{content:"\f0e1"}.fa-file-text-o:before{content:"\f0f6"}.fa-youtube:before{content:"\f167"}.hamburger{padding:15px;display:inline-block;cursor:pointer;transition-property:opacity,-webkit-filter;transition-property:opacity,filter;transition-property:opacity,filter,-webkit-filter;transition-duration:.15s;transition-timing-function:linear;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible}.oli{font-style:normal}.hamburger:hover{opacity:.7}.hamburger-box{width:40px;height:24px;display:inline-block;position:relative}.hamburger-inner{display:block;top:50%;margin-top:-2px}.hamburger-inner,.hamburger-inner::after,.hamburger-inner::before{width:40px;height:4px;background-color:#000;border-radius:4px;position:absolute;transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;transition-duration:.15s;transition-timing-function:ease}.hamburger-inner::after,.hamburger-inner::before{content:"";display:block}.hamburger-inner::before{top:-10px}.hamburger-inner::after{bottom:-10px}.hamburger--elastic .hamburger-inner{top:0;transition-duration:.4s;transition-timing-function:cubic-bezier(.68,-.55,.265,1.55)}.hamburger--elastic .hamburger-inner::before{top:10px;transition:opacity .15s .4s ease}.hamburger--elastic .hamburger-inner::after{top:20px;transition:-webkit-transform .4s cubic-bezier(.68,-.55,.265,1.55);transition:transform .4s cubic-bezier(.68,-.55,.265,1.55);transition:transform .4s cubic-bezier(.68,-.55,.265,1.55),-webkit-transform .4s cubic-bezier(.68,-.55,.265,1.55)}button::-moz-focus-inner{padding:0;border:0}@font-face{font-family:ol-icon-set;src:url(../fonts/ol-icon-set.eot?v1.1);src:url(../fonts/ol-icon-set.eot?v1.1#iefix) format('embedded-opentype'),url(../fonts/ol-icon-set.ttf?v1.1) format('truetype'),url(../fonts/ol-icon-set.woff?v1.1) format('woff'),url(../fonts/ol-icon-set.svg?v1.1#ol-icon-set) format('svg');font-weight:400;font-style:normal}.oli{font-family:ol-icon-set!important;speak:none;font-weight:400;font-variant:normal;text-transform:none;line-height:inherit;box-sizing:initial}.oli-diploma:before{content:"\e952"}
+@charset "UTF-8";
+
+/* Button and Image Alignment */
+.btn, .btn-group, img {
+    vertical-align: middle;
+}
+
+/* Image Border */
+img {
+    border: 0;
+}
+
+/* Body Margin */
+body {
+    margin: 0;
+}
+
+/* Button Styles */
+
+/* Button Toolbar Styles */
+.btn-toolbar .btn, .btn-toolbar .btn-group {
+    float: left;
+}
+
+/* HTML Styles */
+html {
+    -webkit-tap-highlight-color: transparent;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 10px;
+}
+
+/* Block Display for Elements */
+footer, header, section {
+    display: block;
+}
+
+/* Anchor Styles */
+a {
+    background-color: transparent;
+}
+
+/* Anchor Hover and Active State */
+a:active, a:hover {
+    outline: 0;
+}
+
+/* Font Weight for Bold Text */
+b {
+    font-weight: 700;
+}
+
+/* Header Margin */
+h1 {
+    margin: .67em 0;
+}
+
+/* Button Inheritance */
+button {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    overflow: visible;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/* Font Smoothing */
+.oli {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Button Inner Focus Styles */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Print Styles */
+@media print {
+    img {
+        page-break-inside: avoid;
+    }
+    *, :after, :before {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: 0 0 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    img {
+        max-width: 100% !important;
+    }
+    h3, p {
+        orphans: 3;
+        widows: 3;
+    }
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* Button and Background Styles */
+
+.btn:active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn, .btn-info:active, .btn:active {
+    background-image: none;
+}
+
+/* Body Background */
+body {
+    background-color: #fff;
+}
+
+/* Font-Face for Glyphicons */
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+         url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+         url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+         url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg');
+}
+
+/* Box Sizing */
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Body Font Styles */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+/* Button Font Inheritance */
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Anchor Colors */
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+/* Anchor Hover and Focus Colors */
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+/* Anchor Focus Outline */
+a:focus {
+    outline: dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px;
+}
+
+/* Header Styles */
+h1, h3, h4 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+/* Header Margins */
+h1, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header Font Sizes */
+h1 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 22px;
+}
+
+/* Paragraph Margin */
+p {
+    margin: 0 0 10px;
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+/* List Styles */
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Container Styles */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Media Queries for Container Widths */
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 22px; /* Scale up font size for larger screens */
+        padding: 14px 28px; /* Increase padding */
+    }
+}
+
+@media (min-width: 992px) {
+    .btn {
+        font-size: 20px; /* Scale up font size even more for larger screens */
+        padding: 16px 32px; /* Increase padding */
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* Row Styles */
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Column Styles */
+.col-md-3, .col-md-6, .col-md-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Media Queries for Columns */
+@media (min-width: 992px) {
+    .col-md-3, .col-md-6, .col-md-9 {
+        float: left;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-offset-3 {
+        margin-left: 25%;
+    }
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 24px; /* Larger padding for bigger size */
+    margin-bottom: 0;
+    font-size: 20px; /* Increased font size */
+    font-weight: 1000; /* Slightly bolder text */
+    line-height: 1.5; /* Increased line height for better readability */
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Medium Button */
+.btn-medium {
+    padding: 14px 28px; /* Larger padding for a more prominent size */
+    font-size: 22px; /* Larger font size */
+    
+}
+
+/* Button Focus and Hover */
+.btn:active:focus, .btn:focus {
+    outline: dotted thin;
+    outline: -webkit-focus-ring-color auto 5px;
+    outline-offset: -2px;
+}
+.btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.btn:active {
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* Button Info Colors */
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.btn-info:focus {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85;
+}
+.btn-info:active, .btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+.btn-info:active:focus, .btn-info:active:hover {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85;
+}
+
+/* Button Block */
+.btn-block {
+    display: block;
+    width: 100%; /* Full-width */
+    padding: 16px 32px; /* Larger padding */
+    font-size: 22px; /* Increased font size for block button */
+}
+
+.btn-round {
+    border-radius: 50px; /* More rounded corners for a "pill" effect */
+}
+
+/* Thick Border Button */
+.btn-thick-border {
+    border-width: 3px; /* Thicker border for visibility */
+}
+
+
+/* Button Group */
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+/* Button Group Styling */
+.btn-group {
+    position: relative;
+    display: inline-block;
+}
+.btn-group>.btn {
+    position: relative;
+    float: left;
+}
+.btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {
+    z-index: 2;
+}
+.btn-group .btn+.btn {
+    margin-left: -1px;
+}
+
+/* Button Toolbar */
+.btn-toolbar {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Same as .project-item to prevent stretching */
+    margin: 0 auto; /* Center align */
+    display: flex; /* Use flexbox for proper alignment */
+    justify-content: flex-start; /* Align buttons to the start */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+/* Button Group */
+.btn-group {
+    display: inline-block; /* Keep buttons side by side */
+    margin-right: 10px; /* Add some spacing between groups */
+}
+
+.btn-toolbar>.btn-group {
+    margin-left: 5px;
+}
+.btn-group>.btn:first-child {
+    margin-left: 0;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.btn-group>.btn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Clearfix and Table Display */
+.btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container:after, .container:before, .row:after, .row:before {
+    display: table;
+    content: " ";
+}
+.btn-toolbar:after, .clearfix:after, .container:after, .row:after {
+    clear: both;
+}
+
+/* Viewport */
+@-ms-viewport {
+    width: device-width;
+}
+
+/* FontAwesome Styles */
+.fa-li {
+    text-align: center;
+}
+@font-face {
+    font-family: FontAwesome;
+    src: url(../fonts/fontawesome-webfont.eot?v=4.5.0);
+    src: url(../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format('embedded-opentype'),
+         url(../fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'),
+         url(../fonts/fontawesome-webfont.woff?v=4.5.0) format('woff'),
+         url(../fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype'),
+         url(../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* FontAwesome Inline Block */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* FontAwesome List Styling */
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+.fa-ul>li {
+    position: relative;
+}
+
+/* FontAwesome Icon Alignment */
+.fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: .14285714em;
+}
+
+/* FontAwesome Icon Codes */
+.fa-github:before {
+    content: "\f09b";
+}
+.fa-files-o:before {
+    content: "\f0c5";
+}
+.fa-linkedin:before {
+    content: "\f0e1";
+}
+.fa-file-text-o:before {
+    content: "\f0f6";
+}
+.fa-youtube:before {
+    content: "\f167";
+}
+
+/* Hamburger Button */
+.hamburger {
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, -webkit-filter, filter;
+    transition-duration: .15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+}
+.hamburger:hover {
+    opacity: .7;
+}
+
+/* Hamburger Box and Inner */
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: -webkit-transform, transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+}
+
+/* Hamburger Inner Pseudo Elements */
+.hamburger-inner::after, .hamburger-inner::before {
+    content: "";
+    display: block;
+}
+.hamburger-inner::before {
+    top: -10px;
+}
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+/* Hamburger Elastic Animation */
+.hamburger--elastic .hamburger-inner {
+    top: 0;
+    transition-duration: .4s;
+    transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55);
+}
+.hamburger--elastic .hamburger-inner::before {
+    top: 10px;
+    transition: opacity .15s .4s ease;
+}
+.hamburger--elastic .hamburger-inner::after {
+    top: 20px;
+    transition: -webkit-transform .4s cubic-bezier(.68, -.55, .265, 1.55);
+    transition: transform .4s cubic-bezier(.68, -.55, .265, 1.55);
+}
+
+/* Button Inner Focus */
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+/* Font-Face for Icon Set */
+@font-face {
+    font-family: ol-icon-set;
+    src: url(../fonts/ol-icon-set.eot?v1.1);
+    src: url(../fonts/ol-icon-set.eot?v1.1#iefix) format('embedded-opentype'),
+         url(../fonts/ol-icon-set.ttf?v1.1) format('truetype'),
+         url(../fonts/ol-icon-set.woff?v1.1) format('woff'),
+         url(../fonts/ol-icon-set.svg?v1.1#ol-icon-set) format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* OL Icon Set Styling */
+.oli {
+    font-family: ol-icon-set !important;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
+    box-sizing: initial;
+}
+
+/* OL Icon Set Diploma Icon */
+.oli-diploma:before {
+    content: "\e952";
+}

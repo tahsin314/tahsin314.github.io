@@ -1,3 +1,4 @@
+@import url('variables.css');
 /* Base Styles */
 img {
     max-width: 100%;
@@ -20,19 +21,10 @@ button,
 
 /* Spacing */
 
-/* CSS Variables */
-:root {
-    --hvh-multiplier: 1;
-    --alpha: 50;
-    --m-top: 10;
-    --p-bottom: 10;
-    --pad: 10;
-    --p-left: 10;
-    --p-right: 10;
-    --pull-up: 10;
-    --spacer: 10;
-    --spacer-xs: 5;
-    --spacer-sm: 8;
+/* Example Usage of Updated Gradient */
+.bg-gradient {
+    background: var(--primary-gradient);
+    color: #f0e4f7; /* Light pinkish text to match */
 }
 
 /* Spacers */
@@ -56,48 +48,40 @@ button,
  *	===================================================
  */
 
- body {
-    font-family: 'Sintony', sans-serif;
-    font-size: 14px;
-    color: #636363;
-    line-height: 1.3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+/* General Background and Text */
+body {
+    background-color: var(--primary-gradient); /* Very light gray for a soothing background */
+    font-family: "Share Tech Mono", monospace;
+    min-height: 100vh;
 }
 
-p {
-    line-height: 24px;
-    margin-bottom: 20px;
-    color: #777;
-}
-
+/* Links */
 a {
-    color: #505050;
+    color: #89AED8; /* Soft pastel blue for links */
     text-decoration: none;
 }
 
-a:hover, a:focus {
-    color: #FF3366;
+a:hover {
+    text-decoration: underline;
+    color: #2C3E50; /* Darker shade on hover */
 }
 
-h1, h3, h4 {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
-    color: #4b4b4b;
-    margin-bottom: 15px;
+/* Typography */
+h1, h3, h4, p, li {
+    font-family: 'Oswald', sans-serif;
+    color: #4D5656; /* Softer dark gray for headings */
 }
 
 h1 {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 48px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 32px;
 }
 
-h4 {
-    font-size: 18px;
+p, li {
+    font-size: 20px;
 }
 
 .with-sideline {
@@ -143,8 +127,9 @@ h4 {
     overflow: hidden;
 }
 
+/* Section Styling */
 .section {
-    background-color: #fff;
+    background-color: #281b2d; /* Dark purplish background */
     position: relative;
     z-index: 2;
     padding: 120px 0;
@@ -163,23 +148,40 @@ h4 {
  *  - Header variations
  */
 
+/* Updated Header Colors */
+/* Updated Header Styles */
 #header {
-    position: relative;
-    z-index: 500;
-    border-bottom: 1px solid #dedede;
+    background-color: var(--color-primary); /* Semi-transparent dark purple */
+    border-bottom: 1px solid #5a3d5e; /* Darker purple border for separation */
     box-shadow: 0px 2px 10px -7px rgba(0, 0, 0, 0.5);
-    background-color: #fff;
+    position: fixed; /* Keep the header fixed to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Transparent background when not sticky */
+#header.trans:not(.is-sticky) {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the header visible when sticky */
+#header.is-sticky .visible-sticky {
+    display: block; /* Show sticky content */
 }
 
 #header .visible-sticky {
-    display: none;
+    display: none; /* Hide initially */
 }
 
 #header .logo-wrapper {
     max-width: 250px;
 }
 
-#header .logo-wrapper a {}
 
 #header .logo-wrapper a:hover,
 #header .logo-wrapper a:focus {
@@ -254,7 +256,6 @@ h4 {
     width: 24px;
 }
 
-#header .ol-mobile-trigger .hamburger-inner {}
 
 #header .ol-mobile-trigger .hamburger-inner:before {
     top: 7px;
@@ -272,10 +273,9 @@ h4 {
 }
 
 #header.trans:not(.is-sticky) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .logo-wrapper a {
@@ -396,41 +396,10 @@ ul#primary-menu>li.current-menu-item>a {
 	color management of Header
 */
 
-#header {}
-
 #header.trans:not(.is-sticky) {
     background-color: transparent;
     border: none;
     box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.1);
-}
-
-
-/*	Footer
- *	===================================================
- */
-
-#footer {
-    position: relative;
-    z-index: 5;
-    font-size: 13px;
-}
-
-#footer #footer-main {
-    background-color: #f5f5f5;
-    padding: 100px 0;
-}
-
-#footer a {
-    /*color:$chaos_textinlight_lighter;*/
-    text-decoration: none;
-    /*&:hover,
-		&:focus {
-			color:$chaos_dark;
-		}*/
-}
-
-#footer p {
-    line-height: 2;
 }
 
 
@@ -466,95 +435,44 @@ ul#primary-menu>li.current-menu-item>a {
  *  - varius layouts
  */
 
+/* Container that holds the buttons */
+/*  */
+
+/* Button Styles */
 .btn-info {
-    display: inline-block;
-    padding: 6px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.42857143;
-    text-align: center;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    user-select: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-decoration: none !important;
+    background-color: #5e3d6b; /* Darker purple for buttons */
+    color: #f0e4f7; /* Light pastel pinkish text */
+    border: 1px solid #5e3d6b;
+    transition: background-color 0.3s ease;
 }
+
+.btn-info:hover {
+    background-color: #7a538a; /* Slightly lighter purple on hover */
+    color: #f0e4f7;
+}
+
 
 .btn {
-    display: inline-block;
-    border-radius: 0;
-    font-family: "Play", sans-serif, sans-serif;
-    transition: all 0.25s ease;
-    text-transform: uppercase;
-    /* Default size*/
-    padding: 15px 30px;
-    font-size: 14px;
-    font-weight: bold;
-    /* default color and border*/
-    background-color: #fff;
-    border: 1px solid #dedede;
-    color: #777;
-}
-
-.btn i {
-    position: relative;
+    background-color: #A1C6EA; /* Pastel blue */
+    border: 1px solid #A1C6EA;
+    color: #2C3E50; /* Dark gray text for readability */
+    text-align: center;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: #eee;
-    color: #333;
+    background-color: #89AED8; /* Darker pastel blue on hover */
+    color: #2C3E50;
 }
-
-
-/* by size */
-
-.btn-medium {
-    padding: 12px 30px;
-    font-size: 14px;
-}
-
-.btn-small {
-    padding: 8px 20px;
-    font-size: 12px;
-}
-
-
-/* by roundness */
 
 .btn-round {
     border-radius: 4px;
 }
 
-
-/* thick borders */
-
 .btn-thick-border {
     border-width: 3px;
 }
 
-
-/* wide bottons */
-
-.btn-block {
-    display: block;
-}
-
-
-/* skins */
-
-
-/* btn trans*/
-
-
-/* icons */
-
-.btn i {
-    left: -10px;
-}
 
 
 /*	ui - social icons
@@ -606,21 +524,20 @@ ul#primary-menu>li.current-menu-item>a {
  *	===================================================
  */
 
+/* Icon Box for Education */
 .icon-box.ib-edu {
-    /* display: flex; */
+    display: flex;
     align-items: flex-start;
-    flex-direction: column;
     overflow: hidden; /* Ensures overflow text is not visible */
     text-overflow: ellipsis; /* Adds an ellipsis if the text overflows the available space */
-    /* padding: 0; */
     padding: 15px; /* Adds padding inside each box */
     text-align: left;
     margin-bottom: 20px; /* Adds space between boxes */
 }
 
-.icon-box.ib-edu>i {
+/* Icon Styling */
+.icon-box.ib-edu > i {
     flex-shrink: 0; /* Prevents the icon from shrinking */
-    float: left;
     width: 70px;
     height: 70px;
     font-size: 30px;
@@ -629,41 +546,32 @@ ul#primary-menu>li.current-menu-item>a {
     text-align: center;
     border: 1px solid #252525;
     border-radius: 50%;
-    margin-bottom: 0;
     margin-right: 20px;
 }
 
+/* Wrapper for Text in Icon Box */
 .icon-box.ib-edu .ib-wrap {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* padding-top: 10px; */
-    margin-left: 90px;
-    /* padding-right: 20px; */
-    padding: 0 20px; /* Adjust padding to taste, but keep it uniform on sides */
+    padding: 0; /* Remove unnecessary padding */
+    margin-left: 0; /* Align content with the icon */
 }
 
+/* Title Styling */
 .icon-box.ib-edu .title {
-    font-size: 14px;
+    font-size: 16px; /* Adjust font size as needed */
     margin-bottom: 5px;
 }
 
+/* Description and Subtitle Styling */
+.icon-box.ib-edu .subtitle,
 .icon-box.ib-edu .description {
-    white-space: nowrap;
-    font-size: 12px;
+    font-size: 18px;
     color: #636363;
-}
-
-.icon-box.ib-edu .subtitle {
-    margin-bottom: 2px; /* Reduce or adjust the bottom margin after the subtitle */
-    font-size: 12px; /* Ensure the font size is appropriate */
-    color: #636363;
-}
-
-.icon-box.ib-edu .description {
-    margin-top: 0;
-    font-family: "Play", sans-serif;
-    font-family: 12px;
+    margin: 0; /* Ensure consistent spacing */
+    margin-top: 0px; /* Ensure no extra space above the description */
+    margin-bottom: 80px; /* Remove bottom margin to reduce spacing */
 }
 
 
@@ -849,12 +757,18 @@ ul {
 /* twitter carousel */
 
 
-/* background color for elements */
-
+/* Gradient Background for Sections */
 .bg-dark {
-    background-color: #282828 !important;
+    background: linear-gradient(135deg, #3d1e3a, #4b244a, #2f1a31); /* Dark purples for a deep gradient */
+    color: #d3d3e1; /* Light text to contrast with the dark background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow for depth */
 }
 
+/* Neon Glow Text for Dark Background Sections */
+.bg-dark h1, .bg-dark h3, .bg-dark h4, .bg-dark p {
+    color: #ff99cc; /* Neon pink for text */
+    text-shadow: 0 0 10px rgba(255, 153, 204, 0.8); /* Neon glow effect for text */
+}
 
 /* summary-box */
 
@@ -877,7 +791,7 @@ ul {
     bottom: -30px;
     color: #333;
     font-family: 'Sintony', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 25px;
     margin-bottom: 0;
@@ -983,4 +897,41 @@ ul {
 
 
 /*  Responsive text aligns */
+}
+
+/* Define Gradients Using the Palette */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #99cc66, #254222); /* Green tones gradient */
+    color: #ece2b1; /* Light beige text for contrast */
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(135deg, #cae4c5, #99cc66); /* Light green gradient */
+    color: #254222; /* Dark green text for contrast */
+}
+
+.bg-gradient-accent {
+    background: linear-gradient(135deg, #ece2b1, #cae4c5); /* Light beige and light green gradient */
+    color: #254222; /* Dark green text */
+}
+
+/* Solid Background Colors */
+.bg-primary {
+    background-color: #99cc66;
+    color: #254222; /* Dark green for text */
+}
+
+.bg-secondary {
+    background-color: #254222;
+    color: #ece2b1; /* Light beige for text */
+}
+
+.bg-accent {
+    background-color: #ece2b1;
+    color: #254222; /* Dark green for text */
+}
+
+.bg-light-green {
+    background-color: #cae4c5;
+    color: #254222; /* Dark green for text */
 }

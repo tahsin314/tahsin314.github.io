@@ -1,174 +1,205 @@
-body {
-    /* font-family: 'Oswald', 'sans-serif';
-    /* background-color: #1c1c1c;  Dark background color for contrast    */
-    /* color: #fbfbfb; Light text color for readability */ 
-    background-color: #262323; /* Enhanced dark background */
-    font-family: "Share Tech Mono", monospace;
-    color: #D3D3D3; /* Bright cyan for high contrast */
-    min-height: 100vh;
-    /* display: flex;
-    justify-content: center; */
-  }
-  
+@import url('variables.css');
+/* Set all font colors to white */
+body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, ul, ol {
+    color: #ffffff !important;
+}
 
+/* Updated Background and Text Colors */
+body {
+    background-color: #1a0f1f; /* Dark purplish-black for a rich background */
+    font-family: "Share Tech Mono", monospace;
+    color: #d3d3e1; /* Light grayish lavender text for readability */
+    min-height: 100vh;
+}
+
+/* Links */
 a {
-    color: red; /* Set all links to red color */
-    text-decoration: none; /* Optional: Remove underline from links */
+    color: #d16ba5; /* Muted pinkish-purple for links */
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
+    text-decoration: underline;
+    color: #f29fcf; /* Lighter pink shade on hover */
 }
 
+/* Typography */
 h1, h3, h4, p, li {
-    font-family: 'Oswald', 'sans-serif';
+    font-family: 'Oswald', sans-serif;
+    color: #e0cfe3; /* Light lavender for headings */
 }
 
-h1 {
-    font-size: 48px;
+/* Base Styles */
+img {
+    max-width: 100%;
 }
 
-h3 {
-    font-size: 32px;
+#footer *:last-child {
+    margin-bottom: 0 !important;
 }
 
-p {
-    font-size: 20px;
-}
+/* Typography */
 
-h4 {
-    font-size: 32px;
-}
-
-li {
-    font-size: 20px;
-}
-
-/* Responsive adjustments if necessary */
-
-.about-section, .education-section, .publications-section, .projects-section {
+/* Sections Styling */
+.section {
+    background-color: transparent; /* Make sections transparent to show background */
     color: #fbfbfb; /* Light text color for readability */
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
 }
 
+/* Section Backgrounds */
+.about-section{
+    background: var(--color-primary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #fff;
+}
+
+.education-section {
+    background: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #fff;
+}
+
+.publications-section {
+    background: var(--color-accent);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #fff;
+}
+
+.projects-section {
+    background: var(--primary-gradient);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #fff;
+}
+
+/* Gradient Background for Sections */
+.bg-dark {
+    background: linear-gradient(135deg, #0f3d2e, #274e3c, #213a2c); /* Dark greens for a deep gradient */
+    color: #b0c4b1; /* Light color for text to contrast with the dark background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Slight shadow for depth */
+}
+
+/* Neon Glow Text for Dark Background Sections */
+.bg-dark h1, .bg-dark h3, .bg-dark h4, .bg-dark p {
+    color: #00ff66; /* Neon green for text */
+    text-shadow: 0 0 10px rgba(0, 255, 102, 0.8); /* Neon glow effect for text */
+}
+
+/* Container Styles */
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around; /* Adjust spacing */
+    background-color: var(--primary-gradient);
     z-index: 1;
     width: 80%;
+    margin: 0 auto;
     padding: 20px;
     background: rgba(49, 47, 47, 0.6);
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
     border-radius: 10px;
     color: white;
-    width: 0 auto;
-    height: 0 auto;
-    margin-top: 0 auto;
-    margin-bottom: 0 auto;
 }
 
 .container-footer {
-    /* display: flex; */
-    align-items: center;
-    /* justify-content: space-around; Adjust spacing */
-    /* z-index: 1; */
-    /* width: 80%; */
-    /* padding: 20px; */
-    background: rgba(248, 242, 242, 0.6);
-    text-align: center; /* Keeps text centered within the container */
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.5); */
-    /* border-radius: 10px; */
-    /* color: white; */
+    background-color: var(--primary-gradient);
+    text-align: center;
 }
 
-
-.about-section {
-    background-color: #262827; /* Dark background for About Me */
+/* Text and Links */
+.about-section p,
+.education-section .title,
+.education-section .subtitle,
+.education-section .description,
+.publications-section p,
+.projects-section p {
+    color: #ffffff; /* Set text to white */
 }
 
-
-/* For About Me section paragraph text */
-.about-section p {
-    color: #ffffff; /* Set the color of the paragraph text to white */
+.about-section a,
+.projects-section a {
+    
+    color: gray;
 }
 
-/* For links inside the About Me section */
-.about-section a {
-    color: gray; /* Ensure links remain blue */
-    text-decoration: none; /* Remove underline from links */
+.about-section a:hover,
+.projects-section a:hover {
+    text-decoration: underline;
 }
 
-.about-section a:hover {
-    text-decoration: underline; /* Optional: Add underline on hover */
-}
-
+/* Research Interests */
 .research-interests {
     list-style-type: disc;
-    padding-left: 20px; /* Adds padding to the left for indentation */
+    padding-left: 20px;
 }
 
 .research-interests li {
-    margin-left: 20px; /* Additional margin for indentation */
-    font-size: 22px; /* Adjust font size if needed */
+    margin-left: 20px;
+    font-size: 22px;
+    color: #fff
 }
 
-.education-section {
-    background-color: #262323; /* Darker gray background for Education */
-    font-size: 22px; /* Larger font size */
-    color: #fbfbfb; /* Light text color for readability */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
-}
-
-
-.icon-box.ib-edu .title,
-.icon-box.ib-edu .subtitle,
-.icon-box.ib-edu .description {
-    margin-bottom: 5px; /* Adds bottom margin to each element to avoid overlap */
-    color: #fbfbfb; /* Light text color for readability */
-    font-size: 16px; /* Larger font size for text */
-}
-
-.icon-box.ib-edu .oli-diploma {
-    color: #388E8E; /* Set the color of the diploma icon */
-}
-
-
-
-.publications-section {
-    background-color: #646060; /* Dark background for Major Publications */
-}
-
-.projects-section {
-    background-color: #2a2a2a; /* Dark background for Selected Projects section */
-}
-
-
+/* Projects Section */
+/* Project Card Styles */
 .project-item {
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    background-color: #3a3a3a; /* Card background color */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Prevents stretching */
+    margin: 0 auto 20px auto;
+    padding: 20px;
 }
 
 .project-item:hover {
-    transform: translateY(-10px);
-    opacity: 0.8;
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    opacity: 0.9;
 }
 
-.project-details b {
+.project-details {
+    /* display: flex; */
+    justify-content: space-between;
+    gap: 20px; /* Space between buttons */
+}
+/* Profile Image and Terminal */
+.info-cards {
+    background-color: rgba(16, 15, 15, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 2; /* Ensure it's above the canvas */
+}
+
+.profile-image {
+    /* display: block; */
+    /* margin: -50px auto 20px auto; Moves the image upwards to overlap with the terminal */
+    text-align: center;
+    /* padding: 20px 0; */
+    position: relative; /* Ensures the image stays in place */
+    z-index: 2; /*Ensures it appears above the terminal */
+}
+
+.profile-image img {
     width: 300px;
-    color: #fbfbfb; /* Ensure bold text is visible */
+    height: 300px;
+    border-radius: 50%; /* Make the image circular */
+    border: 3px solid #fff;
+    margin-bottom: 10px; /* Add a small margin below the image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a slight shadow for depth */
 }
-
 
 #canvasContainer {
     position: absolute;
@@ -179,32 +210,68 @@ li {
     z-index: 0;
 }
 
-.info-cards {
-    background-color: rgba(16, 15, 15, 0.1); /* Transparent background */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Adjust based on preference */
-    height: 230%;
-    margin: 0; /* Remove any additional margins */
-    padding: 0; /* Remove any additional paddings */
-    justify-content: space-between;
+/*	Footer
+ *	===================================================
+ */
+
+ #footer {
+    background-color: var(--primary-gradient);
+    position: relative;
+    z-index: 5;
+    font-size: 13px;
 }
 
-.profile-image {
-    text-align: center; /* Center aligns text and image */
+#footer-main {
+    background-color: var(--primary-gradient); /* Dark purplish background for footer */
+    padding: 100px 0;
+    color: #d3d3e1; /* Light lavender text */
 }
 
-.profile-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    margin-bottom: 10px; /* Add a small margin below the image */
+#footer a {
+    /*color:$chaos_textinlight_lighter;*/
+    text-decoration: none;
+    /*&:hover,
+		&:focus {
+			color:$chaos_dark;
+		}*/
 }
 
-/* Responsive adjustments */
+#footer p {
+    line-height: 2;
+}
 
-/* Footer section background */
-/*  */
 
+/* Social Icons */
+.social-icons a {
+    color: #b5b5b5;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+    color: #ff007f;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+    h3, h4 {
+        font-size: 24px;
+    }
+    p, li {
+        font-size: 18px;
+    }
+    .profile-image img {
+        width: 120px;
+    }
+}
+
+/* Additional Styles if Needed */
+/* ... */
