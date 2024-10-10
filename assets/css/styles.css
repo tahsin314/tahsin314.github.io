@@ -151,8 +151,8 @@ p, li {
 /* Updated Header Colors */
 /* Updated Header Styles */
 #header {
-    background-color: var(--color-primary); /* Semi-transparent dark purple */
-    border-bottom: 1px solid #5a3d5e; /* Darker purple border for separation */
+    background-color: var(--color-header); /* Semi-transparent dark purple */
+    border-bottom: 1px solid var(--color-header); /* Darker purple border for separation */
     box-shadow: 0px 2px 10px -7px rgba(0, 0, 0, 0.5);
     position: fixed; /* Keep the header fixed to the top */
     top: 0;
@@ -172,10 +172,12 @@ p, li {
 /* Make the header visible when sticky */
 #header.is-sticky .visible-sticky {
     display: block; /* Show sticky content */
+    color: #f0e4f7;
 }
 
 #header .visible-sticky {
     display: none; /* Hide initially */
+    color: #f0e4f7;
 }
 
 #header .logo-wrapper {
@@ -318,6 +320,7 @@ ul#primary-menu {
 
 ul#primary-menu li {
     position: relative;
+    color: #b1b1b1;
 }
 
 ul#primary-menu li a {
@@ -334,7 +337,7 @@ ul#primary-menu li a {
 ul#primary-menu li a:hover,
 ul#primary-menu li a:focus {
     color: #f5f5f5;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--color-primary-menu);
 }
 
 
@@ -351,13 +354,13 @@ ul#primary-menu>li>a {
     text-transform: capitalize;
     letter-spacing: 0px;
     padding: 0px 2px 0px 18px;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--color-primary-menu);
 }
 
 ul#primary-menu>li>a:hover,
 ul#primary-menu>li>a:focus {
     background-color: transparent;
-    color: rgba(0, 0, 0, 0.9);
+    color: var(--color-primary-menu-hover);
 }
 
 ul#primary-menu>li.current-menu-item>a {
@@ -775,7 +778,7 @@ ul {
 .title {
     font-size: 36px;
     font-family: "Merriweather", serif;
-    color: #505050;
+    color: #fff;
     margin-top: 0;
     margin-bottom: 50px;
 }
