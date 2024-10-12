@@ -100,16 +100,33 @@ const headerContent = `
 </header>
 `;
 
+fdocument.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM loaded. Injecting header and footer...");
+
+    loadHeaderAndFooter(); // Call the function to inject header and footer
+});
+
 function loadHeaderAndFooter() {
+    console.log("Inserting header and footer...");
+
     // Insert header and footer content
     document.body.insertAdjacentHTML("afterbegin", headerContent);
     document.body.insertAdjacentHTML("beforeend", footerContent);
+
+    console.log("Header and footer inserted.");
 
     // Load the revolver map script dynamically
     const script = document.createElement("script");
     script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
     script.async = true;
-    document.getElementById("revolver-map-container").appendChild(script);
+
+    const container = document.getElementById("revolver-map-container");
+    if (container) {
+        console.log("Appending script to revolver-map-container...");
+        container.appendChild(script);
+    } else {
+        console.error("revolver-map-container not found!");
+    }
 
     // Sticky header functionality
     const header = document.getElementById("header");
@@ -120,10 +137,6 @@ function loadHeaderAndFooter() {
             header.classList.remove("is-sticky");
         }
     });
-}
 
-// Call loadHeaderAndFooter after the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM loaded. Injecting header and footer...");
-    loadHeaderAndFooter();
-});
+    console.log("loadHeaderAndFooter completed.");
+}
