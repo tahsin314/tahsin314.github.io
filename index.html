@@ -173,68 +173,207 @@
             
             
 
-            <section class="section projects-section" id="projects_all">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3 class="title with-sideline">writings</h3>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="project-toolbar">
-                                <div class="btn-toolbar">
-                                    <div class="btn-group">
-                                        <button data-filter="*" class="btn btn-small btn-info">All</button>
-                                        <button data-filter=".deep-learning" class="btn btn-small btn-info">Deep Learning</button>
-                                        <button data-filter=".daily_life" class="btn btn-small btn-info">Daily Life</button>
-                                        <button data-filter=".design-simulation" class="btn btn-small btn-info">Fiction</button>
-                                        <button data-filter=".others" class="btn btn-small btn-info">Others</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="isotope" id="container-projects">
-                                <ul class="fa-ul">
-                                    <!-- Project 1: Diary -->
-                                    <li class="project-item isotope-item daily_life">
-                                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                            <b><a href="https://tahsin314.github.io/writings/fiction/diary.html" target="_blank" style="color: rgb(11, 11, 70); text-decoration: none; font-family: 'SiyamRupali', sans-serif; font-size: 12px;">ডায়রীর পাতা থেকে</a></b>
-                                        </div>
-                                    </li>
-                                    <!-- Project 2: Winter Story -->
-                                    <li class="project-item isotope-item daily_life">
-                                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                            <b><a href="https://tahsin314.github.io/writings/fiction/winter_1.html" target="_blank" style="color: rgb(11, 11, 70); text-decoration: none; font-family: 'SiyamRupali', sans-serif; font-size: 12px;">হারানো শীতের গল্প</a></b>
-                                        </div>
-                                    </li>
-                                    <!-- Project 3: Campus -->
-                                    <li class="project-item isotope-item daily_life">
-                                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                            <b><a href="https://tahsin314.github.io/writings/fiction/campus_1.html" target="_blank" style="color: rgb(11, 11, 70); text-decoration: none; font-family: 'SiyamRupali', sans-serif; font-size: 12px;">ক্যাম্পাস</a></b>
-                                        </div>
-                                    </li>
-                                    <!-- Project 4: Beggar -->
-                                    <li class="project-item isotope-item daily_life">
-                                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                            <b><a href="https://tahsin314.github.io/writings/fiction/beggar.html" target="_blank" style="color: rgb(11, 11, 70); text-decoration: none; font-family: 'SiyamRupali', sans-serif; font-size: 12px;">ভিক্ষুক</a></b>
-                                        </div>
-                                    </li>
-                                    <!-- Project 5: Night Journey -->
-                                    <li class="project-item isotope-item daily_life">
-                                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                            <b><a href="https://tahsin314.github.io/writings/fiction/night.html" target="_blank" style="color: rgb(11, 11, 70); text-decoration: none; font-family: 'SiyamRupali', sans-serif; font-size: 12px;">নিশুতি রাতের যাত্রা</a></b>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<section class="section projects-section" id="projects_all">
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="title with-sideline">Selected Projects</h3>
+        </div>
+        <div class="col-md-9">
+            <div class="project-toolbar">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <button data-filter="*" class="btn btn-small btn-info">All</button>
+                        <button data-filter=".deep-learning" class="btn btn-small btn-info">Deep Learning</button>
+                        <button data-filter=".software" class="btn btn-small btn-info">Software & Apps</button>
+                        <button data-filter=".design-simulation" class="btn btn-small btn-info">Design & Simulation</button>
+                        <button data-filter=".others" class="btn btn-small btn-info">Others</button>
                     </div>
                 </div>
-            </section>
-            
+            </div>
+            <div class="isotope" id="container-projects">
+                <ul class="fa-ul">
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Small Object Detection in CT Images Using DASPP</b>
+                            <p>Developed an algorithm for small object detection in CT images using Dense Atrous Spatial Pyramid Pooling and a Spatial Context Network with Reverse Axial Attention.</p>
+                        </div>
+                    </li>
+
+                    <!-- New Project 2: ICU Patient Acuity Assessment -->
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>ICU Patient Acuity Assessment with Explainable AI</b>
+                            <p>Co-developed an acuity assessment pipeline for ICU patients incorporating explainable AI algorithms to identify features contributing to the worsening of patient conditions.</p>
+                        </div>
+                    </li>
+
+                    <!-- New Project 3: Electric Pole Detection -->
+                    <li class="project-item isotope-item deep-learning software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Semi-Supervised Electric Pole Detection</b>
+                            <p>Developed a semi-supervised object detection pipeline for electric pole detection from car dashboard camera images using Fast-RCNN with ResNet50 backbone and YoloV4.</p>
+                        </div>
+                    </li>
+
+                    <!-- New Project 4: Abnormality Detection in Dairy Products -->
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Abnormality Detection in Dairy Products</b>
+                            <p>Co-developed a semi-supervised CNN model for abnormality detection in dairy product images.</p>
+                        </div>
+                    </li>
+
+                    <!-- New Project 5: SemRad CAM Tool -->
+                    <li class="project-item isotope-item software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>SemRad CAM Tool for Chest X-rays</b>
+                            <p>Co-developed SemRad, an inference tool and Class Activation Mapping (CAM) tool for localization of abnormalities in chest X-ray images using ResNet101.</p>
+                        </div>
+                    </li>
+
+                    <!-- New Project 6: Symptom Checker Alexa Skill -->
+                    <li class="project-item isotope-item software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Symptom Checker Alexa Skill</b>
+                            <p>Developed an Amazon Alexa skill to help users detect diseases from symptoms.</p>
+                        </div>
+                    </li>
+
+                    <li class="project-item isotope-item deep-learning software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>RadAssist, A Web-Based Tool for Brain Hemorrhage Detection</b>
+                            <p>Worked on developing the backend deep learning model for RadAssist, assisting doctors in detecting and localizing abnormalities from brain CT scan images.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item deep-learning software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>An Inference Tool for SemRad, a Teleradiology Solution Software</b>
+                            <p>A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed an inference tool for abnormality detection and localization in Chest X-Rays based on <a href="https://arxiv.org/abs/1704.04861" target="_blank">MobileNet</a> Algorithm. This was later integrated into the software.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item deep-learning software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Class Activation Mapping (CAM) for SemRad, a Teleradiology Solution Software</b>
+                            <p>A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed a Class Activation Mapping tool based on <a href="https://arxiv.org/pdf/1512.04150.pdf" target="_blank">this</a> paper for localization of abnormalities in Chest X-Rays. This was later integrated into the software.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Retinal Vessel Segmentation Using Autoencoder</b>
+                            <p>This project was performed on the DRIVE dataset, using a U-Net-based architecture with residual blocks. It was part of a research work which later got accepted at the 4th IEEE WIECON-ECE Conference 2018. Details are available in the <a href="/#publications_all" target="_blank">Publications</a> section.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Pathology Extraction from Chest X-Ray Radiological Reports</b>
+                            <p>Using the Named Entity Recognition (NER) method described <a href="https://www.aclweb.org/anthology/N16-1030" target="_blank">here</a>, I developed a model that can extract pathology terms from EHR reports. This is an ongoing research project.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Development of Hardware for the Measurement of THD in Power Systems</b>
+                            <p>I developed a device using Raspberry Pi, Arduino, and a transformer that can measure the total harmonic distortion (THD) present in the power system. This was a part of our undergraduate thesis.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>PhotoPlay, An Android App for Children</b>
+                            <p>This app was designed to help children stimulate their cognitive development. It uses an Inception v3 model as its backbone, pretrained on the <a href="http://www.image-net.org/" target="_blank">ImageNet</a> dataset and fine-tuned on additional data. It was part of a research work which later got accepted at the 2017 IEEE Region 10 Humanitarian Technology Conference (R10-HTC). Details are available in the <a href="/#publications_all" target="_blank">Publications</a> section.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Differential Diagnoses, an Amazon Alexa Skill</b>
+                            <p>This Alexa skill can recite all differential diagnoses for user-fed symptoms. It includes a comprehensive list of 1700 differential diagnoses and their corresponding symptom mapping. The development of this skill is still in progress.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Identification of Risk Factors for Heart Disease in Diabetic Patients</b>
+                            <p>Using bidirectional LSTM and CRF-based entity recognition model, risk factors were identified for heart diseases in diabetic patients. The dataset was from <a href="https://www.i2b2.org/" target="_blank">i2b2</a>. This was a professional project.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item software" data-category="software">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>semDDX, an Android App</b>
+                            <p>This Android app helps easily navigate the vast landscape of differential diagnoses, aids medical students in learning, and helps normalize and standardize communication between physicians. The app is available at <a href="https://play.google.com/store/apps/details?id=com.semion.user.dd" target="_blank">Google Play</a>.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Interface and Gaming Console Design for A Computer and An Android Game.</b>
+                            <p>A 2-D Car racing game for PC and Android devices (Phone, Tablet, Smart TV etc.) with an external control system and a user-friendly gaming interface was designed. Detailed explanation and demo are available <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank">here</a> on Youtube. This was an academic project for the Control System Lab.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Home Security System Via Push Message Service</b>
+                            <p>Arduino along with a GSM module, LCD panel, proximity and sonar sensors were used for this project. This was an academic project for the Communication I Lab.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>An Oscilloscope for the Measurement of Current and Voltage</b>
+                            <p>This was the final project for the Measurement and Instrumentation Laboratory. I made a 2-channel oscilloscope that can simultaneously measure and plot voltage and current values on a Graphical User Interface designed by me. It was also the last undergrad project I worked on.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item software design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>SONAR Controlled Flappy Bird</b>
+                            <p>The infamous Flappy Bird game could be played by waving a hand in this project. Arduino along with a SONAR sensor were used for this project. A demo is available <a href="https://www.youtube.com/watch?v=6RDEc8gb8EA" target="_blank">here</a> on Youtube.</p>
+                        </div>
+                    </li>
+                    <li class="project-item isotope-item software design-simulation" data-category="design-simulation">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Home Automation System</b>
+                            <p>This was a group project. We made a home automation system that had electric fans and lights as test loads, and an Android app was built to control the loads from a distance. This prototype used Bluetooth to connect.</p>
+                        </div>
+                    </li>
+
+                    <li class="project-item isotope-item others" data-category="others">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Mentoring Undergraduate Thesis on COVID Infection Analysis</b>
+                            <p>Mentored an undergraduate student in his thesis work titled <i>"COVID Infection Analysis via Lung Lobe Segmentation using Deep Learning"</i>.</p>
+                        </div>
+                    </li>
+
+                    <li class="project-item isotope-item others" data-category="others">
+                        <i class="fa-li fa fa-files-o pub-icon"></i>
+                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
+                            <b>Supervision of High-School Students in Research</b>
+                            <p>Supervised two high-school students to get them familiar with research work in hardware security and machine learning under the <i>Student Science Training Program (SSTP)</i> at University of Florida.</i>.</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
 <div class="clearfix"></div>
 
