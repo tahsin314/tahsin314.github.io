@@ -6,48 +6,66 @@ const footerContent = `
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="heading-with-sub m-bottom-50">
-                        <h3 class="title sans-font m-bottom-30"><a href="index.html" title="Home" style="font-size:30px; color:gray">Tahsin Mostafiz</a></h3>
-                        <h4 class="text-center">Contact me via <a href="mailto:m.tahsinmostafiz@ufl.edu" style="color:gray"><b>m.tahsinmostafiz@ufl.edu</b></a>.</h4>
+                        <h3 class="title sans-font m-bottom-30">
+                            <a href="index.html" title="Home" style="font-size:30px; color:gray">Tahsin Mostafiz</a>
+                        </h3>
+                        <h4 class="text-center">
+                            Contact me via <a href="mailto:m.tahsinmostafiz@ufl.edu" style="color:gray">
+                            <b>m.tahsinmostafiz@ufl.edu</b></a>.
+                        </h4>
                         <div class="row">
                             <div class="span10 offset1">
                                 <div class="social-icons">
-                                    <!--<h1>Horizontal Social Icon List</h1>-->
                                     <ul>
                                         <li>
-                                            <a class="ai ai-google-scholar big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://scholar.google.com/citations?user=1gDQkNIAAAAJ&hl=en&authuser=1" target="_blank"></i>
-                                            </a>
+                                            <a class="ai ai-google-scholar big-icon" style="font-size:30px; color:gray"
+                                               aria-hidden="true" 
+                                               href="https://scholar.google.com/citations?user=1gDQkNIAAAAJ&hl=en&authuser=1" 
+                                               target="_blank"></a>
                                         </li>
                                         <li>
-                                            <a class="ai ai-researchgate big-icon" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.researchgate.net/profile/Tahsin_Mostafiz" target="_blank"></i>
-                                            </a>
-                                        </li>
-
-                                        <!--<li><a class="fa fa-facebook-official w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.facebook.com/tahsin.mostafiz" target="_blank"></i></a></li>-->
-                                        <!--<li><a class="fa fa-instagram w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.instagram.com/tahsin_mostafiz/" target="_blank"></i></a></li>-->
-                                        <li>
-                                            <a class="fa fa-linkedin w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.linkedin.com/in/tahsin-mostafiz-276292141/" target="_blank"></i>
-                                            </a>
+                                            <a class="ai ai-researchgate big-icon" style="font-size:30px; color:gray"
+                                               aria-hidden="true" 
+                                               href="https://www.researchgate.net/profile/Tahsin_Mostafiz" 
+                                               target="_blank"></a>
                                         </li>
                                         <li>
-                                            <a class="fa fa-youtube w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.youtube.com/channel/UCsA63C_GRkhkMVE7LOjODCA/" target="_blank"></i>
-                                            </a>
+                                            <a class="fa fa-linkedin w3-hover-opacity w3-margin-left" 
+                                               style="font-size:30px; color:gray" 
+                                               aria-hidden="true" 
+                                               href="https://www.linkedin.com/in/tahsin-mostafiz-276292141/" 
+                                               target="_blank"></a>
                                         </li>
                                         <li>
-                                            <a class="fa fa-github w3-hover-opacity w3-margin-left" style="font-size:30px; color:gray" aria-hidden="true" href="https://www.github.com/tahsin314" target="_blank"></i>
-                                            </a>
+                                            <a class="fa fa-youtube w3-hover-opacity w3-margin-left" 
+                                               style="font-size:30px; color:gray" 
+                                               aria-hidden="true" 
+                                               href="https://www.youtube.com/channel/UCsA63C_GRkhkMVE7LOjODCA/" 
+                                               target="_blank"></a>
                                         </li>
-
+                                        <li>
+                                            <a class="fa fa-github w3-hover-opacity w3-margin-left" 
+                                               style="font-size:30px; color:gray" 
+                                               aria-hidden="true" 
+                                               href="https://www.github.com/tahsin314" 
+                                               target="_blank"></a>
+                                        </li>
                                     </ul>
-                                    <!-- <p align="center"> <img src="https://komarev.com/ghpvc/?username=tahsin314&label=Profile%20views&color=0e75b6&style=flat&theme=dark" alt="tahsin314" /> </p>  -->
-                                    <p align="center" <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Total View" src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/></a> </p>
-                                    <div id="revolver-map" align="center">
-                                        <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5gkbov5q09l&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+                                    <p align="center">
+                                        <a href="https://hits.sh/github.com/tahsin314/hits/">
+                                            <img alt="Total View" 
+                                                 src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/>
+                                        </a>
+                                    </p>
+                                    <div align="center">
+                                        <script type="text/javascript" 
+                                                src="//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo" 
+                                                async="async">
+                                        </script>
                                     </div>
-                                        <!-- <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=tahsin314&theme=onedark" alt="tahsin314" /></a> </p> -->
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
