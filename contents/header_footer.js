@@ -57,12 +57,7 @@ const footerContent = `
                                                  src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/>
                                         </a>
                                     </p>
-                                    <div align="center">
-                                        <script type="text/javascript" 
-                                                src="//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo" 
-                                                async="async">
-                                        </script>
-                                    </div>
+                                    <div align="center" id="revolver-map-container"></div>
                                 </div>
                             </div>
                         </div>
@@ -106,10 +101,15 @@ const headerContent = `
 `;
 
 function loadHeaderAndFooter() {
-    console.log("DOM fully loaded. Injecting header and footer...");
     // Insert header and footer content
     document.body.insertAdjacentHTML("afterbegin", headerContent);
     document.body.insertAdjacentHTML("beforeend", footerContent);
+
+    // Load the revolver map script dynamically
+    const script = document.createElement("script");
+    script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
+    script.async = true;
+    document.getElementById("revolver-map-container").appendChild(script);
 
     // Sticky header functionality
     const header = document.getElementById("header");
@@ -123,4 +123,7 @@ function loadHeaderAndFooter() {
 }
 
 // Call loadHeaderAndFooter after the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM loaded. Injecting header and footer...");
+    loadHeaderAndFooter();
+});
