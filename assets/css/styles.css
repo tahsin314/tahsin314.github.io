@@ -9,17 +9,6 @@ button,
     outline: none !important;
 }
 
-#footer *:last-child {
-    margin-bottom: 0 !important;
-}
-
-/* Width & Heights */
-
-/* Overlays */
-
-/* Overlay Colors & Gradients */
-
-/* Spacing */
 
 /* Example Usage of Updated Gradient */
 .bg-gradient {
@@ -125,6 +114,7 @@ p, li {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    background: #252525;
 }
 
 /* Section Styling */
@@ -293,21 +283,6 @@ p, li {
     text-align: center;
 }
 
-
-/* side-header nav */
-
-
-/*@media only screen and (max-width : 1200px) {
-	#header #primary-menu{
-		display: none;
-	}
-}*/
-
-
-/*	Navigations
- *	===================================================
- */
-
 ul#primary-menu {
     padding: 0;
     margin: 0;
@@ -421,26 +396,6 @@ ul#primary-menu>li.current-menu-item>a {
 
 /* this is used for rev slider */
 
-
-/*&.set-bg{
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-	}*/
-
-
-/*	Breadcrumbs
- *	===================================================
- *  - Title variations
- */
-
-
-/*	theme bottons
- *	===================================================
- *  - varius layouts
- */
-
-/* Container that holds the buttons */
-/*  */
-
 /* Button Styles */
 .btn-info {
     background-color: #5e3d6b; /* Darker purple for buttons */
@@ -517,12 +472,6 @@ ul#primary-menu>li.current-menu-item>a {
     color: #333;
 }
 
-
-/*	shop
- *	===================================================
- */
-
-
 /*	iconbox
  *	===================================================
  */
@@ -578,186 +527,9 @@ ul#primary-menu>li.current-menu-item>a {
 }
 
 
-/*	ui-side-navigations
- *	===================================================
- */
-
-
-/*General styles for all levels*/
-
-
-/*First level li*/
-
-
-/*Second level li*/
-
-
-/*	ui-Accordions & Toggles & Tabs
- *	===================================================
- */
-
-
-/*Tabs*/
-
-
-/*	numbers
- *	===================================================
- */
-
-
-/*	Callouts
- *	===================================================
- */
-
-
-/*	Testimonials
- *	===================================================
- */
-
-
-/*	Alerts / Notifications
- *	===================================================
- */
-
-
-/*	Modals
- *	===================================================
- */
-
-
-/*	List icons
- *	===================================================
- */
-
-
-/*	Progress bars
- *	===================================================
- */
-
-
-/*	People
- *	===================================================
- */
-
-
-/*	Tables
- *	===================================================
- */
-
-
-/*	Grid items
- *	===================================================
- *  items related to grid
- */
-
-
-/*&:before{
-			background-color: #3a3a3a;
-		}*/
-
-
-/*	Portfolio Grid
- *	===================================================
- */
-
-
-/* used for one column grid*/
-
-
-/* Small Devices, Tablets */
-
-
-/* Extra Small Devices, Phones */
-
-
-/* navigation box */
-
-
-/*	Partners
- *	===================================================
- */
-
-
-/*	Images
- *	===================================================
- */
-
-
-/*	hovers
- *	===================================================
- */
-
-
-/*	Videos
- *	===================================================
- */
-
-/*	list styles
- *	===================================================
- */
-
 ul {
     line-height: 1.5;
 }
-
-
-/*	paginations
- *	===================================================
- */
-
-
-/*	Form elements
- *	===================================================
- */
-
-
-/*	extend bg
- *	===================================================
- */
-
-
-/*	Timelines
- *	===================================================
- */
-
-
-/*	News
- *	===================================================
- */
-
-
-/*	events
- *	===================================================
- */
-
-
-/* in case you want the event-nav texts to be light add this class to it */
-
-
-/*to remove the spaces*/
-
-
-/*to remove the spaces*/
-
-
-/*	sections
- *	===================================================
- */
-/*	revolution sliders
- *	===================================================
- */
-
-
-/*	General css
- *	===================================================
- *	keep this at the bottom
- */
-
-
-/* single icons */
-
-
-/* twitter carousel */
 
 
 /* Gradient Background for Sections */
@@ -810,16 +582,6 @@ ul {
     color: #fff;
     font-size: 14px;
 }
-
-/* .ol-price-table .head.shadow {} */
-
-/* .ol-price-table.featured .head.shadow {} */
-
-
-/*  Responsive Containers */
-
-
-/* this is for typed.js */
 
 
 /*Handle stacked columns on different sizes*/

@@ -6,7 +6,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, ul, ol {
 
 /* Updated Background and Text Colors */
 body {
-    background-color: #1a0f1f; /* Dark purplish-black for a rich background */
+    background-color: var(--color-primary); /* Dark purplish-black for a rich background */
     font-family: "Share Tech Mono", monospace;
     color: #d3d3e1; /* Light grayish lavender text for readability */
     min-height: 100vh;
@@ -24,7 +24,7 @@ a:hover {
 }
 
 /* Typography */
-h1, h3, h4, p, li {
+h1, h3, h4, p {
     font-family: 'Oswald', sans-serif;
     color: #e0cfe3; /* Light lavender for headings */
 }
@@ -37,8 +37,6 @@ img {
 #footer *:last-child {
     margin-bottom: 0 !important;
 }
-
-/* Typography */
 
 /* Sections Styling */
 .section {
@@ -77,6 +75,27 @@ img {
     color: #fff;
 }
 
+.resources-section{
+    background: var(--primary-gradient);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    color: #fff;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+}
+
 .projects-section {
     background: var(--primary-gradient);
     padding: 20px;
@@ -101,7 +120,7 @@ img {
 
 /* Container Styles */
 .container {
-    background-color: var(--primary-gradient);
+    background-color: var(--color-primary);
     z-index: 1;
     width: 80%;
     margin: 0 auto;
@@ -113,7 +132,7 @@ img {
 }
 
 .container-footer {
-    background-color: var(--primary-gradient);
+    background-color: var(--color-primary);
     text-align: center;
 }
 
@@ -215,14 +234,14 @@ img {
  */
 
  #footer {
-    background-color: var(--primary-gradient);
+    background-color: var(--color-primary);
     position: relative;
     z-index: 5;
     font-size: 13px;
 }
 
 #footer-main {
-    background-color: var(--primary-gradient); /* Dark purplish background for footer */
+    background-color: var(--color-primary); 
     padding: 100px 0;
     color: #d3d3e1; /* Light lavender text */
 }
@@ -272,6 +291,3 @@ img {
         width: 120px;
     }
 }
-
-/* Additional Styles if Needed */
-/* ... */
