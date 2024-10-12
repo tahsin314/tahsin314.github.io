@@ -106,6 +106,7 @@ const headerContent = `
 `;
 
 function loadHeaderAndFooter() {
+    console.log("DOM fully loaded. Injecting header and footer...");
     // Insert header and footer content
     document.body.insertAdjacentHTML("afterbegin", headerContent);
     document.body.insertAdjacentHTML("beforeend", footerContent);
