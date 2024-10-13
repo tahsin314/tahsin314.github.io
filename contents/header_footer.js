@@ -53,7 +53,9 @@ const footerContent = `
                                     </ul>
                                     <p align="center" <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Total View" src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/></a> </p>           
 
-                                    <div align="center" id="revolver-map-container"></div>
+                                    <div align="center" id="revolver-map-container">
+                                        <span id="live-stats-text" style="font-size: 20px; color: gray;">Live Stats</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
