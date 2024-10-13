@@ -51,9 +51,8 @@ const footerContent = `
                                                target="_blank"></a>
                                         </li>
                                     </ul>
-                                    <p align="center">
-                                    <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Hits" src="https://hits.sh/github.com/tahsin314/hits.svg?style=plastic&label=Views&color=fe7d37"/></a>
-                                    </p>
+                                    <p align="center" <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Total View" src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/></a> </p>           
+
                                     <div align="center" id="revolver-map-container"></div>
                                 </div>
                             </div>

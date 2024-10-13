@@ -259,6 +259,11 @@ img {
     line-height: 2;
 }
 
+.hits-counter {
+    width: 200px;
+    height: auto;
+}
+
 
 /* Social Icons */
 .social-icons a {
