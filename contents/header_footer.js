@@ -82,7 +82,7 @@ const footerContent = `
                                     document.addEventListener("DOMContentLoaded", function () {
                                         // Dynamically load the RevolverMaps script
                                         const script = document.createElement("script");
-                                        script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
+                                        script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo&amp;t=skibidi";
                                         script.async = true;
                                         
                                         // Append the script to the revolver map container
