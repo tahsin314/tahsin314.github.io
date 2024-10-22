@@ -53,45 +53,39 @@ const footerContent = `
                                     </ul>
                                     <p align="center" <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Total View" src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/></a> </p>           
 
-                                    <div align="center" id="revolver-map-container">
-    <a href="https://www.revolvermaps.com" target="_blank" style="text-decoration: none;">
-        <span id="live-stats-text" style="font-size: 20px; color: gray;">Live Stats</span>
-    </a>
-</div>
+                                    <style>
+                                    /* Blinking animation */
+                                    @keyframes blink {
+                                        0% { opacity: 1; }
+                                        50% { opacity: 0; }
+                                        100% { opacity: 1; }
+                                    }
 
-<style>
-/* Blinking animation */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
+                                    #live-stats-text {
+                                        animation: blink 1s infinite;
+                                        display: inline-block;
+                                    }
 
-#live-stats-text {
-    animation: blink 1s infinite;
-    display: inline-block;
-}
+                                    /* Hide the default RevolverMaps text */
+                                    #revolver-map-container iframe {
+                                        display: none;
+                                    }
+                                    </style>
 
-/* Hide the default RevolverMaps text */
-#revolver-map-container iframe {
-    display: none;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // Dynamically load the RevolverMaps script
-    const script = document.createElement("script");
-    script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
-    script.async = true;
-    
-    // Append the script to the revolver map container
-    const container = document.getElementById("revolver-map-container");
-    if (container) {
-        container.appendChild(script);
-    }
-});
-</script>
+                                    <script>
+                                    document.addEventListener("DOMContentLoaded", function () {
+                                        // Dynamically load the RevolverMaps script
+                                        const script = document.createElement("script");
+                                        script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
+                                        script.async = true;
+                                        
+                                        // Append the script to the revolver map container
+                                        const container = document.getElementById("revolver-map-container");
+                                        if (container) {
+                                            container.appendChild(script);
+                                        }
+                                    });
+                                    </script>
                                 </div>
                             </div>
                         </div>
