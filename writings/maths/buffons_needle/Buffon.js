@@ -30,12 +30,12 @@ function draw() {
   background("#774360");
   stroke("#03045E");
   for (var i = 0; i <= height / line_len; i++) {
-    line(0, i * line_len, width, i * line_len);
+    line(0, i * line_len + 120, width, i * line_len+120);
   }
 
   // Random position and angle for each needle
   var x = random(0, width);
-  var y = random(0, height);
+  var y = random(120, height);
   var angle = random(0, PI);  // Angle in radians, only needs 0 to π
 
   // Draw needle and check for intersection
@@ -45,7 +45,8 @@ function draw() {
   var pi_estimate = int_count > 0 ? (2 * ne_len * tot) / (line_len * int_count) : 0;
   fill("#023047");
   textAlign(CENTER, CENTER);
-  text(`Estimated Value of π: ${nf(pi_estimate, 1, 5)}`, width / 2, 40);
+  text(`Number of Simulations: ${tot}`, width / 2, 40)
+  text(`Estimated Value of π: ${nf(pi_estimate, 1, 5)}`, width / 2, 80);
 }
 
 function needle_draw(x, y, angle) {

@@ -38,7 +38,7 @@
 <body>
 <section class="section section-narrow-2 resources-section" id="header_section">
   <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-      <img src="assets/img/bg/tanah_lot.jpg" alt="Tanah Lot" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      <img src="../../assets/img/bg/niagara_night.jpg" alt="Niagara Falls at night" style="width: 100%; height: 100%; object-fit: cover; display: block;">
       <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 36px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
         Buffon's Needle: A really weird way to find Pi
       </div>
@@ -50,7 +50,7 @@
 
     <p>Pi (⁡π) refers to the ratio of Circumference to diameter of any circle. It's a constant value (unless you are trying to measure ⁡π from inside the Event horizon of a Blackhole!). It's also a transcendental number which means it can't be expressed as a root of an equation with integer coefficients. Anyways, we've been able to find the value of ⁡π over 9 trillion digits after the decimal point!</p>
 
-    <center><img src="data/circle.jpg" width="50%"></center><br>
+    <center><img src="buffons_needle/buffons_needle/data/circle.jpg" width="50%"></center><br>
 
     <p>The history of our attempt to find ⁡π goes back to Archimedes' time. He tried to calculate ⁡π using a 4096 side polygon! Without any calculator, he was able to find that the value of π should lie between 3.1429 and 3.1408.</p>
 
@@ -66,7 +66,7 @@
 
     <center>\[ P = \frac{m}{n} \]</center>
 
-    <center><img src="data/Buffonneedle.jpg" width="50%"></center><br>
+    <center><img src="buffons_needle/data/Buffonneedle.jpg" width="50%"></center><br>
 
     <center><em>Buffon's Needle Problem. The green needles are the ones crossing the parallel lines</em></center>
 
@@ -74,7 +74,7 @@
 
     <p>To solve this problem, we'll require some basic knowledge of <code>Probability</code> and <code>Integral Calculus</code>. Let's assume that the spacing between two consecutive parallel lines is <em>D</em>, the length of the needle is <em>L</em>. Now, let the distance from the middle point of a needle on the floor to its closest line be <em>x</em> and the acute angle between the line and needle be <em>θ</em> (See figure above). All needles are of equal length.</p>
 
-    <center><img src="data/buffon_explained.png" width="50%"></center>
+    <center><img src="buffons_needle/data/buffon_explained.png" width="50%"></center>
 
     <p>Since we are considering <em>x</em> to be the smallest distance from the center of the needle to any one of the lines, it can vary only within <em>0</em> and <em>D/2</em>. And since <em>θ</em> is an acute angle, it can take any value between <em>0</em> and <em>π/2</em>. Using trigonometry, we can find out that the vertical component of length <em>L</em> is \( \frac{L}{2} \sin(\theta) \). The needle will cross the line if <em>x</em> is less than \( \frac{L}{2} \sin(\theta) \).</p>
 
@@ -83,13 +83,13 @@
 
     <p>Okay. Now let's visualize possible outcomes in a graph. Let the horizontal axis be <em>θ</em> and the vertical axis be <em>x</em>. So a rectangle with sides \( \frac{\pi}{2} \) and \( \frac{D}{2} \) represents all possible outcomes in this experiment.</p>
 
-    <center><img src="data/1.jpg" width="50%"></center>
+    <center><img src="buffons_needle/data/1.jpg" width="50%"></center>
 
     <center><em>Horizontal axis refers to θ and vertical axis refers to x. The rectangle represents all possible outcomes</em></center>
 
     <p>Now I am going to shade all those points in the rectangle that represent the events where a needle crosses a line according to the two conditions above. Think about it. It's just the area under the curve \( \frac{D}{2} \sin(\theta) \) where \( 0 \leq \theta \leq \pi \).</p>
 
-    <center><img src="data/2.jpg" width="50%"></center>
+    <center><img src="buffons_needle/data/2.jpg" width="50%"></center>
 
     <center><em>The shaded area indicates the probability that a needle will cross a line</em></center>
 
@@ -122,6 +122,6 @@
 
 <div class="clearfix"></div>
 
-<script src="Buffon.js"></script>
+<script src="buffons_needle/Buffon.js"></script>
 </body>
 </html>
