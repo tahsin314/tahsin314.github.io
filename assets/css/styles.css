@@ -16,28 +16,6 @@ button,
     color: #f0e4f7; /* Light pinkish text to match */
 }
 
-/* Spacers */
-
-/* Overlay Opacity Levels */
-
-/* Shadow & Shadow-Line */
-
-/* Additional Styles */
-
-
-/* 
-	++ Vertical-Center utility with absolute positioning
-	=======================================================
-	The parent of .vcente-wrapper should have a height
-	and be positioned relatively
-*/
-
-
-/*	Typography
- *	===================================================
- */
-
-/* General Background and Text */
 body {
     background-color: var(--primary-gradient); /* Very light gray for a soothing background */
     font-family: "Share Tech Mono", monospace;
@@ -125,21 +103,6 @@ p, li {
     padding: 120px 0;
 }
 
-/* Bootstrap multi-columns-row */
-
-/* Side-header layout */
-
-
-/*  adjust widths at side-header layout */
-
-
-/*	Headers
- *	===================================================
- *  - Header variations
- */
-
-/* Updated Header Colors */
-/* Updated Header Styles */
 #header {
     background-color: var(--color-header); /* Semi-transparent dark purple */
     border-bottom: 1px solid var(--color-header); /* Darker purple border for separation */
@@ -365,28 +328,12 @@ ul#primary-menu>li.current-menu-item>a {
 }
 
 
-/*	Header skins
- *	===================================================
- */
-
-
-/* 
-	color management of Header
-*/
-
 #header.trans:not(.is-sticky) {
     background-color: transparent;
     border: none;
     box-shadow: 0px 2px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-
-/*	Page Titles
- *	===================================================
- *  - Title variations
- */
-
-/* Additional styling for the container */
 #contents .container {
     z-index: 2; /* Ensures it's above the canvas */
     width: 100%; /* Adjust width as necessary */
@@ -430,12 +377,6 @@ ul#primary-menu>li.current-menu-item>a {
 .btn-thick-border {
     border-width: 3px;
 }
-
-
-
-/*	ui - social icons
- *	===================================================
- */
 
 .social-icons {
     font-size: 0;
@@ -573,18 +514,11 @@ ul {
 }
 
 
-/* dark-wrapper */
-
-
-/* particles */
-
 .search-area.fullscreen .search-field input::webkit-input-placeholder {
     color: #fff;
     font-size: 14px;
 }
 
-
-/*Handle stacked columns on different sizes*/
 
 .row:not(.multi-columns-row) [class*="col-"]+[class*="col-"] {
     margin-top: 30px;
@@ -596,8 +530,6 @@ ul {
     }
 }
 
-
-/*Responsive media queries*/
 
 @media only screen and (max-width: 1024px) {
     .container {

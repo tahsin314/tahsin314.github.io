@@ -80,12 +80,11 @@
 		init:function($elem){
 			this.$elem = $elem;
 			this.$links = this.$elem.find("a");
-			this.$hParent=this.$elem.parents('.head-main, .nav-row');//The parent that determines height
+			this.$hParent=this.$elem.parents('.head-main, .nav-row'); // The parent that determines height
 			this.prepare();
 			this.setMobile(this.isMobileActive());
 			this.bindUIActions();
 			this.toggleAnimation={duration:300,easing:"easeInOutQuint"};
-			
 		},
 		prepare:function(){
 			var self = this;
@@ -93,45 +92,40 @@
 		},
 		bindUIActions:function(){
 			var self = this;
-
-			$(window).on('debouncedresize',function(){
+	
+			// Adjustments for toggling the menu on mobile
+			$(window).on('debouncedresize', function(){
 				self.destroy();
 				self.setMobile(self.isMobileActive());
 			});
-
-			$.og.$body.on('click','.ol-mobile-trigger',function(){
+	
+			$.og.$body.on('click','.ol-mobile-trigger', function(){
 				$(this).toggleClass("is-active");
 				self.$elem.stop().slideToggle(self.toggleAnimation);
 			})
-			.on('click','.mobile-menu .menu-item-has-children > a',function(e){
-				e.preventDefault();
-				var $parent=$(this).parent();
-				$parent.toggleClass('is-open').children('.sub-menu').stop().slideToggle(self.toggleAnimation);
+			.on('click', '.mobile-menu .menu-item-has-children > a', function(e){
+				// Prevent default behavior for parent links with children in mobile view
+				if ($.og.$header.hasClass('mobile-menu')) {
+					e.preventDefault();
+					var $parent = $(this).parent();
+					$parent.toggleClass('is-open').children('.sub-menu').stop().slideToggle(self.toggleAnimation);
+				}
 			});
-
-
 		},
 		setMobile:function(mobileFlag){
-			var self=this;
 			if (mobileFlag){
 				$.og.$header.addClass('mobile-menu');
-			}else{
+			} else {
 				$.og.$header.removeClass('mobile-menu');
 			}
 		},
 		isMobileActive:function(){
-			var self=this;
-
-			// mobile device?
-			if ( $.browser.mobile ) return true;
-
-			if ( $.og.$window.width()<=1200 ) return true;
-				
+			// Check if mobile view should be active based on screen width or mobile device detection
+			return ($.browser.mobile || $.og.$window.width() <= 1200);
 		},
 		destroy:function(){
 			$.og.$header.removeClass('mobile-menu');
 		}
-
 	};
 	//*********** Primary Menu End *********//	
 
