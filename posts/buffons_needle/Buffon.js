@@ -1,104 +1,87 @@
-var line_len = 80; 
-var ne_len = 20;
-var int_count = 0;
-var tot = 0;
-var iter_step;
-var rate = 1;
-var message = "tickle",
-  font,
-  bounds, // holds x, y, w, h of the text's bounding box
-  fontsize = 60,
-  x_text, y_text; // x and y coordinates of the text
+var line_len = 80;   // Distance between parallel lines
+var ne_len = 60;     // Needle length (should be less than line_len for accurate results)
+var int_count = 0;   // Count of needles intersecting lines
+var tot = 0;         // Total needles dropped
+var rate = 1;        // Frame rate for dropping needles
+var x_text, y_text;
 
 function setup() {
-  createCanvas(560,560);
+  let canvas = createCanvas(1200, 800);
+  canvas.parent("sketch-canvas");  // Attach the canvas to the div with id 'sketch-canvas'
   background("#CAF0F8");
   frameRate(rate);
   textFont("Arial");
-  textSize(58);
-   //bounds = font.textBounds(message, 0, 0, fontsize);
+  textSize(32);
   x_text = width / 2 - 100; 
-  y_text = height / 2; 
-  iter_step = int((width - width%80)*1.0/line_len);
-  for(var i=0; i<=iter_step; i++) {
-    line(0, i*line_len, width, i*line_len);
+  y_text = 40;
+
+  // Draw the parallel lines once
+  stroke("#03045E");
+  strokeWeight(2);
+  for (var i = 0; i <= height / line_len; i++) {
+    line(0, i * line_len, width, i * line_len);
   }
- 
 }
 
 function draw() {
-  tot++;
-  background("#CAF0F8");
-  frameRate(rate);
-  //if(mousePressed) frameRate(10);
-  for(var i=0; i<=iter_step; i++) {
-    line(0, i*line_len, width, i*line_len);
-  }
-  var x = random(0,width-00);
-  var y = random(0,height-00);
-  var angle = random(0,360);
-  needle_draw(x, y, angle);
-  //var s = String.format("%.2f", tot*1.0/int_count);
-  var s = nf((1.0*tot/int_count),1,5);
-  fill(0);
-  textFont(100);
-  textSize(100);
-  text(str(s), x_text, y_text);
-  //bounds = font.textBounds(message,x,y,fontsize);
-  //if(mouseClicked()) rate = rate +5;
-}
+  tot++;  // Increment total needle count
 
+  // Set background color and draw lines each frame
+  background("#774360");
+  stroke("#03045E");
+  for (var i = 0; i <= height / line_len; i++) {
+    line(0, i * line_len, width, i * line_len);
+  }
+
+  // Random position and angle for each needle
+  var x = random(0, width);
+  var y = random(0, height);
+  var angle = random(0, PI);  // Angle in radians, only needs 0 to π
+
+  // Draw needle and check for intersection
+  needle_draw(x, y, angle);
+
+  // Calculate and display the estimated value of π
+  var pi_estimate = int_count > 0 ? (2 * ne_len * tot) / (line_len * int_count) : 0;
+  fill("#023047");
+  textAlign(CENTER, CENTER);
+  text(`Estimated Value of π: ${nf(pi_estimate, 1, 5)}`, width / 2, 40);
+}
 
 function needle_draw(x, y, angle) {
-  var x_init = x - (ne_len*cos(angle*PI/180));
-  var y_init = y - (ne_len*sin(angle*PI/180));
-  
-  var x_last = x + (ne_len*cos(angle*PI/180));
-  var y_last = y + (ne_len*sin(angle*PI/180));
-  
-  line(x_init, y_init, x_last, y_last);
-  
-  for(var i=0; i<=iter_step; i++) {
-    if(intersect(0, (i*line_len+20), width, (i*line_len+20), x_init, y_init, x_last, y_last)== true)  {
-      stroke(0);
-      line(x_init, y_init, x_last, y_last);
-      
-      int_count = int_count+1;
+  // Calculate endpoints of the needle
+  var x_init = x - (ne_len / 2) * cos(angle);
+  var y_init = y - (ne_len / 2) * sin(angle);
+  var x_last = x + (ne_len / 2) * cos(angle);
+  var y_last = y + (ne_len / 2) * sin(angle);
+
+  // Check if the needle intersects any line
+  var intersected = false;
+  for (var i = 0; i <= height / line_len; i++) {
+    var line_y = i * line_len;
+    // Check if either endpoint is on opposite sides of a line
+    if ((y_init < line_y && y_last > line_y) || (y_init > line_y && y_last < line_y)) {
+      intersected = true;
+      int_count++;
       break;
-    }
-    else {
-      stroke(0);
-      line(x_init, y_init, x_last, y_last);
-      continue;
     }
   }
 
-}
-
-function intersect(x1_i, y1_i, x1_f, y1_f, x2_i, y2_i, x2_f, y2_f) {
-  
-  //Finding slope and costant term for line 1
-  var epsilon = 1e-15;
-  var a1 = (y1_f-y1_i)/(x1_f-x1_i+epsilon);
-  var b1 = y1_i - a1*x1_i;
-  
-  //Finding slope and costant term for line 2
-  var a2 = (y2_f-y2_i)/(x2_f-x2_i+epsilon);
-  var b2 = y2_i - a2*x2_i;
-  
-  //Finding varersecting povar
-  var x_varersect = -(b1-b2)/(a1-a2+ epsilon);
-  //var y_varersect = a1*x_varersect + b1;
-  
-  if((x_varersect>=x2_i & x_varersect <=x2_f) | (x_varersect<=x2_i & x_varersect >=x2_f)) return true;
-  else return false;
-  
+  // Draw the needle with color based on intersection
+  if (intersected) {
+    stroke("#FF6F61");  // Color for intersecting needles
+  } else {
+    stroke("#0077B6");  // Color for non-intersecting needles
+  }
+  strokeWeight(4);
+  line(x_init, y_init, x_last, y_last);
 }
 
 function keyPressed() {
   if (keyCode === LEFT_ARROW) {
-    rate = rate-3;
+    rate = max(3, rate - 3);
   } else if (keyCode === RIGHT_ARROW) {
-    rate = rate+3;
+    rate += 3;
   }
+  frameRate(rate);
 }
