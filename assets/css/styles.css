@@ -51,6 +51,16 @@ p, li {
     font-size: 20px;
 }
 
+.bengali-text {
+    margin: 20px;
+    padding: 0;
+    line-height: 200%;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    color: white;
+    font-size: 16px;
+}
+
+
 .with-sideline {
     text-align: left;
     position: relative;
