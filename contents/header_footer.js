@@ -134,7 +134,7 @@ const headerContent = `
 </header>
 `;
 
-fdocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM loaded. Injecting header and footer...");
 
     loadHeaderAndFooter(); // Call the function to inject header and footer
