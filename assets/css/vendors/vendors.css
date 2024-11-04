@@ -37,10 +37,6 @@ footer, header, section {
 }
 
 /* Anchor Styles */
-a {
-    background-color: transparent;
-}
-
 /* Anchor Hover and Active State */
 a:active, a:hover {
     outline: 0;
@@ -63,7 +59,6 @@ button {
     color: inherit;
     text-transform: none;
     overflow: visible;
-    -webkit-appearance: button;
     cursor: pointer;
 }
 
@@ -159,10 +154,6 @@ button {
 }
 
 /* Anchor Colors */
-a {
-    color: #337ab7;
-    text-decoration: none;
-}
 
 /* Anchor Hover and Focus Colors */
 a:focus, a:hover {

@@ -13,15 +13,6 @@ body {
 }
 
 /* Links */
-a {
-    color: #d16ba5; /* Muted pinkish-purple for links */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #f29fcf; /* Lighter pink shade on hover */
-}
 
 /* Typography */
 h1, h3, h4, p {
@@ -246,14 +237,6 @@ img {
     color: #d3d3e1; /* Light lavender text */
 }
 
-#footer a {
-    /*color:$chaos_textinlight_lighter;*/
-    text-decoration: none;
-    /*&:hover,
-		&:focus {
-			color:$chaos_dark;
-		}*/
-}
 
 #footer p {
     line-height: 2;
