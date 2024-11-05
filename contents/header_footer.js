@@ -134,11 +134,11 @@ const headerContent = `
 </header>
 `;
 
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("DOM loaded. Injecting header and footer...");
+// document.addEventListener("DOMContentLoaded", function () {
+//     console.log("DOM loaded. Injecting header and footer...");
 
-    loadHeaderAndFooter(); // Call the function to inject header and footer
-});
+//     loadHeaderAndFooter(); // Call the function to inject header and footer
+// });
 
 function loadHeaderAndFooter() {
     console.log("Inserting header and footer...");
