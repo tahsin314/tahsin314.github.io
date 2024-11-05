@@ -149,7 +149,7 @@
   font-size: 28px;
   line-height: 1.25;
   text-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-primary), 0 0 30px var(--color-primary);
-  animation: blink 5s infinite;
+  animation: blink-animation 5s infinite, flicker 2s infinite;
 }
 
 .cursor {
@@ -159,5 +159,5 @@
 }
 
 @keyframes blink-animation {
-  80% { opacity: 0.8; }
+  80% { opacity: 0.6; }
 }
