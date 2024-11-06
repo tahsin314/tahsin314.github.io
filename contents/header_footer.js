@@ -114,21 +114,34 @@ const headerContent = `
                     </div>
                 </a>
             </div>
-            <ul id="primary-menu">
-                <li class="current-menu-item"><a href="https://tahsin314.github.io" title="Home"><span>Home</span></a></li>
-                <li><a href="https://tahsin314.github.io/index.html#publications_all" data-target="#publications_all"><span>Publications</span></a></li>
-                <li><a href="https://tahsin314.github.io/index.html#projects_all" data-target="#projects_all" title="Projects"><span>Projects</span></a></li>
-                <li><a href="https://tahsin314.github.io/timeline.html" title="Timeline"><span>Timeline</span></a></li>
-                <li><a href="https://tahsin314.github.io/resources.html" title="Resources"><span>Resources</span></a></li>
-                <li><a href="https://tahsin314.github.io/blog.html" title="Blog"><span>Blog</span></a></li>
-            </ul>
             <div class="header-icons">
-                <div class="ol-mobile-trigger hamburger hamburger--elastic">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>
-            </div>
+    <div class="ol-mobile-trigger hamburger hamburger--elastic">
+        <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+        </div>
+    </div>
+</div>
+
+<ul id="primary-menu">
+    <li class="current-menu-item">
+        <a href="https://tahsin314.github.io" title="Home"><span>Home</span></a>
+    </li>
+    <li>
+        <a href="https://tahsin314.github.io/index.html#publications_all" data-target="#publications_all"><span>Publications</span></a>
+    </li>
+    <li>
+        <a href="https://tahsin314.github.io/index.html#projects_all" data-target="#projects_all" title="Projects"><span>Projects</span></a>
+    </li>
+    <li>
+        <a href="https://tahsin314.github.io/timeline.html" title="Timeline"><span>Timeline</span></a>
+    </li>
+    <li>
+        <a href="https://tahsin314.github.io/resources.html" title="Resources"><span>Resources</span></a>
+    </li>
+    <li>
+        <a href="https://tahsin314.github.io/blog.html" title="Blog"><span>Blog</span></a>
+    </li>
+</ul>
         </div>
     </div>
 </header>

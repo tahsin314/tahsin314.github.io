@@ -11,9 +11,9 @@
     --spacer: 10;
     --spacer-xs: 5;
     --spacer-sm: 8;
-    --primary-gradient: linear-gradient(to bottom, #4C3A51, #363c2f);
-    --primary-gradient_right: linear-gradient(to right, #4C3A51, #363c2f);
-    --color-primary: #4C3A51; /* Light green */
+    --primary-gradient: linear-gradient(to bottom, #382b3c, #363c2f);
+    --primary-gradient_right: linear-gradient(to right, #382b3c, #363c2f);
+    --color-primary: #382b3c; /* Light green */
     --color-secondary: #345039; /* Dark green */
     --color-accent: #363c2f; /* Light greenish */
     --color-light: #E7AB79; /* Light beige */

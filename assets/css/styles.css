@@ -322,20 +322,40 @@ ul#primary-menu>li.current-menu-item>a {
 /*
 	position: relative !important;*/
 
-@media (min-width: 1200px) {
-    body:not(.side-header) #header ul#primary-menu {
-        display: inline-block !important;
+    @media (min-width: 1200px) {
+        body:not(.side-header) #header ul#primary-menu {
+            display: inline-block !important;
+        }
     }
-}
-
-@media (max-width: 1200px) {
-    #header .ol-mobile-trigger {
-        display: inline-block;
+    
+    @media (max-width: 1200px) {
+        /* Display hamburger trigger only on mobile */
+        #header .ol-mobile-trigger {
+            display: inline-block;
+        }
+    
+        /* Hide primary menu by default on mobile */
+        #header ul#primary-menu {
+            display: none;
+        }
+    
+        /* Show primary menu when the "show" class is added */
+        #header ul#primary-menu.show {
+            display: block;
+        }
+    
+        /* Hide submenus by default */
+        #header ul#primary-menu .sub-menu {
+            display: none;
+        }
+    
+        /* Show submenu when "is-open" is added to the parent */
+        #header ul#primary-menu .menu-item-has-children.is-open > .sub-menu {
+            display: block;
+        }
+        
     }
-    #header ul#primary-menu {
-        display: none;
-    }
-}
+    
 
 
 #header.trans:not(.is-sticky) {
@@ -604,41 +624,4 @@ ul {
 
 
 /*  Responsive text aligns */
-}
-
-/* Define Gradients Using the Palette */
-.bg-gradient-primary {
-    background: linear-gradient(135deg, #99cc66, #254222); /* Green tones gradient */
-    color: #ece2b1; /* Light beige text for contrast */
-}
-
-.bg-gradient-secondary {
-    background: linear-gradient(135deg, #cae4c5, #99cc66); /* Light green gradient */
-    color: #254222; /* Dark green text for contrast */
-}
-
-.bg-gradient-accent {
-    background: linear-gradient(135deg, #ece2b1, #cae4c5); /* Light beige and light green gradient */
-    color: #254222; /* Dark green text */
-}
-
-/* Solid Background Colors */
-.bg-primary {
-    background-color: #99cc66;
-    color: #254222; /* Dark green for text */
-}
-
-.bg-secondary {
-    background-color: #254222;
-    color: #ece2b1; /* Light beige for text */
-}
-
-.bg-accent {
-    background-color: #ece2b1;
-    color: #254222; /* Dark green for text */
-}
-
-.bg-light-green {
-    background-color: #cae4c5;
-    color: #254222; /* Dark green for text */
 }
