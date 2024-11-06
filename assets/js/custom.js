@@ -76,15 +76,15 @@
 	
 	//*********** Primary Menu Begin*********//	
 	// Initialize $.og with necessary properties
-$.og = {
-    $window: $(window),
-    $body: $('body'),
-    $header: $('#header')
-};
+	$.og = {
+		$window: $(window),
+		$body: $('body'),
+		$header: $('#header')
+	};
+	
 	var olmenu = {
 		init: function() {
 			this.$menu = $('#primary-menu'); // Directly target #primary-menu
-			this.setMobile(this.isMobileActive());
 			this.bindUIActions();
 		},
 		bindUIActions: function() {
@@ -95,21 +95,6 @@ $.og = {
 				$(this).toggleClass("is-active");
 				self.$menu.toggleClass('show'); // Toggle 'show' class on #primary-menu
 			});
-		},
-		setMobile: function(mobileFlag) {
-			if (mobileFlag) {
-				$.og.$header.addClass('mobile-menu');
-			} else {
-				$.og.$header.removeClass('mobile-menu');
-				this.$menu.removeClass('show'); // Reset the primary menu visibility
-			}
-		},
-		isMobileActive: function() {
-			return ($.browser.mobile || $.og.$window.width() <= 1200);
-		},
-		destroy: function() {
-			$.og.$header.removeClass('mobile-menu');
-			this.$menu.removeClass('show'); // Ensure menu is hidden on desktop
 		}
 	};
 	
