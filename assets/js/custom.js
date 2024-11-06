@@ -75,7 +75,12 @@
 
 	
 	//*********** Primary Menu Begin*********//	
-
+	// Initialize $.og with necessary properties
+$.og = {
+    $window: $(window),
+    $body: $('body'),
+    $header: $('#header')
+};
 	var olmenu = {
 		init: function() {
 			this.$menu = $('#primary-menu'); // Directly target #primary-menu
@@ -111,7 +116,7 @@
 	// Document ready function to initialize the menu
 	$(document).ready(function() {
 		olmenu.init();
-		console.log("Inserting header and footer...");
+		console.log("Document ready function to initialize the menu...");
 	});
 	//*********** Primary Menu End *********//	
 
