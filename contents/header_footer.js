@@ -53,7 +53,7 @@ const footerContent = `
                                     </ul>
 
                                     <div align="center" id="clustrmaps-container">
-                                    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk"></script>
+                                    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
                                     </div>
                                 </div>
                             </div>
