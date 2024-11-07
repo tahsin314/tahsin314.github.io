@@ -55,12 +55,12 @@ const footerContent = `
                             </div>
                         </div>
                                 <div align="center" id="clustrmaps-container">
-                                        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=500&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+                                <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=a45d45&w=800&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk&co=382b3c'></script>
                                 </div>
 
                                 <div align="center">
                                 <a href="https://clustrmaps.com/site/1c22o" title="Visit tracker">
-                                <img src="https://clustrmaps.com/map_v2.png?cl=ffffff&w=600&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk" alt="ClustrMaps visitor tracker map" style="margin-top: 20px;" />
+                                <img src="https://clustrmaps.com/map_v2.png?cl=a45d45&w=800&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk&co=382b3c" alt="ClustrMaps visitor tracker map" style="margin-top: 20px;" />
                             </a>
                             
                                 </div>
