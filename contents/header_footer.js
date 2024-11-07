@@ -51,47 +51,10 @@ const footerContent = `
                                                target="_blank"></a>
                                         </li>
                                     </ul>
-                                    <p align="center" <a href="https://hits.sh/github.com/tahsin314/hits/"><img alt="Total View" src="https://hits.sh/github.com/tahsin314/hits.svg?style=for-the-badge&label=Profile%20Views&color=fe7d37&logo=base64"/></a> </p>           
 
-                                    <div align="center" id="revolver-map-container">
-                                        <a style="text-decoration: none;">
-                                            <span id="live-stats-text" style="font-size: 20px; color: gray;"></span>
-                                        </a>
+                                    <div align="center" id="clustrmaps-container">
+                                        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=a08f80&w=500&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk'></script>
                                     </div>
-
-                                    <style>
-                                    /* Blinking animation */
-                                    @keyframes blink {
-                                        0% { opacity: 1; }
-                                        50% { opacity: 0; }
-                                        100% { opacity: 1; }
-                                    }
-
-                                    #live-stats-text {
-                                        animation: blink 1s infinite;
-                                        display: inline-block;
-                                    }
-
-                                    /* Hide the default RevolverMaps text */
-                                    #revolver-map-container iframe {
-                                        display: none;
-                                    }
-                                    </style>
-
-                                    <script>
-                                    document.addEventListener("DOMContentLoaded", function () {
-                                        // Dynamically load the RevolverMaps script
-                                        const script = document.createElement("script");
-                                        script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo&amp;t=skibidi";
-                                        script.async = true;
-                                        
-                                        // Append the script to the revolver map container
-                                        const container = document.getElementById("revolver-map-container");
-                                        if (container) {
-                                            container.appendChild(script);
-                                        }
-                                    });
-                                    </script>
                                 </div>
                             </div>
                         </div>
@@ -102,6 +65,7 @@ const footerContent = `
     </section>
 </footer>
 `;
+
 
 const headerContent = `
 <header id="header" class="trans header-personal-1">
@@ -147,12 +111,6 @@ const headerContent = `
 </header>
 `;
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     console.log("DOM loaded. Injecting header and footer...");
-
-//     loadHeaderAndFooter(); // Call the function to inject header and footer
-// });
-
 function loadHeaderAndFooter() {
     console.log("Inserting header and footer...");
 
@@ -161,19 +119,6 @@ function loadHeaderAndFooter() {
     document.body.insertAdjacentHTML("beforeend", footerContent);
 
     console.log("Header and footer inserted.");
-
-    // Load the revolver map script dynamically
-    const script = document.createElement("script");
-    script.src = "//rf.revolvermaps.com/0/0/9.js?i=5e4unpfsjwo";
-    script.async = true;
-
-    const container = document.getElementById("revolver-map-container");
-    if (container) {
-        console.log("Appending script to revolver-map-container...");
-        container.appendChild(script);
-    } else {
-        console.error("revolver-map-container not found!");
-    }
 
     // Sticky header functionality
     const header = document.getElementById("header");
