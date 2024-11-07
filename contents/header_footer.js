@@ -33,7 +33,7 @@ const footerContent = `
                                             <a class="fa fa-linkedin w3-hover-opacity w3-margin-left" 
                                                style="font-size:30px; color:gray" 
                                                aria-hidden="true" 
-                                               href="https://www.linkedin.com/in/tahsin-mostafiz-276292141/" 
+                                               href="https://www.linkedin.com/in/tahsin314/" 
                                                target="_blank"></a>
                                         </li>
                                         <li>
