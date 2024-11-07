@@ -60,7 +60,7 @@ const footerContent = `
 
                                 <div align="center">
                                 <a href="https://clustrmaps.com/site/1c22o" title="Visit tracker">
-                                <img src="//clustrmaps.com/map_v2.png?cl=ffffff&w=600&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk" alt="ClustrMaps visitor tracker map" />
+                                <img src="https://clustrmaps.com/map_v2.png?cl=ffffff&w=600&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk" alt="ClustrMaps visitor tracker map" />
                             </a>
                             
                                 </div>
