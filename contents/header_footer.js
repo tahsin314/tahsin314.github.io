@@ -80,7 +80,7 @@ const headerContent = `
     <div class="head-main text-center">
         <div class="head">
             <div class="logo-wrapper visible-sticky">
-                <a href="index.html" class="standard-logo text-logo"><img src="https://tahsin314.github.io/assets/img/Pro_pic.jpg" alt="Tahsin Mostafiz">
+                <a href="https://tahsin314.github.io/" class="standard-logo text-logo"><img src="https://tahsin314.github.io/assets/img/Pro_pic.jpg" alt="Tahsin Mostafiz">
                     <div class="text-wrapper">
                         <h1 class="title">Tahsin <span> Mostafiz</span></h1>
                     </div>
