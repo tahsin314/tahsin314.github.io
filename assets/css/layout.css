@@ -1,6 +1,6 @@
 @import url('variables.css');
 /* Set all font colors to white */
-body, h1, h2, h3, h4, h5, h6, p, li, a, span, div, ul, ol {
+body, h1, h2, h3, h4, h5, h6, p, li, span, div, ul, ol {
     color: #ffffff !important;
 }
 
@@ -140,7 +140,7 @@ img {
 .about-section a,
 .projects-section a {
     
-    color: gray;
+    color: #89AED8;
 }
 
 .about-section a:hover,
