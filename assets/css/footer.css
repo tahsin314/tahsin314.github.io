@@ -1,4 +1,13 @@
 @import url('variables.css');
+#footer #footer-main {
+    padding: 60px 0;
+}
+
+@media (max-width: 992px) {
+    #footer #footer-main {
+        padding: 40px 0;
+    }
+}
 #footer {
     background-color: #282c34; /* Dark background for contrast */
     color: #ffffff;

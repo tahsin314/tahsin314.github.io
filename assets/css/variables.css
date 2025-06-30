@@ -21,4 +21,125 @@
     --color-header: #3c383e;
     --color-primary-menu-hover : #E7AB79;
     --color-primary-menu : #f5eaf8;
+    --header-height: 68px; /* Approximate height of the header for hero section calc */
+    --header-bg: #1f2937;
+    --sticky-header-bg: rgba(31, 41, 55, 0.95); 
+    --header-text-color: #d1d5db; 
+    --header-logo-text-color: #e5e7eb; 
+    --header-logo-span-color: #34d399; 
+    --nav-link-color: #d1d5db;
+    --nav-link-hover-color: #34d399; 
+    --hamburger-color: #d1d5db;
+
+    --section-bg-odd: #1f2937; 
+    --section-bg-even: #111827; 
+    --card-bg: #374151; 
+    --card-hover-shadow-color: rgba(52, 211, 153, 0.3); 
+    
+    --primary-accent-color: #10b981; 
+    --primary-accent-text-color: #ffffff;
+    --secondary-accent-color: #34d399; 
+    
+    --button-outline-border-color: var(--secondary-accent-color);
+    --button-outline-text-color: var(--secondary-accent-color);
+    --button-outline-hover-bg-color: var(--secondary-accent-color);
+    --button-outline-hover-text-color: #111827; 
+
+    --terminal-bg: rgba(0, 0, 0, 0.75);
+    --terminal-border-color: #4b5563; 
+    --terminal-text-color: #22c55e; 
+    --terminal-glow-color: #22c55e;
+
+    --profile-image-border-color: var(--primary-accent-color);
+    --sideline-color: var(--secondary-accent-color);
+    --link-text-color: var(--secondary-accent-color);
+    --link-hover-text-color: var(--primary-accent-color);
+    
+    --footer-bg: #0f172a; 
+    --footer-border-color: #374151; 
+    --footer-text-color: #9ca3af; 
+    --footer-heading-color: #d1d5db;
+    --footer-link-color: #9ca3af;
+    --footer-link-hover-color: var(--primary-accent-color);
+    --footer-icon-color: #9ca3af;
+    --footer-icon-hover-color: var(--primary-accent-color);
+    --footer-subtext-color: #6b7280; 
+
+    --terrain-bg-p5: #212121; 
+    --terrain-deep: #065f46;    
+    --terrain-mid: #10b981;     
+    --terrain-high: #34d399;    
+    --terrain-peak: #6b7280;    
+
+    --glitch-color-1: rgba(255, 0, 193, 0.7); 
+    --glitch-color-2: rgba(0, 255, 249, 0.7); 
+
+    --modal-bg: var(--card-bg);
+    --modal-text-color: var(--body-text-color);
+    --modal-header-bg: var(--header-bg);
+    --modal-header-text-color: var(--primary-accent-color);
+    --modal-border-color: var(--secondary-accent-color);
+    --modal-button-bg: var(--primary-accent-color);
+    --modal-button-text-color: var(--primary-accent-text-color);
+    --modal-button-hover-bg: var(--secondary-accent-color);
+}
+
+.theme-sapphire-dark {
+    --body-bg: #001C30; --body-text-color: #DAFFFB;
+    --header-bg: #002845; --sticky-header-bg: rgba(0, 40, 69, 0.95);
+    --header-text-color: #DAFFFB; --header-logo-text-color: #DAFFFB; --header-logo-span-color: #64CCC5;
+    --nav-link-color: #DAFFFB; --nav-link-hover-color: #64CCC5; --hamburger-color: #DAFFFB;
+    --section-bg-odd: #002845; --section-bg-even: #001C30;
+    --card-bg: #176B89; --card-hover-shadow-color: rgba(100, 204, 197, 0.3);
+    --primary-accent-color: #64CCC5; --primary-accent-text-color: #001C30;
+    --secondary-accent-color: #87D8D2;
+    --button-outline-border-color: var(--secondary-accent-color); --button-outline-text-color: var(--secondary-accent-color);
+    --button-outline-hover-bg-color: var(--secondary-accent-color); --button-outline-hover-text-color: #001C30;
+    --terminal-bg: rgba(0, 10, 20, 0.85); --terminal-border-color: #176B89;
+    --terminal-text-color: #64CCC5; --terminal-glow-color: #64CCC5;
+    --profile-image-border-color: var(--primary-accent-color); --sideline-color: var(--secondary-accent-color);
+    --link-text-color: var(--secondary-accent-color); --link-hover-text-color: var(--primary-accent-color);
+    --footer-bg: #001320; --footer-border-color: #176B89;
+    --footer-text-color: #A0D2DB;  --footer-heading-color: #DAFFFB;
+    --footer-link-color: #A0D2DB; --footer-link-hover-color: var(--primary-accent-color);
+    --footer-icon-color: #A0D2DB; --footer-icon-hover-color: var(--primary-accent-color);
+    --footer-subtext-color: #648995;
+    --terrain-bg-p5: #00101A; --terrain-deep: #002845;  
+    --terrain-mid: #176B89; --terrain-high: #64CCC5; --terrain-peak: #DAFFFB;  
+    --glitch-color-1: rgba(218, 255, 251, 0.7); --glitch-color-2: rgba(100, 204, 197, 0.7); 
+    --modal-bg: var(--card-bg); --modal-text-color: var(--body-text-color);
+    --modal-header-bg: var(--header-bg); --modal-header-text-color: var(--primary-accent-color);
+    --modal-border-color: var(--secondary-accent-color);
+    --modal-button-bg: var(--primary-accent-color); --modal-button-text-color: var(--primary-accent-text-color);
+    --modal-button-hover-bg: var(--secondary-accent-color);
+}
+
+.theme-rose-light {
+    --body-bg: #FFF8F0; --body-text-color: #4A4A4A; 
+    --header-bg: #FFDEDF; --sticky-header-bg: rgba(255, 222, 223, 0.95);
+    --header-text-color: #5D4343; --header-logo-text-color: #7B5050; --header-logo-span-color: #E06469;
+    --nav-link-color: #AD5D5D; --nav-link-hover-color: #E06469; --hamburger-color: #AD5D5D;
+    --section-bg-odd: #FFF0E6; --section-bg-even: #FFF8F0; 
+    --card-bg: #FFFFFF; --card-hover-shadow-color: rgba(224, 100, 105, 0.2);
+    --primary-accent-color: #E06469; --primary-accent-text-color: #FFFFFF;
+    --secondary-accent-color: #F28B82; 
+    --button-outline-border-color: var(--secondary-accent-color); --button-outline-text-color: var(--secondary-accent-color);
+    --button-outline-hover-bg-color: var(--secondary-accent-color); --button-outline-hover-text-color: #FFFFFF;
+    --terminal-bg: rgba(240, 240, 240, 0.85); --terminal-border-color: #D8B0B0; 
+    --terminal-text-color: #C17275; --terminal-glow-color: #C17275;
+    --profile-image-border-color: var(--primary-accent-color); --sideline-color: var(--secondary-accent-color);
+    --link-text-color: var(--primary-accent-color); --link-hover-text-color: #AD5D5D;
+    --footer-bg: #FFDEDF; --footer-border-color: #F2C4C4;
+    --footer-text-color: #7B5050;  --footer-heading-color: #5D4343;
+    --footer-link-color: #7B5050; --footer-link-hover-color: var(--primary-accent-color);
+    --footer-icon-color: #7B5050; --footer-icon-hover-color: var(--primary-accent-color);
+    --footer-subtext-color: #AD5D5D;
+    --terrain-bg-p5: #FDF0E3; --terrain-deep: #F28B82;   
+    --terrain-mid: #E06469; --terrain-high: #F2C4C4; --terrain-peak: #FFF8F0;   
+    --glitch-color-1: rgba(224, 100, 105, 0.7); --glitch-color-2: rgba(173, 93, 93, 0.7); 
+    --modal-bg: #ffffff; --modal-text-color: #4A4A4A;
+    --modal-header-bg: #FFDEDF; --modal-header-text-color: #E06469;
+    --modal-border-color: #F28B82;
+    --modal-button-bg: #E06469; --modal-button-text-color: #ffffff;
+    --modal-button-hover-bg: #F28B82;
 }

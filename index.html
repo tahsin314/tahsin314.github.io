@@ -4,450 +4,394 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Content-Type-Script" content="text/javascript">
-    <meta name="Content-Type-Style" content="text/css">
-    <meta name="author" content="owwwlab.com">
-    <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/terminal/css/style.css" /> 
+    <title>Tahsin Mostafiz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- User's CSS Paths -->
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Corrected from styles.css to style.css -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/terminal/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/terrain.css">
+    <link rel="stylesheet" href="assets/css/header.css"> <!-- Added user's header.css -->
+    <!-- External Libraries CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/js/filter.js"></script>
-    <script src="assets/js/terrain.js" defer></script> <!-- Assuming terrain.js contains the updated script -->
-    <script src="assets/terminal/JS/views/index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- User's Footer HTML (Static) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- User's JS Paths -->
+    <script src="assets/js/terrain.js"></script>
+    <script src="assets/terminal/JS/views/index.js"></script> 
+    <script src="assets/js/main.js"></script>
     <script src="contents/header_footer.js"></script>
-    <script src="assets/js/vendors/vendors.js"></script>
-    <script src="assets/js/hugo-academic.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <title>Tahsin Mostafiz</title>
+    <div id="theme-switcher-placeholder" class="mr-4 relative">
+        <!-- Theme dropdown button will be injected here by JS -->
+    </div>
     
-    <script>
-        document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
-    </script>
 </head>
+<body class="theme-default" id="dynamic_header"> 
 
-<section id="contents">
-    <div id="canvasContainer"></div> <!-- Terrain animation will fill this container -->      
-    <div class="container">
-        <div class="info-cards">
-            <div class="profile-image">
-                <img src="assets/img/Pro_pic.jpg" alt="Md Tahsin Mostafiz">
-                <!-- <p><strong>Md Tahsin Mostafiz</strong></p> -->
-            </div>
-            <div class="terminal">
-            <div class="main__container scanlines">
-                <p id="dynamic-text"> </p>
+    <section id="contents" class="relative flex items-center justify-center overflow-hidden" style="min-height: calc(100vh - var(--header-height));">
+        <div id="canvasContainer" class="absolute inset-0 z-0"></div>
+        <div class="relative z-10 container mx-auto px-6 py-16 text-center">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 bg-[var(--body-bg)] bg-opacity-80 backdrop-blur-md p-8 rounded-xl shadow-2xl" style="transition: background-color 0.5s;">
+                <div class="profile-image mb-6 md:mb-0">
+                    <img src="https://tahsin314.github.io/assets/img/Pro_pic.jpg" alt="Md Tahsin Mostafiz" class="rounded-full w-40 h-40 md:w-48 md:h-48 object-cover shadow-lg mx-auto" style="border: 4px solid var(--profile-image-border-color); transition: border-color 0.5s;" onerror="this.onerror=null;this.src='https://placehold.co/200x200/374151/e5e7eb?text=Image+Not+Found';">
                 </div>
-             </div>
-        </div>
-    </div>
-</section>
-
-
-    
-    <!-- About Me Section -->
-<section class="section color-primary section-narrow-2 about-section">
-<div class="container">
-<div class="row">
-    <div class="col-md-9">
-        <h3 class="with-sideline">About Me</h3>
-        <p>Hello! I am Tahsin. I completed my Masters degree in the ECE department of University of Florida. 
-            I graduated in Electrical and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After graduation, I worked as <i>Machine Learning Engineer</i> in <a href="http://www.semionmed.com/" style="color: red; text-decoration: none">Semion Limited</a> and <a href="https://www.chowagiken.co.jp/" style="color: red; text-decoration: none">AI Samurai</a>, served as an RA in the <a href="https://mhealth.buet.ac.bd/" style="color: red; text-decoration: none">MHealth Lab</a>, Department of Biomedical Engineering, BUET and mentored several undergraduate students in their thesis and research works. 
-            <br> I am currently looking for job opportunities in the domain of AI. 
-        <h3 class="with-sideline">Research Interests</h4>
-        <ul class="research-interests"">
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Computer Vision</li>
-            <li>Sequence Modeling</li>
-            <li>Natural Language Processing</li>
-        </ul>
-    </div>
-    <div class="col-md-3 cv-section">
-        <h3 class="with-sideline">CV</h3>
-        <a href="My_Resume.pdf" class="btn btn-medium btn-block btn-round btn-thick-border">
-            <i class="oi-download-from-cloud"></i><span class="text-capitilize">Download CV</span>
-        </a>
-    </div>
-</div>
-</div>
-</section>
-
-            
-<section class="section section-narrow-2 education-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h3 class="with-sideline">Education</h3>
+                <div class="terminal relative max-w-2xl w-full"> 
+                    <div class="main__container scanlines p-6 rounded-lg shadow-xl min-h-[150px] flex items-center justify-center" style="background-color: var(--terminal-bg); border: 1px solid var(--terminal-border-color); transition: background-color 0.5s, border-color 0.5s;">
+                        <p id="dynamic-text" data-text="" class="font-vt323 text-xl md:text-2xl terminal-text-glow whitespace-pre-wrap text-left w-full" style="color: var(--terminal-text-color); transition: color 0.5s;"></p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="icon-box ib-edu">
-                            <!-- Replaced icon with the university logo -->
-                            <img src="assets/img/icon/university-of-florida-logo.png" alt="University of Florida Logo" style="height: 150px; margin-bottom: 10px;">
-                            <div class="ib-wrap">
-                                <h3 class="title" style="font-weight: bold; font-size: 1.2em;">M.Sc in Electrical and Electronics Engineering</h3>
-                                <span class="subtitle" style="font-weight: bold; font-size: 1.2em;">University of Florida</span>
-                                <div class="description" style="font-weight: bold; font-size: 1.2em;"><span>Spring 2021 - Spring 2024</span></div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-odd);">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-9">
+                    <h2 class="text-3xl font-bold mb-8 with-sideline" style="color: var(--nav-link-color); transition: color 0.5s;">About Me</h2>
+                    <p class="mb-6" style="color: var(--nav-link-color); transition: color 0.5s;">
+                        Hello! I am Tahsin. I completed my Masters degree in the ECE department of University of Florida. 
+                        I graduated in Electrical and Electronic Engineering from Bangladesh University of Engineering and Technology (BUET) in 2017. After graduation, I worked as <i>Machine Learning Engineer</i> in <a href="http://www.semionmed.com/" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color); transition: color 0.5s;">Semion Limited</a> and <a href="https://www.chowagiken.co.jp/" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color); transition: color 0.5s;">AI Samurai</a>, served as an RA in the <a href="https://mhealth.buet.ac.bd/" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color); transition: color 0.5s;">MHealth Lab</a>, Department of Biomedical Engineering, BUET and mentored several undergraduate students in their thesis and research works.
+                    </p>
+                    <p class="mb-8" style="color: var(--nav-link-color); transition: color 0.5s;">
+                        I am currently looking for job opportunities in the domain of AI.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4 with-sideline" style="color: var(--nav-link-color); transition: color 0.5s;">Research Interests</h3>
+                    <ul class="list-disc list-inside space-y-2 pl-2" style="color: var(--nav-link-color); transition: color 0.5s;">
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Computer Vision</li>
+                        <li>Sequence Modeling</li>
+                        <li>Natural Language Processing</li>
+                    </ul>
+                </div>
+                <div class="md:col-span-3">
+                    <h3 class="text-2xl font-semibold mb-4 with-sideline" style="color: var(--nav-link-color); transition: color 0.5s;">CV</h3>
+                    <a href="My_Resume.pdf" target="_blank" class="btn-custom w-full text-center">
+                        <i class="fas fa-download mr-2" style="color: var(--nav-link-color)"></i style="color: var(--nav-link-color); transition: color 0.5s;">Download CV 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center with-sideline inline-block mx-auto" style="color: var(--nav-link-color); transition: color 0.5s;">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <div class="p-6 rounded-lg shadow-xl hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300 flex flex-col items-center text-center" style="background-color: var(--card-bg);">
+                    <img src="assets/img/icon/university-of-florida-logo.png" alt="University of Florida Logo" class="h-36 w-36 object-contain mb-6 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/150x150/4ade80/111827?text=Logo+UF';">
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">M.Sc in Electrical and Computer Engineering</h3>
+                    <p class="font-medium mb-1" style="color: var(--nav-link-color);">University of Florida</p>
+                    <p class="text-sm" style="color: var(--nav-link-color); opacity:0.7;">Spring 2021 - Spring 2024</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-xl hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300 flex flex-col items-center text-center" style="background-color: var(--card-bg);">
+                    <img src="assets/img/icon/buet-logo.png" alt="BUET Logo" class="h-36 w-36 object-contain mb-6 rounded-md" onerror="this.onerror=null;this.src='https://placehold.co/150x150/4ade80/111827?text=Logo+BUET';">
+                    <h3 class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">B.Sc in Electrical and Electronic Engineering</h3>
+                    <p class="font-medium mb-1" style="color: var(--nav-link-color);">Bangladesh University of Engineering and Technology</p>
+                    <p class="text-sm" style="color: var(--nav-link-color); opacity:0.7;">2012 - 2017</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-odd);">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center with-sideline inline-block mx-auto" style="color: var(--nav-link-color);">Major Publications</h2>
+            <ul class="space-y-8">
+                <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">Wearable Sensors in Patient Acuity Assessment in Critical Care</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">
+                                        Jessica Sena, <strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Jiaqing Zhang, Andrea E Davidson, Sabyasachi Bandyopadhyay, Subhash Nerella, Yuanfang Ren, Tezcan Ozrazgat-Baslanti, Benjamin Shickel, Tyler Loftus, William Robson Schwartz, Azra Bihorac, Parisa Rashidi
+                                    </p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">Frontiers in Neurology</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1386728/pdf" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                        <a href="https://github.com/iheallab/Acuity_application" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fab fa-github mr-1"></i>Code</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="icon-box ib-edu">
-                            <!-- Replaced icon with the university logo -->
-                            <img src="assets/img/icon/buet-logo.png" alt="BUET Logo" style="height: 150px; margin-bottom: 10px;">
-                            <div class="ib-wrap">
-                                <h3 class="title" style="font-weight: bold; font-size: 1.2em;">B.Sc in Electrical and Electronics Engineering</h3>
-                                <span class="subtitle" style="font-weight: bold; font-size: 1.2em;">Bangladesh University of Engineering and Technology</span>
-                                <div class="description" style="font-weight: bold; font-size: 1.2em;"><span>2012 - 2017</span></div>
+                </li>
+                <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                    <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                             <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">Automated Segmentation of Lymph Nodes on Neck CT Scans Using Deep Learning</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">
+                                        Md Mahfuz Al Hasan, Saba Ghazimoghadam, Padcha Tunlayadechanont, <strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Manas Gupta, Antika Roy, Keith Peters, Bruno Hochhegger, Anthony Mancuso, Navid Asadizanjani, Reza Forghani
+                                    </p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">Journal of Digital Imaging</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://pubmed.ncbi.nlm.nih.gov/38937342/" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                        <a href="https://github.com/tahsin314/Lymph_Node_Segmentation" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fab fa-github mr-1"></i>Code</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </li>
+                 <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                     <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">Diurnal Pain Classification in Critically Ill Patients using Machine Learning on Accelerometry and Analgesic Data</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">Jessica Sena, Sabyasachi Bandyopadhyay, <strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Andrea Davidson, Ziyuan Guan, Jesimon Barreto, Tezcan Ozrazgat-Baslanti, Patrick Tighe, Azra Bihorac, William Robson Schwartz, Parisa Rashidi</p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10385764" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                     <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">The Potential of Wearable Sensors for Assessing Patient Acuity in Intensive Care Unit (ICU)</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">Jessica Sena, <strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Jiaqing Zhang, Andrea Davidson, Sabyasachi Bandyopadhyay, Ren Yuanfang, Tezcan Ozrazgat-Baslanti, Benjamin Shickel, Tyler Loftus, William Robson Schwartz, Azra Bihorac, Parisa Rashidi</p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">arXiv preprint</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://arxiv.org/ftp/arxiv/papers/2311/2311.02251.pdf" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                        <a href="https://github.com/iheallab/Acuity_application" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fab fa-github mr-1"></i>Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                     <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">EVHA: Explainable Vision System for Hardware Testing and Assurance - An Overview</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">Md Mahfuz Al Hasan, <strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Thomas An Lee, Jake Julia, Nidish Vashistha, Shayan Taheri, Navid Asadi Zanjani</p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">ACM Journal on Emerging Technologies in Computing Systems</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://dl.acm.org/doi/pdf/10.1145/3590772" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                        <a href="https://github.com/tahsin314/Block_Recognition" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fab fa-github mr-1"></i>Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                 <li itemscope itemtype="http://schema.org/CreativeWork" class="p-6 rounded-lg shadow-lg hover:shadow-[var(--card-hover-shadow-color)] transition-all duration-300" style="background-color: var(--card-bg);">
+                     <div class="flex flex-col sm:flex-row items-start gap-4">
+                        <img src="https://placehold.co/150x100/777/ccc?text=Pub+Thumb" alt="Publication Thumbnail" class="w-full sm:w-32 h-auto sm:h-20 object-cover rounded-md mb-4 sm:mb-0 sm:mr-4" onerror="this.onerror=null;this.src='https://placehold.co/150x100/777/ccc?text=No+Image';">
+                        <div class="flex-grow">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-file-alt text-2xl mt-1 hidden sm:block" style="color: var(--secondary-accent-color);"></i>
+                                <div>
+                                    <h3 itemprop="name" class="text-xl font-semibold mb-1" style="color: var(--nav-link-color);">Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</h3>
+                                    <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;"><strong class="italic" style="color: var(--nav-link-color);">Tahsin Mostafiz</strong>, Dr. Khalid Ashraf</p>
+                                    <p class="text-sm italic mb-3" style="color: var(--nav-link-color); opacity:0.6;">arXiv 1812.02305</p>
+                                    <div class="flex flex-wrap gap-3">
+                                        <a href="https://arxiv.org/abs/1812.02305" target="_blank" rel="noopener noreferrer" class="btn-custom-outline text-xs px-4 py-2"><i class="fas fa-book-open mr-1"></i>Paper</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center with-sideline inline-block mx-auto" style="color: var(--nav-link-color);">Selected Projects</h2>
+            <div class="project-toolbar mb-8 text-center">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button data-filter="*" class="active" style="color: var(--nav-link-color); transition: color 0.5s;">All</button>
+                    <button data-filter=".deep-learning" style="color: var(--nav-link-color); transition: color 0.5s;">Deep Learning</button>
+                    <button data-filter=".software" style="color: var(--nav-link-color); transition: color 0.5s;">Software & Apps</button>
+                    <button data-filter=".design-simulation" style="color: var(--nav-link-color); transition: color 0.5s;">Design & Simulation</button>
+                    <button data-filter=".others" style="color: var(--nav-link-color); transition: color 0.5s;">Others</button>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-
-            <section class="section section-narrow-2 publications-section" id="publications_all">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3 class="with-sideline">Major Publications</h3>
-                        </div>
-                        <div class="col-md-9">
-                            <ul class="fa-ul" style="padding-bottom: 20px;">
-
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Wearable Sensors in Patient Acuity Assessment in Critical Care</span><br>
-                                        <span>Jessica Sena, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Jiaqing Zhang, Andrea E Davidson, Sabyasachi Bandyopadhyay, Subhash Nerella, Yuanfang Ren, Tezcan Ozrazgat-Baslanti, Benjamin Shickel, Tyler Loftus, William Robson Schwartz, Azra Bihorac, Parisa Rashidi</span><br>
-                                        <span><i>Frontiers in Neurology</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2024.1386728/pdf" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            <a href="https://github.com/iheallab/Acuity_application" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Code</a>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-            
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Automated Segmentation of Lymph Nodes on Neck CT Scans Using Deep Learning</span><br>
-                                        <span>Md Mahfuz Al Hasan, Saba Ghazimoghadam, Padcha Tunlayadechanont, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Manas Gupta, Antika Roy, Keith Peters, Bruno Hochhegger, Anthony Mancuso, Navid Asadizanjani, Reza Forghani</span><br>
-                                        <span><i>Journal of Digital Imaging</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://pubmed.ncbi.nlm.nih.gov/38937342/" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            <a href="https://github.com/tahsin314/Lymph_Node_Segmentation" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Code</a>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Diurnal Pain Classification in Critically Ill Patients using Machine Learning on Accelerometry and Analgesic Data</span><br>
-                                        <span>Jessica Sena, Sabyasachi Bandyopadhyay, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Andrea Davidson, Ziyuan Guan, Jesimon Barreto, Tezcan Ozrazgat-Baslanti, Patrick Tighe, Azra Bihorac, William Robson Schwartz, Parisa Rashidi</span><br>
-                                        <span><i>2023 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10385764" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">The Potential of Wearable Sensors for Assessing Patient Acuity in Intensive Care Unit (ICU)</span><br>
-                                        <span>Jessica Sena, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Jiaqing Zhang, Andrea Davidson, Sabyasachi Bandyopadhyay, Ren Yuanfang, Tezcan Ozrazgat-Baslanti, Benjamin Shickel, Tyler Loftus, William Robson Schwartz, Azra Bihorac, Parisa Rashidi</span><br>
-                                        
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://arxiv.org/ftp/arxiv/papers/2311/2311.02251.pdf" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            <a href="https://github.com/iheallab/Acuity_application" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Code</a>
-                                        </div>
-                                    </div>
-                                </li>
-            
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">EVHA: Explainable Vision System for Hardware Testing and Assurance - An Overview</span><br>
-                                        <span>Md Mahfuz Al Hasan, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Thomas An Lee, Jake Julia, Nidish Vashistha, Shayan Taheri, Navid Asadi Zanjani</span><br>
-                                        <span><i>ACM Journal on Emerging Technologies in Computing Systems</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://dl.acm.org/doi/pdf/10.1145/3590772" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            <a href="https://github.com/tahsin314/Block_Recognition" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Code</a>
-                                        </div>
-                                    </div>
-                                </li>
-            
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</span><br>
-                                        <span><b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Dr. Khalid Ashraf</span><br>
-                                        <span><i>arXiv 1812.02305</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://arxiv.org/abs/1812.02305" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                        </div>
-                                    </div>
-                                </li>
-            
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Retinal Blood Vessel Segmentation using Residual Block Incorporated U-Net Architecture and Fuzzy Inference System</span><br>
-                                        <span><b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">Tahsin Mostafiz</b>, Ismat Jarin, Dr. Shaikh A. Fattah, Dr. Celia Shahnaz</span><br>
-                                        <span><i>2018 4th IEEE WIECON-ECE Conference</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8783182" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                            <a href="https://github.com/tahsin314/Retinal-Vessel-Segmentation" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Code</a>
-                                        </div>
-                                    </div>
-                                </li>
-            
-                                <li itemscope itemtype="http://schema.org/CreativeWork" style="margin-bottom: 20px; line-height: 1.8;">
-                                    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <i class="fa-li fa fa-file-text-o pub-icon" style="font-size:18px; color:#388E8E" aria-hidden="true"></i>
-                                        <span itemprop="name" style="font-weight: bold; font-size: 1.2em;">Photoplay: An Android Application to Stimulate Children’s Cognitive Development</span><br>
-                                        <span>A. Mitra, <b style="font-weight: bold; font-style: italic; text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);">T. Mostafiz</b>, R. Ur Rashid</span><br>
-                                        <span><i>2017 IEEE Region 10 Humanitarian Technology Conference (R10-HTC)</i></span>
-                                        <div style="display: flex; gap: 10px; margin-top: 5px;">
-                                            <a href="https://ieeexplore.ieee.org/document/8288990" target="_blank" style="padding: 5px 15px; background-color: rgb(140, 58, 58); color: white; border: none; border-radius: 5px; text-decoration: none;">Paper</a>
-                                        </div>
-                                    </div>
-                                </li>
-            
-                            </ul>
+            <div id="container-projects" class="space-y-6">
+                <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Small Object Detection in CT Images Using DASPP</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Developed an algorithm for small object detection in CT images using Dense Atrous Spatial Pyramid Pooling and a Spatial Context Network with Reverse Axial Attention.</p>
                         </div>
                     </div>
                 </div>
-            </section>
-            
-            
-            
-            
-            
-            
-            
-
-<section class="section projects-section" id="projects_all">
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <h3 class="title with-sideline">Selected Projects</h3>
-        </div>
-        <div class="col-md-9">
-            <div class="project-toolbar">
-                <div class="btn-toolbar">
-                    <div class="btn-group">
-                        <button data-filter="*" class="btn btn-small btn-info">All</button>
-                        <button data-filter=".deep-learning" class="btn btn-small btn-info">Deep Learning</button>
-                        <button data-filter=".software" class="btn btn-small btn-info">Software & Apps</button>
-                        <button data-filter=".design-simulation" class="btn btn-small btn-info">Design & Simulation</button>
-                        <button data-filter=".others" class="btn btn-small btn-info">Others</button>
+                <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">ICU Patient Acuity Assessment with Explainable AI</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed an acuity assessment pipeline for ICU patients incorporating explainable AI algorithms to identify features contributing to the worsening of patient conditions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Semi-Supervised Electric Pole Detection</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Developed a semi-supervised object detection pipeline for electric pole detection from car dashboard camera images using Fast-RCNN with ResNet50 backbone and YoloV4.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Abnormality Detection in Dairy Products</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed a semi-supervised CNN model for abnormality detection in dairy product images.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">SemRad CAM Tool for Chest X-rays</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed SemRad, an inference tool and Class Activation Mapping (CAM) tool for localization of abnormalities in chest X-ray images using ResNet101.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">RadAssist, A Web-Based Tool for Brain Hemorrhage Detection</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Worked on developing the backend deep learning model for RadAssist, assisting doctors in detecting and localizing abnormalities from brain CT scan images.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">An Inference Tool for SemRad, a Teleradiology Solution Software</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed an inference tool for abnormality detection and localization in Chest X-Rays based on <a href="https://arxiv.org/abs/1704.04861" target="_blank"  rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">MobileNet</a> Algorithm. This was later integrated into the software.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Class Activation Mapping (CAM) for SemRad, a Teleradiology Solution Software</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed a Class Activation Mapping tool based on <a href="https://arxiv.org/pdf/1512.04150.pdf" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">this</a> paper for localization of abnormalities in Chest X-Rays. This was later integrated into the software.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Pathology Extraction from Chest X-Ray Radiological Reports</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Using the Named Entity Recognition (NER) method described <a href="https://www.aclweb.org/anthology/N16-1030" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">here</a>, I developed a model that can extract pathology terms from EHR reports. This is an ongoing research project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Development of Hardware for the Measurement of THD in Power Systems</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">I developed a device using Raspberry Pi, Arduino, and a transformer that can measure the total harmonic distortion (THD) present in the power system. This was a part of our undergraduate thesis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">semDDX, an Android App</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">This Android app helps easily navigate the vast landscape of differential diagnoses, aids medical students in learning, and helps normalize and standardize communication between physicians. The app is available at <a href="https://play.google.com/store/apps/details?id=com.semion.user.dd" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">Google Play</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Interface and Gaming Console Design for A Computer and An Android Game.</h3>
+                            <p class="project-description-text text-sm mb-3" style="color: var(--nav-link-color); opacity:0.8;">A 2-D Car racing game for PC and Android devices (Phone, Tablet, Smart TV etc.) with an external control system and a user-friendly gaming interface was designed. Detailed explanation and demo are available <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">here</a> on Youtube. This was an academic project for the Control System Lab.</p>
+                            <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <img src="https://placehold.co/200x112/777/ccc?text=Video+Preview" alt="Video Thumbnail for Gaming Console Design" class="rounded-md shadow-md hover:opacity-80 transition-opacity w-full max-w-xs sm:max-w-sm md:max-w-md" onerror="this.onerror=null;this.src='https://placehold.co/200x112/777/ccc?text=Video+Error';">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                     <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">An Oscilloscope for the Measurement of Current and Voltage</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">This was the final project for the Measurement and Instrumentation Laboratory. I made a 2-channel oscilloscope that can simultaneously measure and plot voltage and current values on a Graphical User Interface designed by me. It was also the last undergrad project I worked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item software design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">SONAR Controlled Flappy Bird</h3>
+                            <p class="project-description-text text-sm mb-3" style="color: var(--nav-link-color); opacity:0.8;">The infamous Flappy Bird game could be played by waving a hand in this project. Arduino along with a SONAR sensor were used for this project. A demo is available <a href="https://www.youtube.com/watch?v=6RDEc8gb8EA" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">here</a> on Youtube.</p>
+                             <a href="https://www.youtube.com/watch?v=6RDEc8gb8EA" target="_blank" rel="noopener noreferrer" class="inline-block">
+                                <img src="https://placehold.co/200x112/777/ccc?text=Video+Preview" alt="Video Thumbnail for SONAR Flappy Bird" class="rounded-md shadow-md hover:opacity-80 transition-opacity w-full max-w-xs sm:max-w-sm md:max-w-md" onerror="this.onerror=null;this.src='https://placehold.co/200x112/777/ccc?text=Video+Error';">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item others p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Mentoring Undergraduate Thesis on COVID Infection Analysis</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Mentored an undergraduate student in his thesis work titled <i>"COVID Infection Analysis via Lung Lobe Segmentation using Deep Learning"</i>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item others p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Supervision of High-School Students in Research</h3>
+                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Supervised two high-school students to get them familiar with research work in hardware security and machine learning under the <i>Student Science Training Program (SSTP)</i> at University of Florida.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="isotope" id="container-projects">
-                <ul class="fa-ul">
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Small Object Detection in CT Images Using DASPP</b>
-                            <p>Developed an algorithm for small object detection in CT images using Dense Atrous Spatial Pyramid Pooling and a Spatial Context Network with Reverse Axial Attention.</p>
-                        </div>
-                    </li>
-
-                    <!-- New Project 2: ICU Patient Acuity Assessment -->
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">ICU Patient Acuity Assessment with Explainable AI</b>
-                            <p>Co-developed an acuity assessment pipeline for ICU patients incorporating explainable AI algorithms to identify features contributing to the worsening of patient conditions.</p>
-                        </div>
-                    </li>
-
-                    <!-- New Project 3: Electric Pole Detection -->
-                    <li class="project-item isotope-item deep-learning software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Semi-Supervised Electric Pole Detection</b>
-                            <p>Developed a semi-supervised object detection pipeline for electric pole detection from car dashboard camera images using Fast-RCNN with ResNet50 backbone and YoloV4.</p>
-                        </div>
-                    </li>
-
-                    <!-- New Project 4: Abnormality Detection in Dairy Products -->
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Abnormality Detection in Dairy Products</b>
-                            <p>Co-developed a semi-supervised CNN model for abnormality detection in dairy product images.</p>
-                        </div>
-                    </li>
-
-                    <!-- New Project 5: SemRad CAM Tool -->
-                    <li class="project-item isotope-item software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">SemRad CAM Tool for Chest X-rays</b>
-                            <p>Co-developed SemRad, an inference tool and Class Activation Mapping (CAM) tool for localization of abnormalities in chest X-ray images using ResNet101.</p>
-                        </div>
-                    </li>
-
-                    <!-- New Project 6: Symptom Checker Alexa Skill -->
-                    <li class="project-item isotope-item software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Symptom Checker Alexa Skill</b>
-                            <p>Developed an Amazon Alexa skill to help users detect diseases from symptoms.</p>
-                        </div>
-                    </li>
-
-                    <li class="project-item isotope-item deep-learning software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">RadAssist, A Web-Based Tool for Brain Hemorrhage Detection</b>
-                            <p>Worked on developing the backend deep learning model for RadAssist, assisting doctors in detecting and localizing abnormalities from brain CT scan images.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item deep-learning software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">An Inference Tool for SemRad, a Teleradiology Solution Software</b>
-                            <p>A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed an inference tool for abnormality detection and localization in Chest X-Rays based on <a href="https://arxiv.org/abs/1704.04861" target="_blank">MobileNet</a> Algorithm. This was later integrated into the software.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item deep-learning software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Class Activation Mapping (CAM) for SemRad, a Teleradiology Solution Software</b>
-                            <p>A complete teleradiology solution that incorporates deep learning models to detect chest abnormalities. The framework is JavaFX and SQL is at the backend. This was a professional project. I designed a Class Activation Mapping tool based on <a href="https://arxiv.org/pdf/1512.04150.pdf" target="_blank">this</a> paper for localization of abnormalities in Chest X-Rays. This was later integrated into the software.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Retinal Vessel Segmentation Using Autoencoder</b>
-                            <p>This project was performed on the DRIVE dataset, using a U-Net-based architecture with residual blocks. It was part of a research work which later got accepted at the 4th IEEE WIECON-ECE Conference 2018. Details are available in the <a href="/#publications_all" target="_blank">Publications</a> section.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Pathology Extraction from Chest X-Ray Radiological Reports</b>
-                            <p>Using the Named Entity Recognition (NER) method described <a href="https://www.aclweb.org/anthology/N16-1030" target="_blank">here</a>, I developed a model that can extract pathology terms from EHR reports. This is an ongoing research project.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Development of Hardware for the Measurement of THD in Power Systems</b>
-                            <p>I developed a device using Raspberry Pi, Arduino, and a transformer that can measure the total harmonic distortion (THD) present in the power system. This was a part of our undergraduate thesis.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">PhotoPlay, An Android App for Children</b>
-                            <p>This app was designed to help children stimulate their cognitive development. It uses an Inception v3 model as its backbone, pretrained on the <a href="http://www.image-net.org/" target="_blank">ImageNet</a> dataset and fine-tuned on additional data. It was part of a research work which later got accepted at the 2017 IEEE Region 10 Humanitarian Technology Conference (R10-HTC). Details are available in the <a href="/#publications_all" target="_blank">Publications</a> section.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Differential Diagnoses, an Amazon Alexa Skill</b>
-                            <p>This Alexa skill can recite all differential diagnoses for user-fed symptoms. It includes a comprehensive list of 1700 differential diagnoses and their corresponding symptom mapping. The development of this skill is still in progress.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item deep-learning" data-category="deep-learning">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Identification of Risk Factors for Heart Disease in Diabetic Patients</b>
-                            <p>Using bidirectional LSTM and CRF-based entity recognition model, risk factors were identified for heart diseases in diabetic patients. The dataset was from <a href="https://www.i2b2.org/" target="_blank">i2b2</a>. This was a professional project.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item software" data-category="software">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">semDDX, an Android App</b>
-                            <p>This Android app helps easily navigate the vast landscape of differential diagnoses, aids medical students in learning, and helps normalize and standardize communication between physicians. The app is available at <a href="https://play.google.com/store/apps/details?id=com.semion.user.dd" target="_blank">Google Play</a>.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Interface and Gaming Console Design for A Computer and An Android Game.</b>
-                            <p>A 2-D Car racing game for PC and Android devices (Phone, Tablet, Smart TV etc.) with an external control system and a user-friendly gaming interface was designed. Detailed explanation and demo are available <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank">here</a> on Youtube. This was an academic project for the Control System Lab.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Home Security System Via Push Message Service</b>
-                            <p>Arduino along with a GSM module, LCD panel, proximity and sonar sensors were used for this project. This was an academic project for the Communication I Lab.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">An Oscilloscope for the Measurement of Current and Voltage</b>
-                            <p>This was the final project for the Measurement and Instrumentation Laboratory. I made a 2-channel oscilloscope that can simultaneously measure and plot voltage and current values on a Graphical User Interface designed by me. It was also the last undergrad project I worked on.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item software design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">SONAR Controlled Flappy Bird</b>
-                            <p>The infamous Flappy Bird game could be played by waving a hand in this project. Arduino along with a SONAR sensor were used for this project. A demo is available <a href="https://www.youtube.com/watch?v=6RDEc8gb8EA" target="_blank">here</a> on Youtube.</p>
-                        </div>
-                    </li>
-                    <li class="project-item isotope-item software design-simulation" data-category="design-simulation">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Home Automation System</b>
-                            <p>This was a group project. We made a home automation system that had electric fans and lights as test loads, and an Android app was built to control the loads from a distance. This prototype used Bluetooth to connect.</p>
-                        </div>
-                    </li>
-
-                    <li class="project-item isotope-item others" data-category="others">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Mentoring Undergraduate Thesis on COVID Infection Analysis</b>
-                            <p>Mentored an undergraduate student in his thesis work titled <i>"COVID Infection Analysis via Lung Lobe Segmentation using Deep Learning"</i>.</p>
-                        </div>
-                    </li>
-
-                    <li class="project-item isotope-item others" data-category="others">
-                        <i class="fa-li fa fa-files-o pub-icon"></i>
-                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                            <b style="font-size: 1.2em;">Supervision of High-School Students in Research</b>
-                            <p>Supervised two high-school students to get them familiar with research work in hardware security and machine learning under the <i>Student Science Training Program (SSTP)</i> at University of Florida.</i>.</p>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
         </div>
-    </div>
-</div>
-</section>
-
-<div class="clearfix"></div>
-
+    </section>    
+    </body>
 </html>

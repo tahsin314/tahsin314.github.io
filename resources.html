@@ -1,190 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Content-Type-Script" content="text/javascript">
-    <meta name="Content-Type-Style" content="text/css">
-    <meta name="author" content="owwwlab.com">
-    <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/terminal/css/style.css">
-    
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="contents/header_footer.js"></script>
-    <script src="assets/js/vendors/vendors.js"></script>
-    <script src="assets/js/hugo-academic.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <title>Tahsin Mostafiz</title>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
-    </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tahsin Mostafiz - Portfolio</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Theme + UI CSS -->
+  <link rel="stylesheet" href="assets/css/themes.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/terrain.css" />
+  <link rel="stylesheet" href="assets/css/header.css" />
+  <link rel="stylesheet" href="assets/terminal/css/style.css" />
+
+  <!-- Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+
+  <!-- JS Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+  <!-- Project Scripts -->
+  <script src="assets/js/terrain.js"></script>
+  <script src="assets/terminal/JS/views/index.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="contents/header_footer.js"></script>
+
+  <div id="theme-switcher-placeholder" class="mr-4 relative"></div>
 </head>
-<!-- Header Section with Image and Overlay Text -->
-<section class="section section-narrow-2 resources-section" id="header_section">
-  <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-      <img src="assets/img/bg/tanah_lot.jpg" alt="Tanah Lot" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+
+<body class="theme-default" id="dynamic_header">
+
+  <main>
+
+    <!-- HEADER -->
+    <section class="relative overflow-hidden h-[300px]">
+      <img src="assets/img/bg/tanah_lot.jpg" alt="Tanah Lot" class="w-full h-full object-cover block" />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h1 class="text-white text-4xl font-bold font-sans text-center drop-shadow-md" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
           Useful Links and Resources
+        </h1>
       </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Notice Section with Flickering Text -->
-<section class="section section-narrow-2" style="text-align: center; margin-top: 40px;">
-    <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-        <p>
-            <b>A LOT OF THESE RESOURCES EITHER DO NOT EXIST<br>OR ARE NO LONGER RELEVANT. I HOPE TO ADD NEW<br>RESOURCES HERE SOON!</b>
-        </p>
-    </div>
-</section>
-
-<!-- Main Content Section -->
-<section class="section section-narrow-2 resources-section" id="all_resources">
-    <div class="container">
-
-        <!-- Machine Learning Video Tutorials Container -->
-        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin-top: 40px;">
-
-            <h3 style="font-size: 24px; font-weight: bold;">Machine Learning Video Tutorials</h3>
-            <ul style="font-size: 18px; list-style: disc; padding-left: 20px;">
-                <li>Stanford CS229: Machine Learning
-                    <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-
-                <li>CS231n
-                    <a href="https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-
-                <li>NLP with Deep Learning
-                    <a href="https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Introduction to Reinforcement Learning: David Silver
-                    <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>PyTorch Zero To All
-                    <a href="https://www.youtube.com/watch?v=SKq-pmkekTk&list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
+    <section class="py-12">
+        <div class="container mx-auto px-6 max-w-4xl space-y-16 text-center">
+      
+          <!-- ⚠️ Notice Section -->
+          <div>
+            <div class="bg-white/10 p-6 rounded-lg shadow mx-auto" style="background-color: var(--card-bg);">
+              <p class="font-bold text-lg leading-relaxed" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">
+                A LOT OF THESE RESOURCES EITHER DO NOT EXIST<br />
+                OR ARE NO LONGER RELEVANT. I HOPE TO ADD NEW<br />
+                RESOURCES HERE SOON!
+              </p>
+            </div>
+          </div>
+      
+          <!-- 📺 Machine Learning Video Tutorials -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2" style="color: var(--header-logo-text-color);">
+              <i class="fas fa-video text-xl" style="color: var(--secondary-accent-color);"></i>
+              Machine Learning Video Tutorials
+            </h3>
+            <details class="group max-w-4xl mx-auto">
+              <summary class="cursor-pointer text-lg font-semibold p-4 rounded bg-white/10 hover:bg-white/20 transition duration-200 text-center" style="color: var(--nav-link-color);">Show Resources</summary>
+              <div class="project-item isotope-item videos p-6 rounded-lg shadow-lg mt-4 mx-auto" style="background-color: var(--card-bg);">
+                <div class="flex flex-col items-center space-y-2">
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rNyWOpJg_Yh4NSqI4Z4vOYy" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Stanford CS229</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/watch?v=vT1JzLTH4G4&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">CS231n</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/watch?v=OQQ-W_63UgQ&list=PL3FW7Lu3i5Jsnh1rnUwq_TcylNr7EkRe6" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">NLP with Deep Learning</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Reinforcement Learning - David Silver</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/watch?v=SKq-pmkekTk&list=PLlMkM4tgfjnJ3I-dbhO9JTw7gNty6o_2m" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">PyTorch Zero To All</a></h3>
+                </div>
+              </div>
+            </details>
+          </div>
+      
+          <!-- 📖 Machine Learning Blogs and Blogposts -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2" style="color: var(--header-logo-text-color);">
+              <i class="fas fa-blog text-xl" style="color: var(--secondary-accent-color);"></i>
+              Machine Learning Blogs and Blogposts
+            </h3>
+            <details class="group max-w-4xl mx-auto">
+              <summary class="cursor-pointer text-lg font-semibold p-4 rounded bg-white/10 hover:bg-white/20 transition duration-200 text-center" style="color: var(--nav-link-color);">Show Resources</summary>
+              <div class="project-item isotope-item blogs p-6 rounded-lg shadow-lg mx-auto mt-4" style="background-color: var(--card-bg);">
+                <div class="flex flex-col items-center space-y-2">
+                  <h3 class="text-lg font-semibold text-center"><a href="https://vinija.ai/concepts/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Vinija.ai Notes</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://handong1587.github.io/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">ML Resources by Handong</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://github.com/innat/ML-Bookmarks" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">ML Bookmarks by Innat</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="http://karpathy.github.io/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Karpathy Blog</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="http://colah.github.io/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Colah Blog</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://distill.pub/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Distill Research</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://dgschwend.github.io/netscope/quickstart.html" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Netscope Visualizer</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://startupsventurecapital.com/essential-cheat-sheets-for-machine-learning-and-deep-learning-researchers-efb6a8ebd2e5" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">ML Cheat Sheets</a></h3>
+                </div>
+              </div>
+            </details>
+          </div>
+      
+          <!-- 💾 GitHub Repositories and Codes -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2" style="color: var(--header-logo-text-color);">
+              <i class="fab fa-github text-xl" style="color: var(--secondary-accent-color);"></i>
+              GitHub Repositories and Codes
+            </h3>
+            <details class="group max-w-4xl mx-auto">
+              <summary class="cursor-pointer text-lg font-semibold p-4 rounded bg-white/10 hover:bg-white/20 transition duration-200 text-center" style="color: var(--nav-link-color);">Show Resources</summary>
+              <div class="project-item isotope-item github p-6 rounded-lg shadow-lg mx-auto mt-4" style="background-color: var(--card-bg);">
+                <div class="flex flex-col items-center space-y-2">
+                  <h3 class="text-lg font-semibold text-center"><a href="https://github.com/zhaoxin94/awsome-domain-adaptation" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Domain Adaptation</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://github.com/tahsin314/gans-awesome-applications" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">GAN Applications</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">CNN for Text</a></h3>
+                  <h3 class="text-lg font-semibold text-center"><a href="https://github.com/fastai/fastai" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">Fast.ai Library</a></h3>
+                </div>
+              </div>
+            </details>
+          </div>
+      
+          <!-- 🎥 Miscellaneous -->
+          <div>
+            <h3 class="text-2xl font-bold mb-6 flex items-center justify-center gap-2" style="color: var(--header-logo-text-color);">
+              <i class="fas fa-lightbulb text-xl" style="color: var(--secondary-accent-color);"></i>
+              Miscellaneous
+            </h3>
+            <details class="group max-w-4xl mx-auto">
+              <summary class="cursor-pointer text-lg font-semibold p-4 rounded bg-white/10 hover:bg-white/20 transition duration-200 text-center" style="color: var(--nav-link-color);">Show Resources</summary>
+              <div class="project-item isotope-item misc p-6 rounded-lg shadow-lg mx-auto mt-4" style="background-color: var(--card-bg);">
+                <div class="flex flex-col items-center">
+                  <h3 class="text-lg font-semibold text-center"><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank" class="hover:underline" style="color: var(--nav-link-color);">3Blue1Brown</a></h3>
+                </div>
+              </div>
+            </details>
+          </div>
+      
         </div>
+      </section>
+  </main>
 
-        <!-- Machine Learning Blogs and Blogposts Container -->
-        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin-top: 40px;">
-            <h3 style="font-size: 24px; font-weight: bold;">Machine Learning Blogs and Blogposts</h3>
-            <ul style="font-size: 18px; list-style: disc; padding-left: 20px;">
-                <li>An Awesome Collection of ML Notes and Reviews 
-                    <a href="https://vinija.ai/concepts/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                
-                <li>Everything about ML you need!
-                    <a href="https://handong1587.github.io/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>ML Bookmarks compiled by Mohammad Innat
-                    <a href="https://github.com/innat/ML-Bookmarks" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Karpathy Blog
-                    <a href="http://karpathy.github.io/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Colah Blog
-                    <a href="http://colah.github.io/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Distill - Machine Learning Research
-                    <a href="https://distill.pub/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Netscope - Visualize popular network architectures
-                    <a href="https://dgschwend.github.io/netscope/quickstart.html" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Essential Cheat Sheets for ML Engineers
-                    <a href="https://startupsventurecapital.com/essential-cheat-sheets-for-machine-learning-and-deep-learning-researchers-efb6a8ebd2e5" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- GitHub Repositories and Codes Container -->
-        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin-top: 40px;">
-            <h3 style="font-size: 24px; font-weight: bold;">GitHub Repositories and Codes</h3>
-            <ul style="font-size: 18px; list-style: disc; padding-left: 20px;">
-                <li>Domain Adaptation
-                    <a href="https://github.com/zhaoxin94/awsome-domain-adaptation" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Huge Collection of GAN Applications
-                    <a href="https://github.com/tahsin314/gans-awesome-applications" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Implementing a CNN for Text Classification in TensorFlow
-                    <a href="http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-                <li>Fast.ai Library
-                    <a href="https://github.com/fastai/fastai" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px; margin-left:10px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Miscellaneous Container -->
-        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px; margin-top: 40px;">
-            <h3 style="font-size: 24px; font-weight: bold;">Miscellaneous</h3>
-            <ul style="font-size: 18px; list-style: disc; padding-left: 20px;">
-                <li>3Blue1Brown
-                    <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank">
-                        <i class="fa fa-external-link" style="color:red; font-size:20px;" aria-hidden="true"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-
-
-
+</body>
 </html>

@@ -1,163 +1,37 @@
-@import url('../../css/variables.css');
-@import url("https://fonts.googleapis.com/css?family=Space+Mono");
-@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.scanlines::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%), 
+              linear-gradient(90deg, 
+                  rgba(var(--glitch-color-1-rgb, 250, 34, 245), 0.08), 
+                  rgba(var(--glitch-color-2-rgb, 113, 34, 250), 0.04), 
+                  rgba(var(--terminal-text-color-rgb, 8, 247, 254), 0.08) 
+              );
+  z-index: 1; background-size: 100% 3px, 4px 100%; 
+  pointer-events: none; animation: scanlineAnimation 8s linear infinite; 
 }
-
-.terminal {
-  width: 100%;
-  height: 500px;
-  margin: 0 auto;
-  background: transparent; /* Background remains transparent */
+@keyframes scanlineAnimation { 0% { background-position: 0 0; } 100% { background-position: 0 100%; } }
+.terminal-text-glow { text-shadow: 0 0 3px var(--terminal-text-color), 0 0 8px var(--terminal-glow-color), 0 0 12px var(--terminal-glow-color), 0 0 2px var(--glitch-color-1), 0 0 2px var(--glitch-color-2); transition: text-shadow 0.5s; }
+#dynamic-text { position: relative; animation: infinite steps(2, end) alternate-reverse; color: var(--terminal-text-color); transition: color 0.5s; }
+#dynamic-text::before, #dynamic-text::after {
+  content: attr(data-text); position: absolute; top: 0; left: 0;
+  width: 100%; height: 100%; background: transparent; 
+  overflow: hidden; z-index: -1; 
+  color: var(--terminal-text-color); transition: color 0.5s, text-shadow 0.5s;
 }
-
-.terminal::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.05) 0px,
-    rgba(255, 255, 255, 0.05) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  pointer-events: none;
-  opacity: 0.25;
+#dynamic-text::before { left: 2px; text-shadow: -2px 0 var(--glitch-color-1); animation: textGlitchCyber 1.5s infinite linear alternate-reverse; }
+#dynamic-text::after { left: -2px; text-shadow: 2px 0 var(--glitch-color-2), -1px 1px var(--glitch-color-1); animation: textGlitchCyber 1s infinite linear alternate-reverse; }
+@keyframes textGlitchCyber { 
+  0% { clip-path: polygon(0 10%, 100% 10%, 100% 15%, 0 15%); transform: translate(-0.05em, -0.025em); } 10% { clip-path: polygon(0 75%, 100% 75%, 100% 80%, 0 80%); transform: translate(0.03em, 0.01em); } 20% { clip-path: polygon(0 30%, 100% 30%, 100% 38%, 0 38%); transform: translate(-0.04em, 0.005em); } 30% { clip-path: polygon(0 90%, 100% 90%, 100% 93%, 0 93%); transform: translate(0.05em, -0.015em); } 40% { clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%); transform: translate(-0.02em, 0.02em); } 50% { clip-path: polygon(0 5%, 100% 5%, 100% 10%, 0 10%); transform: translate(0.04em, -0.025em); } 60% { clip-path: polygon(0 60%, 100% 60%, 100% 63%, 0 63%); transform: translate(-0.05em, 0.01em); } 70% { clip-path: polygon(0 20%, 100% 20%, 100% 28%, 0 28%); transform: translate(0.02em, -0.01em); } 80% { clip-path: polygon(0 85%, 100% 85%, 100% 88%, 0 88%); transform: translate(-0.03em, 0.015em); } 90% { clip-path: polygon(0 40%, 100% 40%, 100% 43%, 0 43%); transform: translate(0.01em, -0.005em); } 100% { clip-path: polygon(0 0%, 100% 0%, 100% 7%, 0 7%); transform: translate(-0.04em, 0.02em); }
 }
-
-.terminal h1 {
-  color: var(--color-primary);
-  padding: 0 0.75em;
-  background-color: rgba(var(--color-secondary), 0.8); /* Dark green with opacity */
-  border: 3px solid rgba(var(--color-secondary), 0.8);
-  margin-bottom: 1em;
-  text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
+@keyframes glitchSkewCyber { 
+0% { transform: skewX(0deg) skewY(0deg); } 20% { transform: skewX(-0.5deg) skewY(0.2deg); } 40% { transform: skewX(0.5deg) skewY(-0.2deg); } 60% { transform: skewX(-0.2deg) skewY(0.5deg); } 80% { transform: skewX(0.2deg) skewY(-0.5deg); } 100% { transform: skewX(0deg) skewY(0deg); }
 }
-
-.terminal h1.main__title {
-  color: var(--color-primary);
-  padding: 0 0.75em;
-  background-color: rgba(var(--color-secondary), 0.8);
-  border: 3px solid rgba(var(--color-secondary), 0.8);
-  margin-bottom: 1em;
-  text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
-}
-
+.cursor-blink::after { content: '█'; animation: blink 0.6s step-end infinite; margin-left: 3px; color: var(--terminal-text-color); text-shadow: 0 0 5px var(--terminal-glow-color); transition: color 0.5s, text-shadow 0.5s; }
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 .terminal .main__container {
-  position: relative;
-  padding: 1.9em 2.4em;
-  max-width: 900px;
-  min-height: 10vh;
-  height: 520px;
-  overflow: hidden;
-  font-size: 1rem;
-  line-height: 1.9;
-  margin: 0 0.5em;
-  color: var(--color-primary);
-  background-color: transparent;
-  background-image: linear-gradient(transparent 50%, rgba(var(--color-secondary-rgb), 0.1) 50%), radial-gradient(transparent 65%, rgba(var(--color-secondary-rgb), 0.6) 100%);
-  text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
-}
-
-.terminal .main__container::after {
-  content: " ";
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0.5;
-  transform: translate3D(0, 0, 0);
-  width: 100%;
-  height: 150px;
-  mix-blend-mode: screen;
-  background-color: transparent;
-  background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.5) 50%), linear-gradient(to top, #050f05, rgba(0, 0, 0, 0) 110%);
-  background-size: 15px 15px, 100%;
-  animation: scan 2.5s linear infinite, blink 0.6s infinite;
-}
-
-.scanlines {
-  position: relative;
-  overflow: hidden;
-  color: var(--color-primary);
-}
-
-.scanlines::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0) 2px,
-    rgba(0, 0, 0, 0.5) 2px,
-    rgba(0, 0, 0, 0.5) 3px
-  );
-  pointer-events: none;
-  opacity: 0.75;
-}
-
-@keyframes blink {
-  0% { opacity: 0.7; }
-  15% { opacity: 0.4; }
-  20% { opacity: 0.7; }
-  23% { opacity: 0.3; }
-  27% { opacity: 0.7; }
-  50% { opacity: 0.8; }
-  60% { opacity: 0.5; }
-  61% { opacity: 0.8; }
-  62% { opacity: 0.6; }
-  67% { opacity: 0.7; }
-  69% { opacity: 0.4; }
-  77% { opacity: 0.7; }
-  80% { opacity: 0.3; }
-  100% { opacity: 0.7; }
-}
-
-@keyframes scan {
-  0% { transform: translate3D(0, -100px, 0); }
-  100% { transform: translate3D(0, 600px, 0); }
-}
-
-@keyframes flicker {
-  0% { transform: translateY(1px); }
-  50% { transform: translateY(0px); }
-  100% { transform: translateY(1px); }
-}
-
-#dynamic-text {
-  width: 100%;
-  height: 600px;
-  overflow-y: hidden;
-  text-align: left;
-  white-space: normal;  
-  padding: 20px;
-  font-family: 'VT323', monospace;
-  color: var(--color-light);
-  font-size: 28px;
-  line-height: 1.25;
-  text-shadow: 0 0 10px var(--color-accent), 0 0 20px var(--color-primary), 0 0 30px var(--color-primary);
-  animation: blink-animation 5s infinite, flicker 2s infinite;
-}
-
-.cursor {
-  font-weight: bold;
-  color: var(--color-primary);
-  animation: blink-animation 0.7s steps(1) infinite;
-}
-
-@keyframes blink-animation {
-  80% { opacity: 0.6; }
+  background-color: var(--terminal-bg); border: 1px solid var(--terminal-border-color);
+  transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
+  box-shadow: 0 0 10px 0px var(--terminal-border-color), inset 0 0 8px 0px color-mix(in srgb, var(--terminal-border-color) 50%, transparent); 
+  position: relative; overflow: hidden; 
 }

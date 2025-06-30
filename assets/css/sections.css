@@ -1,0 +1,18 @@
+.section {
+    background-color: #281b2d;
+    position: relative;
+    z-index: 2;
+    padding: 60px 0;
+}
+
+@media (max-width: 992px) {
+    .section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 0;
+    }
+}

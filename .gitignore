@@ -1,0 +1,35 @@
+# Jekyll-specific
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+
+# Dependency management
+Gemfile.lock
+
+# macOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+
+# IDE-specific
+.idea/
+*.iml
+.vscode/
+
+# Build artifacts
+/dist/
+/build/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Temporary files
+*~
+*.bak
+*.swp
+
+# node.js
+node_modules/

@@ -4,177 +4,148 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Content-Type-Script" content="text/javascript">
-    <meta name="Content-Type-Style" content="text/css">
-    <meta name="author" content="owwwlab.com">
-    <link href="assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/terminal/css/style.css" /> 
+    <title>Tahsin Mostafiz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- User's CSS Paths -->
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Corrected from styles.css to style.css -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/terminal/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/terrain.css">
+    <link rel="stylesheet" href="assets/css/header.css"> <!-- Added user's header.css -->
+    <!-- External Libraries CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&family=Noto+Serif+Bengali:wght@400;700&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/js/filter.js"></script>
-    <script src="assets/terminal/JS/views/index.js" defer></script>
-    <script src="contents/header_footer.js"></script>
-    <script src="assets/js/vendors/vendors.js"></script>
-    <script src="assets/js/hugo-academic.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <title>Tahsin Mostafiz</title>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
-    </script>
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
-    <!-- Header Section with Image and Overlay Text -->
-    <section class="section section-narrow-2" id="header_section">
-        <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-            <img src="https://lh3.googleusercontent.com/pw/AP1GczOo_2S69pzGlRLEt2aGb_87ZYTOtTyxvohdl85_YYGYRK2obQJRHujNJpJrrWEr23E_yOY_dZM4_Zi9W48oBrnU9-WMjbk8PUDSW0JrQiH0Su8JzmjT=w2400" alt="Albany Covered Bridge, NH" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
-                Welcome to Tahsin's World!
+    <!-- User's Footer HTML (Static) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- User's JS Paths -->
+    <script src="assets/js/terrain.js"></script>
+    <script src="assets/terminal/JS/views/index.js"></script> 
+    <script src="assets/js/main.js"></script>
+    <script src="contents/header_footer.js"></script>
+    <div id="theme-switcher-placeholder" class="mr-4 relative">
+        <!-- Theme dropdown button will be injected here by JS -->
+    </div>
+    
+</head>
+<body class="theme-default" id="dynamic_header">
+  <section class="section section-narrow-2" id="header_section">
+    <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOo_2S69pzGlRLEt2aGb_87ZYTOtTyxvohdl85_YYGYRK2obQJRHujNJpJrrWEr23E_yOY_dZM4_Zi9W48oBrnU9-WMjbk8PUDSW0JrQiH0Su8JzmjT=w2400" alt="Albany Covered Bridge, NH" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+            Welcome to Tahsin's World!
+        </div>
+    </div>
+  </section>
+    <section id="projects_all" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center with-sideline inline-block mx-auto" style="color: var(--nav-link-color);">Selected Writings</h2>
+            <div class="project-toolbar mb-8 text-center">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button data-filter="*" class="active" style="color: var(--nav-link-color); transition: color 0.5s;">All</button>
+                    <button data-filter=".technical" style="color: var(--nav-link-color); transition: color 0.5s;">Maths and AI</button>
+                    <button data-filter=".memories" style="color: var(--nav-link-color); transition: color 0.5s;">Memories</button>
+                    <button data-filter=".fiction" style="color: var(--nav-link-color); transition: color 0.5s;">Fiction</button>
+                    <button data-filter=".others" style="color: var(--nav-link-color); transition: color 0.5s;">Others</button>
+                </div>
+            </div>
+            <div id="container-projects" class="space-y-6">
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/miser.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">কিপটা মিয়া</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/diary.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">ডায়রীর পাতা থেকে</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/winter_1.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">হারানো শীতের গল্প</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/campus_1.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">ক্যাম্পাস</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/beggar.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">ভিক্ষুক</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item memories p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/night.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">নিশুতি রাতের যাত্রা</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item technical p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/accident.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">এখনো বেঁচে আছি</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item technical p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/memories/grand_canyon.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">ক্যানিয়ন দর্শন</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item fiction p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/fictions/the_star.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">দ্য স্টার - আর্থার সি. ক্লার্ক</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item fiction p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/fictions/what_you_pawn_i_will_redeem.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">হোয়াট ইউ পন, আই উইল রিডীম – শেরম্যান অ্যালেক্সি</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item isotope-item technical p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-file-alt text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1"><a href="https://tahsin314.github.io/writings/maths/buffons_needle.html" target="_blank" rel="noopener noreferrer" class="hover:underline" style="color: var(--nav-link-color); font-family: 'Noto Sans Bengali', sans-serif;">Buffon's Needle</a></h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </section>
-
-      <section class="section projects-section" id="projects_all">
-        <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-md-9">      -->
-                            <div class="project-toolbar">
-                                <!-- <div id="filters"> -->
-                                    <div class="btn-toolbar">
-                                        <div class="btn-group">
-                                            <button data-filter="*" class="btn btn-small btn-info"> All</button>
-                                            <button data-filter=".technical" class="btn btn-small btn-info"> Maths and AI</button>
-                                            <button data-filter=".memories" class="btn btn-small btn-info"> Memories</button>
-                                            <button data-filter=".fiction" class="btn btn-small btn-info"> Fiction</button>
-                                            <button data-filter=".others" class="btn btn-small btn-info"> Others</button>
-                                        </div>
-                                    </div>
-                                <!-- </div> -->
-                            </div>
-                        </div>
-                        <br> <br> <br> <br>
-
-                        <div id="container-projects" class="isotope">
-                            <ul class="fa-ul" style="position: relative; font-size: 16px;"> <!-- Increase font size here -->
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/miser.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">কিপটা মিয়া</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-                                
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/diary.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">ডায়রীর পাতা থেকে</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-            
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/winter_1.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">হারানো শীতের গল্প</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-            
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/campus_1.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">ক্যাম্পাস</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-            
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/beggar.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">ভিক্ষুক</a></b>
-                                    </div>
-                                    </span>
-                                </li>
-            
-                                <li class="project-item isotope-item memories" data-category="memories">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/night.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">নিশুতি রাতের যাত্রা</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                                <li class="project-item isotope-item memories" data-category="technical">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/accident.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">এখনো বেঁচে আছি</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                                <li class="project-item isotope-item memories" data-category="technical">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/memories/grand_canyon.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">ক্যানিয়ন দর্শন</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                                <li class="project-item isotope-item fiction" data-category="fiction">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/fictions/the_star.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">দ্য স্টার - আর্থার সি. ক্লার্ক</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                                <li class="project-item isotope-item fiction" data-category="fiction">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/fictions/what_you_pawn_i_will_redeem.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">হোয়াট ইউ পন, আই উইল রিডীম – শেরম্যান অ্যালেক্সি</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                                <li class="project-item isotope-item technical" data-category="technical">
-                                    <span class="project-title">
-                                        <i class="fa-li fa fa-files-o pub-icon" aria-hidden="true"></i>
-                                        <div class="project-details" style="background-color: rgba(255, 255, 255, 0.1); padding: 15px; border-radius: 8px;">
-                                        <b><a href="https://tahsin314.github.io/writings/maths/buffons_needle.html" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none; font-family: 'Noto Sans Bengali', sans-serif; font-size: 21px;">Buffon's Needle</a></b>
-                                        </div>
-                                    </span>
-                                </li>
-
-                            </ul>
-                        </div>            
-                    </div>
     </section>
-    
-
-
-<div class="clearfix"></div>
-
+    </body>
 </html>

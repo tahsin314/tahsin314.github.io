@@ -4,56 +4,53 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Content-Type-Script" content="text/javascript">
-    <meta name="Content-Type-Style" content="text/css">
-    <meta name="author" content="owwwlab.com">
-    <link href="../../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/layout.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../assets/css/variables.css">
-    <link rel="stylesheet" href="../../assets/terminal/css/style.css" />
-    
+    <title>Tahsin Mostafiz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- User's CSS Paths -->
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Corrected from styles.css to style.css -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/terminal/css/style.css"> 
+    <link rel="stylesheet" href="assets/css/terrain.css">
+    <link rel="stylesheet" href="assets/css/header.css"> <!-- Added user's header.css -->
+    <!-- External Libraries CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&family=Noto+Serif+Bengali:wght@400;700&display=swap');
-    </style>
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="../../assets/js/vendors/jquery.min.js"></script>
-    <script src="../../contents/header_footer.js"></script>
-    <script src="../../assets/js/vendors/vendors.js"></script>
-    <script src="../../assets/js/hugo-academic.js"></script>
-    <script src="../../assets/js/custom.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- User's Footer HTML (Static) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- User's JS Paths -->
+    <script src="assets/js/terrain.js"></script>
+    <script src="assets/terminal/JS/views/index.js"></script> 
+    <script src="assets/js/main.js"></script>
+    <script src="contents/header_footer.js"></script>
+    <div id="theme-switcher-placeholder" class="mr-4 relative">
+        <!-- Theme dropdown button will be injected here by JS -->
+    </div>
     
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <title>Tahsin Mostafiz</title>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
-    </script>
 </head>
+<body class="theme-default" id="dynamic_header">
+    <section class="section section-narrow-2 resources-section" id="header_section">
+        <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
+            <img src="https://onubadokderadda.com/wp-content/uploads/2016/06/dd8db558e245dd5099f6470adde40abd.jpg" alt="Onubadoker Adda" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+              হোয়াট ইউ পন, আই উইল রিডীম – শেরম্যান অ্যালেক্সি
+            </div>
+        </div>
+      </section>
 
-<body>
-<section class="section section-narrow-2 resources-section" id="header_section">
-  <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-      <img src="https://onubadokderadda.com/wp-content/uploads/2016/06/dd8db558e245dd5099f6470adde40abd.jpg" alt="Onubadoker Adda" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
-        হোয়াট ইউ পন, আই উইল রিডীম – শেরম্যান অ্যালেক্সি
-      </div>
-  </div>
-</section>
-
-<section class="section section-narrow-2">
-    <div class="container">
-        <p style="margin:80px; padding:0; line-height:200%; font-family: 'Noto Sans Bengali', sans-serif;">
-            <font color="white" size="4px">
-    
-    <p class="bengali-text" style="font-size: 24px;">&nbsp;<strong>দুপুর – ১২টা</strong></p>
+    <section class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <div class="p-6 rounded-lg shadow-lg mx-auto max-w-11xl" style="background-color: var(--card-bg);">
+                <div class="flex items-start gap-4">
+                    <div class="flex-grow">
+                        <div class="text-sm space-y-4" style="color: var(--nav-link-color); opacity:0.8; line-height: 1.8; font-family: 'Noto Sans Bengali', sans-serif;">
+                            <p class="bengali-text" style="font-size: 24px;">&nbsp;<strong>দুপুর – ১২টা</strong></p>
     <p class="bengali-text">জীবনে কখনো এমন সময় আসে যখন আপনার মাথার উপর ছাদ থাকবে। আবার কখনো সেই ছাদ সরে যাবে। ঠিক কী&nbsp;কারণে আমি ঘরছাড়া হলাম তা বলবো না কারণ এটা একটা গোপন ব্যাপার আমার কাছে আর ইন্ডিয়ানদেরকে (এখানে ইন্ডিয়ান মানে উত্তর আমেরিকার আদিবাসী, ভারতীয় নয়)&nbsp;পাগলা সাদা চামড়াগুলোর কাছ থেকে নিজেদের&nbsp; গোপনীয়তা লুকিয়ে রাখতে যথেষ্টই ঝামেলা পোহাতে হয়।</p>
     <p class="bengali-text">আমি স্পোকেইন (Spokane) ইন্ডিয়ান, স্যালিশ ভাষার লোক। আমার পূর্বপুরুষ এখানে, এই ওয়াশিংটনের স্পোকেইনের ১০০ মাইল ব্যাসার্ধের মধ্যে বাস করে করে আসছে ১০ হাজার বছর ধরে। আমি স্পোকেইনেই বড় হয়েছি। পরে কলেজে পড়তে সিয়াটলে গেছি প্রায় তেইশ বছর আগে। দুই সেমিস্টার পরই কলেজ ছেড়েছি। তারপর থেকে ভাল-খারাপ মিলিয়ে অনেক রকমের কাজ করেছি, বিয়ে করেছি বার দুই-তিনেক, দু-তিনটে বাচ্চা হয়েছে। আর তারপর-ই মাথাটা খারাপ হয়ে গেলো।</p>
     <p class="bengali-text">সত্যি বলতে কি, মাথা খারাপ বলতে যা বোঝায়, আমার সমস্যাটা তেমন কিছু না। ভাবতে পারেন, আমি বুঝি সিরিয়াল কিলার টাইপ কিছু। কিন্তু বিশ্বাস করুন, আমি ওরকম কিছুই না। আমি জীবনে কাউকে ব্যথা দেইনি-অন্তত শারীরিক ভাবে তো নয়। কারো কারো হৃদয়ে ব্যথা দিয়েছি অবশ্য, তা কে না দেয়! এ ক্ষেত্রে আমার বিশেষত্ব বলতে কিছু নেই। কারো হৃদয়ে আমি হুট করে আঘাত দেইনি। ধীরে-সুস্থে সময় নিয়েছি। এবং হুট-হাট&nbsp; বাসা ছেড়ে পালাইনি আমি। যখন পালিয়েছি , আর ফিরে যাইনি।</p>
@@ -455,8 +452,11 @@
         </p>
 
     </div>
-</section>
-
-<div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

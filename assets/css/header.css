@@ -1,0 +1,63 @@
+/* :root or your theme-specific root selector */
+:root {
+    /* ... your existing variables ... */
+    --header-bg: #your_header_background_color; /* e.g., #1f2937 (gray-800) for dark theme */
+    --footer-bg: var(--header-bg); /* To match header */
+    --body-text-color: #your_body_text_color; /* e.g., #e5e7eb (gray-200) for dark theme text */
+    --footer-text-color: var(--body-text-color);
+    --primary-accent-color: #your_accent_color; /* e.g., #34d399 (emerald-400) */
+    --link-text-color: var(--primary-accent-color);
+    --header-logo-span-color: var(--primary-accent-color);
+    --profile-image-border-color: var(--primary-accent-color);
+    --hamburger-color: var(--body-text-color);
+    --mobile-menu-divider-color: #your_divider_color; /* e.g., #374151 (gray-700) for dark theme */
+}
+
+/* Styling for navigation links (if not already sufficiently styled by Tailwind theme) */
+.nav-link {
+    color: var(--body-text-color); /* Or a specific nav link color */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--primary-accent-color); /* Or a brighter text color for hover */
+    /* background-color: rgba(255, 255, 255, 0.1); /* Optional: subtle hover background */
+}
+/* Mobile nav link specific styling */
+#primary-menu-mobile .nav-link {
+    /* Add any specific padding or display properties if needed */
+    /* text-align: center; /* If you prefer centered mobile links */
+}
+#primary-menu-mobile .nav-link:hover {
+    background-color: var(--primary-accent-color);
+    color: var(--header-bg); /* Text color on hover for mobile links */
+}
+
+
+/* Styling for footer social icons */
+.footer-icon-link i {
+    color: var(--footer-text-color, var(--body-text-color));
+    opacity: 0.8;
+    transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+.footer-icon-link:hover i {
+    color: var(--primary-accent-color);
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+/* ClustrMaps responsive adjustments */
+/* The script itself controls the map's appearance; these are for the container/fallback */
+#clustrmaps-container img {
+    margin: 20px auto 0; /* Centers the image if it's a block */
+    max-width: 100%;    /* Ensures responsiveness */
+    width: auto;        /* Maintain aspect ratio, up to max-height */
+    max-height: 200px;  /* Control max height, adjust as needed */
+    height: auto;       /* Maintain aspect ratio */
+    display: block;
+    border-radius: 8px; /* Softer edges for the map image */
+    /* box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Optional: subtle shadow */
+}
+/* Ensure script-generated map is also centered if possible */
+#clustrmaps-container #clustrmaps {
+    margin: 0 auto !important; /* Try to center the script-generated map */
+}

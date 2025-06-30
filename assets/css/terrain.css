@@ -1,0 +1,80 @@
+#canvasContainer { width: 100%; height: 100%; }
+        #canvasContainer canvas { display: block; width: 100% !important; height: 100% !important; }
+
+        /* Dropdown Menu Styles */
+        .theme-dropdown-button {
+            /* background: transparent; */
+            background-color: var(--dropdown-bg);
+            color: var(--nav-link-color);
+            border: none;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        
+        .theme-dropdown-button:hover {
+            color: var(--nav-link-hover-color);
+            text-decoration: underline;
+        }
+        
+        .theme-dropdown-button .arrow-down {
+            margin-left: 0.5rem;
+            border: solid var(--nav-link-color);
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: rotate(45deg);
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .theme-dropdown-button:hover .arrow-down {
+            border-color: var(--nav-link-hover-color);
+        }
+        
+        .theme-dropdown-button.open .arrow-down {
+            transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+        }
+
+        .theme-dropdown-menu {
+            position: absolute;
+            top: calc(100% + 0.5rem); 
+            right: 0; 
+            background-color: var(--dropdown-bg);
+            border: 1px solid var(--dropdown-border-color);
+            border-radius: 0.375rem; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 60; 
+            min-width: 180px; 
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+        }
+        .theme-dropdown-menu.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .theme-dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1rem; 
+            font-size: 0.875rem; 
+            color: var(--dropdown-text-color);
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .theme-dropdown-menu a:hover {
+            background-color: var(--dropdown-item-hover-bg);
+            color: var(--dropdown-item-hover-text-color);
+            text-decoration: none;
+        }
+        .theme-dropdown-menu a.current-theme-item {
+            background-color: var(--dropdown-item-hover-bg);
+            color: var(--dropdown-item-hover-text-color);
+            font-weight: 600;
+        }

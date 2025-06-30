@@ -4,123 +4,151 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Content-Type-Script" content="text/javascript">
-    <meta name="Content-Type-Style" content="text/css">
-    <meta name="author" content="owwwlab.com">
-    <link href="../../assets/css/vendors/vendors.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="../../assets/css/layout.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../assets/css/variables.css">
-    <link rel="stylesheet" href="../../assets/terminal/css/style.css" />
-    
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
-    <script src="../../assets/js/vendors/jquery.min.js"></script>
-    <script src="../../contents/header_footer.js"></script>
-    <script src="../../assets/js/vendors/vendors.js"></script>
-    <script src="../../assets/js/hugo-academic.js"></script>
-    <script src="../../assets/js/custom.js"></script>
-    
+    <title>Tahsin Mostafiz - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- User's CSS Paths -->
+    <link rel="stylesheet" href="../../assets/css/themes.css">
+    <link rel="stylesheet" href="../../assets/css/styles.css"> <!-- Corrected from styles.css to style.css -->
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="../../assets/css/components.css">
+    <link rel="stylesheet" href="../../assets/terminal/css/style.css"> 
+    <link rel="stylesheet" href="../../assets/css/terrain.css">
+    <link rel="stylesheet" href="../../assets/css/header.css"> <!-- Added user's header.css -->
+    <!-- External Libraries CSS -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Sintony:400,700&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,200,300,400italic,500,700,900&amp;subset=latin,greek,cyrillic" rel="stylesheet" type="text/css">
-    <title>Tahsin Mostafiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- User's Footer HTML (Static) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <!-- User's JS Paths -->
+    <script src="../../assets/js/terrain.js"></script>
+    <script src="../../assets/terminal/JS/views/index.js"></script> 
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../contents/header_footer.js"></script>
+    <div id="theme-switcher-placeholder" class="mr-4 relative">
+        <!-- Theme dropdown button will be injected here by JS -->
+    </div>
     
-    <script>
-        document.addEventListener("DOMContentLoaded", loadHeaderAndFooter);
-    </script>
 </head>
+<body class="theme-default" id="dynamic_header">
+    <section class="section section-narrow-2 resources-section" id="header_section">
+        <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
+            <img src="../../assets/img/bg/13.jpg" alt="Random Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+              Buffon's Needle: A really weird way to find Pi
+            </div>
+        </div>
+      </section>
 
-<body>
-<section class="section section-narrow-2 resources-section" id="header_section">
-  <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-      <img src="../../assets/img/bg/13.jpg" alt="Random Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
-        Buffon's Needle: A really weird way to find Pi
-      </div>
-  </div>
-</section>
+    <section class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <div class="p-6 rounded-lg shadow-lg mx-auto max-w-11xl" style="background-color: var(--card-bg);">
+                <div class="flex items-start gap-4">
+                    <div class="flex-grow">
+                        <div class="text-sm space-y-4" style="color: var(--nav-link-color); opacity:0.8; line-height: 1.8; font-family: 'Noto Sans Bengali', sans-serif;">
+                            <div class="container">
 
-<section class="section section-narrow-2 resources-section" id="all_resources">
-  <div class="container">
+                                <p>Pi (⁡π) refers to the ratio of Circumference to diameter of any circle. It's a constant value (unless you are trying to measure ⁡π from inside the Event horizon of a Blackhole!). It's also a transcendental number which means it can't be expressed as a root of an equation with integer coefficients. Anyways, we've been able to find the value of ⁡π over 9 trillion digits after the decimal point!</p>
+                            
+                                <center><img src="buffons_needle\data\circle.jpg" width="50%"></center><br>
+                            
+                                <p>The history of our attempt to find ⁡π goes back to Archimedes' time. He tried to calculate ⁡π using a 4096 side polygon! Without any calculator, he was able to find that the value of π should lie between 3.1429 and 3.1408.</p>
+                            
+                                <p>Discovery of Calculus in the 17th century opened a new window for estimating ⁡π more precisely. Since then, we've seen plenty of methods to do it. Some of them are pretty weird but simple enough to understand. <code>Buffon's Needle Problem</code> is one of them. This problem was first posed by the French Naturalist <a href="https://en.wikipedia.org/wiki/Georges-Louis_Leclerc,_Comte_de_Buffon">Georges-Louis Leclerc, Comte de Buffon</a> in 1733. It goes like this:</p>
+                            
+                                <center>
+                                    <blockquote>
+                                        Suppose you are given a floor with equally spaced parallel lines on it. If we drop a needle on the floor, what is the probability that the needle will lie across a line?
+                                    </blockquote>
+                                </center>
+                            
+                                <p>Let's say you've thrown <code>n</code> needles (or a single needle for <code>n</code> times or whatever). <code>m</code> number of needles cross/intersect with a line (or <code>m</code> times if you have one needle 😛). The probability <em>P</em> that a needle crosses the line:</p>
+                            
+                                <center>\[ P = \frac{m}{n} \]</center>
+                            
+                                <center><img src="buffons_needle/data/Buffonneedle.jpg" width="50%"></center><br>
+                            
+                                <center><em>Buffon's Needle Problem. The green needles are the ones crossing the parallel lines</em></center>
+                            
+                                <p>It may seem a bit odd how ⁡π is related to this problem. Hang on tight. I'll explain.</p>
+                            
+                                <p>To solve this problem, we'll require some basic knowledge of <code>Probability</code> and <code>Integral Calculus</code>. Let's assume that the spacing between two consecutive parallel lines is <em>D</em>, the length of the needle is <em>L</em>. Now, let the distance from the middle point of a needle on the floor to its closest line be <em>x</em> and the acute angle between the line and needle be <em>θ</em> (See figure above). All needles are of equal length.</p>
+                            
+                                <center><img src="buffons_needle/data/buffon_explained.png" width="50%"></center>
+                            
+                                <p>Since we are considering <em>x</em> to be the smallest distance from the center of the needle to any one of the lines, it can vary only within <em>0</em> and <em>D/2</em>. And since <em>θ</em> is an acute angle, it can take any value between <em>0</em> and <em>π/2</em>. Using trigonometry, we can find out that the vertical component of length <em>L</em> is \( \frac{L}{2} \sin(\theta) \). The needle will cross the line if <em>x</em> is less than \( \frac{L}{2} \sin(\theta) \).</p>
+                            
+                                <center>\[ x < \frac{L}{2} \sin(\theta) \]</center>
+                                <center>\[ 0 < \theta < \frac{\pi}{2} \]</center>
+                            
+                                <p>Okay. Now let's visualize possible outcomes in a graph. Let the horizontal axis be <em>θ</em> and the vertical axis be <em>x</em>. So a rectangle with sides \( \frac{\pi}{2} \) and \( \frac{D}{2} \) represents all possible outcomes in this experiment.</p>
+                            
+                                <center><img src="buffons_needle/data/1.jpg" width="50%"></center>
+                            
+                                <center><em>Horizontal axis refers to θ and vertical axis refers to x. The rectangle represents all possible outcomes</em></center>
+                            
+                                <p>Now I am going to shade all those points in the rectangle that represent the events where a needle crosses a line according to the two conditions above. Think about it. It's just the area under the curve \( \frac{D}{2} \sin(\theta) \) where \( 0 \leq \theta \leq \pi \).</p>
+                            
+                                <center><img src="buffons_needle/data/2.jpg" width="50%"></center>
+                            
+                                <center><em>The shaded area indicates the probability that a needle will cross a line</em></center>
+                            
+                                <p>The probability we are looking for would be the ratio of the area under the <code>sine</code> curve and the rectangle.</p>
+                            
+                                <p>Area of the rectangle: \[ \frac{\pi D}{4} \]</p>
+                            
+                                <p>Area under the <code>sine</code> curve: \[ \int_0^{\pi/2} \frac{L}{2} \sin(\theta) \, d\theta = \frac{L}{2} \]</p>
+                            
+                                <p>Ratio of the areas: \[ \frac{\frac{L}{2}}{\frac{\pi D}{4}} = \frac{2L}{\pi D} \]</p>
+                            
+                                <p>Rearranging, we get \[ \pi = \frac{2L}{P D} \]</p>
+                            
+                                <p>In 1901, Italian mathematician Mario Lazzarini performed Buffon's needle experiment and, tossing a needle 3408 times, obtained <em>π</em> up to six decimal points correctly!</p>
+                            
+                                <p>I myself created a simulation to do this experiment. You can see it below. It's throwing 'imaginary' needles on an 'imaginary' floor with parallel lines and calculates <em>π</em> based on the formula derived above. You can press <b>RIGHT ARROW</b> to speed in up. Enjoy experimenting!</p>
+                            
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <p>Pi (⁡π) refers to the ratio of Circumference to diameter of any circle. It's a constant value (unless you are trying to measure ⁡π from inside the Event horizon of a Blackhole!). It's also a transcendental number which means it can't be expressed as a root of an equation with integer coefficients. Anyways, we've been able to find the value of ⁡π over 9 trillion digits after the decimal point!</p>
-
-    <center><img src="buffons_needle\data\circle.jpg" width="50%"></center><br>
-
-    <p>The history of our attempt to find ⁡π goes back to Archimedes' time. He tried to calculate ⁡π using a 4096 side polygon! Without any calculator, he was able to find that the value of π should lie between 3.1429 and 3.1408.</p>
-
-    <p>Discovery of Calculus in the 17th century opened a new window for estimating ⁡π more precisely. Since then, we've seen plenty of methods to do it. Some of them are pretty weird but simple enough to understand. <code>Buffon's Needle Problem</code> is one of them. This problem was first posed by the French Naturalist <a href="https://en.wikipedia.org/wiki/Georges-Louis_Leclerc,_Comte_de_Buffon">Georges-Louis Leclerc, Comte de Buffon</a> in 1733. It goes like this:</p>
-
-    <center>
-        <blockquote>
-            Suppose you are given a floor with equally spaced parallel lines on it. If we drop a needle on the floor, what is the probability that the needle will lie across a line?
-        </blockquote>
-    </center>
-
-    <p>Let's say you've thrown <code>n</code> needles (or a single needle for <code>n</code> times or whatever). <code>m</code> number of needles cross/intersect with a line (or <code>m</code> times if you have one needle 😛). The probability <em>P</em> that a needle crosses the line:</p>
-
-    <center>\[ P = \frac{m}{n} \]</center>
-
-    <center><img src="buffons_needle/data/Buffonneedle.jpg" width="50%"></center><br>
-
-    <center><em>Buffon's Needle Problem. The green needles are the ones crossing the parallel lines</em></center>
-
-    <p>It may seem a bit odd how ⁡π is related to this problem. Hang on tight. I'll explain.</p>
-
-    <p>To solve this problem, we'll require some basic knowledge of <code>Probability</code> and <code>Integral Calculus</code>. Let's assume that the spacing between two consecutive parallel lines is <em>D</em>, the length of the needle is <em>L</em>. Now, let the distance from the middle point of a needle on the floor to its closest line be <em>x</em> and the acute angle between the line and needle be <em>θ</em> (See figure above). All needles are of equal length.</p>
-
-    <center><img src="buffons_needle/data/buffon_explained.png" width="50%"></center>
-
-    <p>Since we are considering <em>x</em> to be the smallest distance from the center of the needle to any one of the lines, it can vary only within <em>0</em> and <em>D/2</em>. And since <em>θ</em> is an acute angle, it can take any value between <em>0</em> and <em>π/2</em>. Using trigonometry, we can find out that the vertical component of length <em>L</em> is \( \frac{L}{2} \sin(\theta) \). The needle will cross the line if <em>x</em> is less than \( \frac{L}{2} \sin(\theta) \).</p>
-
-    <center>\[ x < \frac{L}{2} \sin(\theta) \]</center>
-    <center>\[ 0 < \theta < \frac{\pi}{2} \]</center>
-
-    <p>Okay. Now let's visualize possible outcomes in a graph. Let the horizontal axis be <em>θ</em> and the vertical axis be <em>x</em>. So a rectangle with sides \( \frac{\pi}{2} \) and \( \frac{D}{2} \) represents all possible outcomes in this experiment.</p>
-
-    <center><img src="buffons_needle/data/1.jpg" width="50%"></center>
-
-    <center><em>Horizontal axis refers to θ and vertical axis refers to x. The rectangle represents all possible outcomes</em></center>
-
-    <p>Now I am going to shade all those points in the rectangle that represent the events where a needle crosses a line according to the two conditions above. Think about it. It's just the area under the curve \( \frac{D}{2} \sin(\theta) \) where \( 0 \leq \theta \leq \pi \).</p>
-
-    <center><img src="buffons_needle/data/2.jpg" width="50%"></center>
-
-    <center><em>The shaded area indicates the probability that a needle will cross a line</em></center>
-
-    <p>The probability we are looking for would be the ratio of the area under the <code>sine</code> curve and the rectangle.</p>
-
-    <p>Area of the rectangle: \[ \frac{\pi D}{4} \]</p>
-
-    <p>Area under the <code>sine</code> curve: \[ \int_0^{\pi/2} \frac{L}{2} \sin(\theta) \, d\theta = \frac{L}{2} \]</p>
-
-    <p>Ratio of the areas: \[ \frac{\frac{L}{2}}{\frac{\pi D}{4}} = \frac{2L}{\pi D} \]</p>
-
-    <p>Rearranging, we get \[ \pi = \frac{2L}{P D} \]</p>
-
-    <p>In 1901, Italian mathematician Mario Lazzarini performed Buffon's needle experiment and, tossing a needle 3408 times, obtained <em>π</em> up to six decimal points correctly!</p>
-
-    <p>I myself created a simulation to do this experiment. You can see it below. It's throwing 'imaginary' needles on an 'imaginary' floor with parallel lines and calculates <em>π</em> based on the formula derived above. You can press <b>RIGHT ARROW</b> to speed in up. Enjoy experimenting!</p>
-
-  </div>
-</section>
-
-<!-- Centered sketch area for Buffon's Needle -->
-<section class="section section-narrow-2 resources-section" id="all_resources">
-  <div class="container">
+    <section class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6">
+            <div class="p-6 rounded-lg shadow-lg mx-auto max-w-11xl" style="background-color: var(--card-bg);">
+                <div class="flex items-start gap-4">
+                    <div class="flex-grow">
+                        <div class="text-sm space-y-4" style="color: var(--nav-link-color); opacity:0.8; line-height: 1.8; font-family: 'Noto Sans Bengali', sans-serif;">
+                            <div class="container">
     <div id="sketch-holder" style="display: flex; justify-content: center; margin: 20px 0;">
       <div id="sketch-canvas"></div>
       </div>
+      </div>
     </div>
+    </div>
+            </div>
+            </div>
 </section>
 
 <div class="clearfix"></div>
 
 <script src="buffons_needle/Buffon.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
