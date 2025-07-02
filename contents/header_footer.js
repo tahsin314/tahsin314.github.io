@@ -68,8 +68,8 @@ const headerContent = `
                     </div>
                     <ul id="primary-menu" class="hidden md:flex space-x-1"> 
                         <li class="current-menu-item"><a href="https://tahsin314.github.io" title="Home"><span style="color:var(--nav-link-color);">Home</span></a></li>
-                        <li><a href="https://tahsin314.github.io/index.html#publications_all" data-target="#publications_all"><span style="color:var(--nav-link-color);">Publications</span></a></li>
-                        <li><a href="https://tahsin314.github.io/index.html#projects_all" data-target="#projects_all" title="Projects"><span style="color:var(--nav-link-color);">Projects</span></a></li>
+                        <li><a href="https://tahsin314.github.io/index.html#publications" data-target="#publications_all"><span style="color:var(--nav-link-color);">Publications</span></a></li>
+                        <li><a href="https://tahsin314.github.io/index.html#projects" data-target="#projects_all" title="Projects"><span style="color:var(--nav-link-color);">Projects</span></a></li>
                         <li><a href="https://tahsin314.github.io/timeline.html" title="Timeline"><span style="color:var(--nav-link-color);">Timeline</span></a></li>
                         <li><a href="https://tahsin314.github.io/resources.html" title="Resources"><span style="color:var(--nav-link-color);">Resources</span></a></li>
                         <li><a href="https://tahsin314.github.io/blog.html" title="Blog"><span style="color:var(--nav-link-color);">Blog</span></a></li>
