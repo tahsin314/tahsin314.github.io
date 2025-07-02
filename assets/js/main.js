@@ -30,63 +30,6 @@ function applyTheme(themeName) {
     });
 }
 
-function initThemeDropdown() {
-    const placeholder = document.getElementById('theme-switcher-placeholder');
-    if (!placeholder) {
-        console.warn("Theme switcher placeholder not found.");
-        return;
-    }
-
-    const dropdownButton = document.createElement('button');
-    dropdownButton.id = 'theme-dropdown-button';
-    dropdownButton.className = 'theme-dropdown-button';
-    dropdownButton.setAttribute('aria-haspopup', 'true');
-    dropdownButton.setAttribute('aria-expanded', 'false');
-    dropdownButton.innerHTML = `
-        <span class="theme-label">Color Palette</span>
-        <span class="arrow-down"></span>
-    `;
-
-    const dropdownMenu = document.createElement('div');
-    dropdownMenu.className = 'theme-dropdown-menu';
-
-    placeholder.appendChild(dropdownButton);
-    placeholder.appendChild(dropdownMenu);
-
-    Object.entries(themes).forEach(([key, name]) => {
-        const option = document.createElement('a');
-        option.href = "#";
-        option.textContent = name;
-        option.dataset.themeKey = key;
-        option.onclick = (e) => {
-            e.preventDefault();
-            applyTheme(key);
-            dropdownMenu.classList.remove('active');
-            dropdownButton.setAttribute('aria-expanded', 'false');
-            dropdownButton.classList.remove('open');
-        };
-        dropdownMenu.appendChild(option);
-    });
-
-    dropdownButton.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isExpanded = dropdownMenu.classList.toggle('active');
-        dropdownButton.setAttribute('aria-expanded', isExpanded.toString());
-        dropdownButton.classList.toggle('open', isExpanded);
-    });
-
-    window.addEventListener('click', (e) => {
-        if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
-            dropdownMenu.classList.remove('active');
-            dropdownButton.setAttribute('aria-expanded', 'false');
-            dropdownButton.classList.remove('open');
-        }
-    });
-
-    const saved = localStorage.getItem('portfolioTheme');
-    const defaultTheme = saved && themes[saved] ? saved : 'theme-default';
-    applyTheme(defaultTheme);
-}
 
 function initStickyHeader() {
     const header = document.getElementById("header");
@@ -135,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadHeaderAndFooter();
         requestAnimationFrame(() => {
             setTimeout(() => {
-                initThemeDropdown();
+                // initThemeDropdown();
                 initStickyHeader();
                 initMobileMenu();
                 initProjectFilter();

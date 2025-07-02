@@ -125,3 +125,29 @@
 #clustrmaps-container { background-color: transparent; margin-top: 1.5rem; margin-bottom: 1.5rem; }
 #footer-main .footer-subtext { color: var(--footer-subtext-color); font-size: 0.75rem; } 
 #footer-main .footer-subtext:last-child { margin-top: 0.25rem; } 
+
+@media (max-width: 767px) {
+        #primary-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: var(--header-bg);
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 999;
+        }
+    
+        #primary-menu li {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+    
+        #primary-menu li a span {
+            display: block;
+            width: 100%;
+        }
+    }
+    
