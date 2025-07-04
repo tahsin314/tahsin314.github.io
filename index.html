@@ -237,6 +237,7 @@
     <section id="projects" class="py-16 md:py-24 transition-colors duration-500" style="background-color: var(--section-bg-even);">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl font-bold mb-12 text-center with-sideline inline-block mx-auto" style="color: var(--nav-link-color);">Selected Projects</h2>
+    
             <div class="project-toolbar mb-8 text-center">
                 <div class="inline-flex rounded-md shadow-sm" role="group">
                     <button data-filter="*" class="active" style="color: var(--nav-link-color); transition: color 0.5s;">All</button>
@@ -246,115 +247,145 @@
                     <button data-filter=".others" style="color: var(--nav-link-color); transition: color 0.5s;">Others</button>
                 </div>
             </div>
+    
             <div id="container-projects" class="space-y-6">
+    
+                <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
+                    <div class="flex flex-col md:flex-row items-start gap-4">
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <div class="flex-grow">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Sorting Algorithms Visualizer</h3>
+                            <p class="text-sm mb-2" style="color: var(--nav-link-color); opacity:0.8;">
+                                Developed a real-time sorting algorithm visualizer using Python and Streamlit.
+                                <a href="https://github.com/tahsin314/sorting_algorithms_visualizer" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">Source</a> |
+                                <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">Demo</a>
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/projects/sort.jpg" alt="Sorting Visualizer" class="rounded-md shadow-md hover:opacity-80 transition-opacity w-full max-w-md" onerror="this.onerror=null;this.src='https://placehold.co/200x112/777/ccc?text=Video+Error';">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
                 <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
                             <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Small Object Detection in CT Images Using DASPP</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Developed an algorithm for small object detection in CT images using Dense Atrous Spatial Pyramid Pooling and a Spatial Context Network with Reverse Axial Attention.</p>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Engineered a Dense Atrous Spatial Pyramid Pooling (DASPP) and Spatial Context Network with Reverse Axial Attention for detecting small objects in CT images.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
                             <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">ICU Patient Acuity Assessment with Explainable AI</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed an acuity assessment pipeline for ICU patients incorporating explainable AI algorithms to identify features contributing to the worsening of patient conditions.</p>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Designed an acuity assessment pipeline with explainable AI to identify key features impacting the condition of ICU patients.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
-                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
+                        <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
                             <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Semi-Supervised Electric Pole Detection</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Developed a semi-supervised object detection pipeline for electric pole detection from car dashboard camera images using Fast-RCNN with ResNet50 backbone and YoloV4.</p>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Utilized Faster R-CNN (ResNet50) and YOLOv4 for semi-supervised electric pole detection from dashboard camera footage.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item deep-learning p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
                             <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Abnormality Detection in Dairy Products</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed a semi-supervised CNN model for abnormality detection in dairy product images.</p>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Constructed a semi-supervised CNN model for detecting abnormalities in images of dairy products.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
                             <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">SemRad CAM Tool for Chest X-rays</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Co-developed SemRad, an inference tool and Class Activation Mapping (CAM) tool for localization of abnormalities in chest X-ray images using ResNet101.</p>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Developed a Class Activation Mapping (CAM) tool for chest X-ray localization, powered by ResNet101.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item deep-learning software p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">RadAssist, A Web-Based Tool for Brain Hemorrhage Detection</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Worked on developing the backend deep learning model for RadAssist, assisting doctors in detecting and localizing abnormalities from brain CT scan images.</p>
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">RadAssist: A Web-Based Tool for Brain Hemorrhage Detection</h3>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Led backend development of a deep learning model for detecting and visualizing abnormalities in brain CT scans.</p>
                         </div>
                     </div>
                 </div>
-               
+    
                 <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Development of Hardware for the Measurement of THD in Power Systems</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">I developed a device using Raspberry Pi, Arduino, and a transformer that can measure the total harmonic distortion (THD) present in the power system. This was a part of our undergraduate thesis.</p>
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">THD Measurement in Power Systems</h3>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Built a device using a Raspberry Pi, Arduino, and a custom transformer to measure Total Harmonic Distortion (THD) for a BSc thesis project.</p>
                         </div>
                     </div>
                 </div>
-                
+    
                 <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Interface and Gaming Console Design for A Computer and An Android Game.</h3>
-                            <p class="project-description-text text-sm mb-3" style="color: var(--nav-link-color); opacity:0.8;">A 2-D Car racing game for PC and Android devices (Phone, Tablet, Smart TV etc.) with an external control system and a user-friendly gaming interface was designed. Detailed explanation and demo are available <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">here</a> on Youtube. This was an academic project for the Control System Lab.</p>
-                            <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="inline-block">
-                                <img src="https://placehold.co/200x112/777/ccc?text=Video+Preview" alt="Video Thumbnail for Gaming Console Design" class="rounded-md shadow-md hover:opacity-80 transition-opacity w-full max-w-xs sm:max-w-sm md:max-w-md" onerror="this.onerror=null;this.src='https://placehold.co/200x112/777/ccc?text=Video+Error';">
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Gaming Console Design + Car Racing Game</h3>
+                            <p class="text-sm mb-3" style="color: var(--nav-link-color); opacity:0.8;">Created a 2D racing game for PC and Android, complete with an external, custom-built gaming console. A demo is available
+                                <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--link-text-color);">here</a>.
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=xwHhBnLUQO8&t" target="_blank" rel="noopener noreferrer">
+                                <img src="assets/img/projects/car_racing.jpg" alt="Gaming Console Demo" class="rounded-md shadow-md hover:opacity-80 transition-opacity w-full max-w-md" onerror="this.onerror=null;this.src='https://placehold.co/200x112/777/ccc?text=Video+Error';">
                             </a>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item design-simulation p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
-                     <div class="flex items-start gap-4">
+                    <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">An Oscilloscope for the Measurement of Current and Voltage</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">This was the final project for the Measurement and Instrumentation Laboratory. I made a 2-channel oscilloscope that can simultaneously measure and plot voltage and current values on a Graphical User Interface designed by me. It was also the last undergrad project I worked on.</p>
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">2-Channel Oscilloscope for Voltage & Current</h3>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">As a final undergraduate project, designed a GUI-based oscilloscope to measure and plot current and voltage in real time.</p>
                         </div>
                     </div>
                 </div>
-                
+    
                 <div class="project-item isotope-item others p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Mentoring Undergraduate Thesis on COVID Infection Analysis</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Mentored an undergraduate student in his thesis work titled <i>"COVID Infection Analysis via Lung Lobe Segmentation using Deep Learning"</i>.</p>
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Mentoring Undergraduate Thesis</h3>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Mentored an undergraduate thesis on *COVID-19 Infection Analysis via Lung Lobe Segmentation* using deep learning.</p>
                         </div>
                     </div>
                 </div>
+    
                 <div class="project-item isotope-item others p-6 rounded-lg shadow-lg" style="background-color: var(--card-bg);">
                     <div class="flex items-start gap-4">
                         <i class="fas fa-cogs text-2xl mt-1" style="color: var(--secondary-accent-color);"></i>
                         <div class="flex-grow">
-                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">Supervision of High-School Students in Research</h3>
-                            <p class="project-description-text text-sm" style="color: var(--nav-link-color); opacity:0.8;">Supervised two high-school students to get them familiar with research work in hardware security and machine learning under the <i>Student Science Training Program (SSTP)</i> at University of Florida.</p>
+                            <h3 class="text-lg font-semibold mb-1" style="color: var(--nav-link-color);">High School Research Supervision</h3>
+                            <p class="text-sm" style="color: var(--nav-link-color); opacity:0.8;">Guided two students in the Student Science Training Program (SSTP) on hardware security and machine learning research at the University of Florida.</p>
                         </div>
                     </div>
                 </div>
+    
             </div>
         </div>
-    </section>    
+    </section>
+       
     <script src="contents/header_footer.js"></script>
 
 </body>
