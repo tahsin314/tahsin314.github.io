@@ -17,6 +17,6 @@ Source codes for my website tahsin314.github.io
 - [ ] Fix the theme dropdown if possible.
 - [ ] Rewrite the terminal text
 - [ ] Update the `About Me` Section text.
-- [ ] Add video thumbnails to my projects.
+- [x] Add video thumbnails to my projects.
 - [x] Get rid of irrelevant projects.
 - [x] Add a default theme with normal text colors and backgrounds. 
