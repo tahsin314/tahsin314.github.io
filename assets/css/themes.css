@@ -148,7 +148,94 @@
     --primary-gradient_right: linear-gradient(to right, #fdfcfa, #f8f2f2);
 }
 
-
+.theme-deep-neon {
+    --body-bg: #001414; /* darkest caribbean_current 100 */
+    --body-text-color: #e6edf3;
+  
+    --header-bg: rgba(33, 47, 69, 0.7); /* prussian_blue */
+    --sticky-header-bg: rgba(33, 47, 69, 0.85);
+    --header-text-color: #e6edf3;
+    --header-logo-text-color: #0afbff;  /* bright cyan accent */
+    --header-logo-span-color: #c346c3;  /* palatinate highlight */
+  
+    --nav-link-color: #66ecf5;         /* midnight_green 800 */
+    --nav-link-hover-color: #0afbff;
+    --hamburger-color: #66ecf5;
+  
+    --section-bg-odd: #0d131c; /* prussian_blue 200 */
+    --section-bg-even: #021012; /* midnight_green2 100 */
+  
+    --card-bg: rgba(39, 38, 64, 0.5); /* space cadet glass */
+    --card-hover-shadow-color: rgba(10, 251, 255, 0.2);
+  
+    --primary-accent-color: #0afbff; /* neon cyan */
+    --primary-accent-text-color: #051018;
+    --secondary-accent-color: #c346c3; /* violet accent */
+  
+    --button-outline-border-color: var(--secondary-accent-color);
+    --button-outline-text-color: var(--secondary-accent-color);
+    --button-outline-hover-bg-color: var(--secondary-accent-color);
+    --button-outline-hover-text-color: var(--body-bg);
+  
+    --terminal-bg: rgba(20, 69, 82, 0.8); /* midnight_green3 */
+    --terminal-border-color: #0afbff;
+    --terminal-text-color: #c3dce9;
+    --terminal-text-color-rgb: 195, 220, 233;
+    --terminal-glow-color: #66ecf5;
+  
+    --glitch-color-1: #0afbff;
+    --glitch-color-1-rgb: 10, 251, 255;
+    --glitch-color-2: #c346c3;
+    --glitch-color-2-rgb: 195, 70, 195;
+  
+    --profile-image-border-color: var(--primary-accent-color);
+    --sideline-color: var(--secondary-accent-color);
+  
+    --link-text-color: #66ecf5;
+    --link-hover-text-color: #0afbff;
+  
+    --footer-bg: rgba(33, 47, 69, 0.7);
+    --footer-border-color: #316987;
+    --footer-text-color: #cbd5e1;
+    --footer-heading-color: #c346c3;
+    --footer-link-color: #66ecf5;
+    --footer-link-hover-color: #0afbff;
+    --footer-icon-color: #c346c3;
+    --footer-icon-hover-color: #66ecf5;
+    --footer-subtext-color: #87b9d4;
+  
+    --terrain-bg-p5: #040e10;
+    --terrain-deep: #0b171e;
+    --terrain-mid: #10232d;
+    --terrain-high: #316987; /* charcoal 600 */
+    --terrain-peak: #703880; /* dark_purple2 600 */
+  
+    --dropdown-bg: var(--header-bg);
+    --dropdown-border-color: var(--primary-accent-color);
+    --dropdown-item-hover-bg: var(--primary-accent-color);
+    --dropdown-item-hover-text-color: var(--primary-accent-text-color);
+    --dropdown-text-color: var(--nav-link-color);
+  
+    --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 25%, transparent);
+  
+    --event-border-clr-1: #0afbff;
+    --event-border-clr-2: #66ecf5;
+    --event-border-clr-3: #c346c3;
+  
+    --primary-gradient: linear-gradient(120deg, #4d194d 0%, #3e1f47 25%, #212f45 60%, #006466 100%);
+    --primary-gradient_right: linear-gradient(90deg, #4d194d, #006466);
+  
+    --glass-backdrop: saturate(150%) blur(12px);
+  }
+  
+  /* optional helper */
+  .theme-deep-ocean .card {
+    backdrop-filter: var(--glass-backdrop);
+    -webkit-backdrop-filter: var(--glass-backdrop);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 36px -12px var(--card-hover-shadow-color);
+  }
+  
 .theme-neon-sunset {
     --body-bg: #0d001a; --body-text-color: #f0e6ff; 
     --header-height: 70px;

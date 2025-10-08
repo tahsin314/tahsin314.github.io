@@ -2,11 +2,7 @@ console.log("Embedded main script started");
 
 const themes = {
     'theme-forest-moss': 'Default Theme (Click to change)',
-    'theme-matte-dust': 'Matte Dust',
-    'theme-matte-pastel': 'Matte Pastel',
-    'theme-matte-sage-lavender': 'Matte Sage Lavender',
-    'theme-matte-blue-peach': 'Matte Blue Peach',
-    'theme-matte-coral-cream': 'Matte Coral Cream',
+    '.theme-deep-neon': 'Deep Neon',
     'theme-neon-sunset': 'Neon Sunset',
     'theme-forest-canopy': 'Forest Canopy',
     'theme-tron-legacy': 'Tron Legacy',
