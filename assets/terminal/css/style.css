@@ -1,37 +1,138 @@
-.scanlines::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.35) 50%), 
-              linear-gradient(90deg, 
-                  rgba(var(--glitch-color-1-rgb, 250, 34, 245), 0.08), 
-                  rgba(var(--glitch-color-2-rgb, 113, 34, 250), 0.04), 
-                  rgba(var(--terminal-text-color-rgb, 8, 247, 254), 0.08) 
-              );
-  z-index: 1; background-size: 100% 3px, 4px 100%; 
-  pointer-events: none; animation: scanlineAnimation 8s linear infinite; 
+/* Terminal Simulation Styles */
+.terminal-content {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  /* Reduced from 1.35rem for balance */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  text-align: left;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 100%;
+  padding-bottom: 2rem;
+
+  /* Tech Glow (Sharp & Bright Core) */
+  text-shadow: 0 0 1px var(--terminal-glow-color);
+  filter: brightness(1.2);
+  color: #E0FFF4;
+  /* High Contrast Frozen Cyan */
+
+  /* Restoring Glitch Effect */
+  animation: slight-glitch 5s infinite;
 }
-@keyframes scanlineAnimation { 0% { background-position: 0 0; } 100% { background-position: 0 100%; } }
-.terminal-text-glow { text-shadow: 0 0 3px var(--terminal-text-color), 0 0 8px var(--terminal-glow-color), 0 0 12px var(--terminal-glow-color), 0 0 2px var(--glitch-color-1), 0 0 2px var(--glitch-color-2); transition: text-shadow 0.5s; }
-#dynamic-text { position: relative; animation: infinite steps(2, end) alternate-reverse; color: var(--terminal-text-color); transition: color 0.5s; }
-#dynamic-text::before, #dynamic-text::after {
-  content: attr(data-text); position: absolute; top: 0; left: 0;
-  width: 100%; height: 100%; background: transparent; 
-  overflow: hidden; z-index: -1; 
-  color: var(--terminal-text-color); transition: color 0.5s, text-shadow 0.5s;
+
+.terminal-line {
+  display: block;
+  margin-bottom: 4px;
+  word-break: break-word;
 }
-#dynamic-text::before { left: 2px; text-shadow: -2px 0 var(--glitch-color-1); animation: textGlitchCyber 1.5s infinite linear alternate-reverse; }
-#dynamic-text::after { left: -2px; text-shadow: 2px 0 var(--glitch-color-2), -1px 1px var(--glitch-color-1); animation: textGlitchCyber 1s infinite linear alternate-reverse; }
-@keyframes textGlitchCyber { 
-  0% { clip-path: polygon(0 10%, 100% 10%, 100% 15%, 0 15%); transform: translate(-0.05em, -0.025em); } 10% { clip-path: polygon(0 75%, 100% 75%, 100% 80%, 0 80%); transform: translate(0.03em, 0.01em); } 20% { clip-path: polygon(0 30%, 100% 30%, 100% 38%, 0 38%); transform: translate(-0.04em, 0.005em); } 30% { clip-path: polygon(0 90%, 100% 90%, 100% 93%, 0 93%); transform: translate(0.05em, -0.015em); } 40% { clip-path: polygon(0 50%, 100% 50%, 100% 57%, 0 57%); transform: translate(-0.02em, 0.02em); } 50% { clip-path: polygon(0 5%, 100% 5%, 100% 10%, 0 10%); transform: translate(0.04em, -0.025em); } 60% { clip-path: polygon(0 60%, 100% 60%, 100% 63%, 0 63%); transform: translate(-0.05em, 0.01em); } 70% { clip-path: polygon(0 20%, 100% 20%, 100% 28%, 0 28%); transform: translate(0.02em, -0.01em); } 80% { clip-path: polygon(0 85%, 100% 85%, 100% 88%, 0 88%); transform: translate(-0.03em, 0.015em); } 90% { clip-path: polygon(0 40%, 100% 40%, 100% 43%, 0 43%); transform: translate(0.01em, -0.005em); } 100% { clip-path: polygon(0 0%, 100% 0%, 100% 7%, 0 7%); transform: translate(-0.04em, 0.02em); }
+
+/* Subtle Glitch Animation */
+@keyframes slight-glitch {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  98% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  98.5% {
+    transform: translate(1px, 0);
+    opacity: 0.9;
+  }
+
+  99% {
+    transform: translate(-1px, 0);
+    opacity: 0.8;
+  }
+
+  99.5% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
-@keyframes glitchSkewCyber { 
-0% { transform: skewX(0deg) skewY(0deg); } 20% { transform: skewX(-0.5deg) skewY(0.2deg); } 40% { transform: skewX(0.5deg) skewY(-0.2deg); } 60% { transform: skewX(-0.2deg) skewY(0.5deg); } 80% { transform: skewX(0.2deg) skewY(-0.5deg); } 100% { transform: skewX(0deg) skewY(0deg); }
-}
-.cursor-blink::after { content: '█'; animation: blink 0.6s step-end infinite; margin-left: 3px; color: var(--terminal-text-color); text-shadow: 0 0 5px var(--terminal-glow-color); transition: color 0.5s, text-shadow 0.5s; }
-@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+
+/* Futuristic Grid Background */
 .terminal .main__container {
-  background-color: var(--terminal-bg); border: 1px solid var(--terminal-border-color);
-  transition: background-color 0.5s, border-color 0.5s, box-shadow 0.5s;
-  box-shadow: 0 0 10px 0px var(--terminal-border-color), inset 0 0 8px 0px color-mix(in srgb, var(--terminal-border-color) 50%, transparent); 
-  position: relative; overflow: hidden; 
+  background-color: rgba(10, 10, 15, 0.95);
+  background-image:
+    linear-gradient(rgba(var(--terminal-border-color-rgb, 8, 247, 254), 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--terminal-border-color-rgb, 8, 247, 254), 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  border: 1px solid var(--terminal-border-color);
+  box-shadow: 0 0 15px rgba(var(--terminal-border-color-rgb, 8, 247, 254), 0.2);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Tweaks */
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid var(--terminal-border-color);
+}
+
+.cmd-prompt {
+  color: var(--primary-accent-color);
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cmd-command {
+  color: var(--terminal-text-color);
+  opacity: 1;
+}
+
+.system-msg {
+  color: var(--secondary-accent-color);
+  opacity: 1;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.success-msg {
+  color: #4ade80;
+}
+
+.highlight-msg {
+  color: var(--primary-accent-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Blinking Underscore Cursor */
+.typing-cursor::after {
+  content: '_';
+  animation: blink 0.5s step-end infinite;
+  margin-left: 2px;
+  color: var(--primary-accent-color);
+  font-weight: bold;
+  text-shadow: 0 0 4px var(--primary-accent-color);
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }

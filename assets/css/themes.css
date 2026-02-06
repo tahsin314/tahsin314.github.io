@@ -1,62 +1,81 @@
 :root {
-    --body-bg: #0D0221; 
-    --body-text-color: #F0F0F0; 
-    
-    --header-height: 70px; 
-    --header-bg: #1A1A2E; 
-    --sticky-header-bg: rgba(26, 26, 46, 0.95); 
-    --header-text-color: #F0F0F0; 
-    --header-logo-text-color: #FFFFFF; 
-    --header-logo-span-color: #08F7FE; 
-    --nav-link-color: #C0C0C0; 
-    --nav-link-hover-color: #08F7FE; 
-    --hamburger-color: #08F7FE;
+    /* Matte Canyon Theme (Terracotta/Beige/Sky Palette) - Inspired by Canyon Image */
+    --body-bg: #fff7ed;
+    /* Orange 50 - Warm White */
+    --body-text-color: #7c2d12;
+    /* Orange 900 - Deep Rust */
 
-    --section-bg-odd: #1A1A2E; 
-    --section-bg-even: #0D0221; 
-    --card-bg: #24243E; 
-    --card-hover-shadow-color: rgba(8, 247, 254, 0.3); 
-    
-    --primary-accent-color: #08F7FE; 
-    --primary-accent-text-color: #0A0A0A; 
-    --secondary-accent-color: #FA22F5; 
-    
+    --header-height: 70px;
+    --header-bg: #ffedd5;
+    /* Orange 100 - Pale Orange */
+    --sticky-header-bg: rgba(255, 237, 213, 0.95);
+    --header-text-color: #7c2d12;
+    --header-logo-text-color: #9a3412;
+    /* Orange 800 */
+    --header-logo-span-color: #c2410c;
+    /* Orange 700 - Terracotta */
+
+    --nav-link-color: #9a3412;
+    /* Orange 800 */
+    --nav-link-hover-color: #c2410c;
+    --hamburger-color: #c2410c;
+
+    --section-bg-odd: #ffedd5;
+    /* Orange 100 */
+    --section-bg-even: #fff7ed;
+    /* Orange 50 */
+    --card-bg: #ffffff;
+    --card-hover-shadow-color: rgba(194, 65, 12, 0.15);
+
+    --primary-accent-color: #c2410c;
+    /* Orange 700 - Terracotta */
+    --primary-accent-text-color: #fff7ed;
+    --secondary-accent-color: #0ea5e9;
+    /* Sky 500 - Sky Blue Contrast */
+
     --button-outline-border-color: var(--primary-accent-color);
     --button-outline-text-color: var(--primary-accent-color);
     --button-outline-hover-bg-color: var(--primary-accent-color);
-    --button-outline-hover-text-color: #0A0A0A; 
+    --button-outline-hover-text-color: #fff7ed;
 
-    --terminal-bg: rgba(10, 10, 20, 0.9); 
-    --terminal-border-color: #08F7FE; 
-    --terminal-text-color: #08F7FE;   
-    --terminal-text-color-rgb: 8, 247, 254;
-    --terminal-glow-color: #08F7FE;   
-    --glitch-color-1: #FA22F5;        
-    --glitch-color-1-rgb: 250, 34, 245;
-    --glitch-color-2: #7122FA;        
-    --glitch-color-2-rgb: 113, 34, 250;
+    /* Terminal - Deep Warm Brown/Rust */
+    --terminal-bg: rgba(67, 20, 7, 0.95);
+    /* Deep Rust/Brown */
+    --terminal-border-color: #c2410c;
+    --terminal-text-color: #fdba74;
+    /* Orange 300 - Light Peach */
+    --terminal-text-color-rgb: 253, 186, 116;
+    --terminal-glow-color: #fb923c;
+    /* Orange 400 */
+    --glitch-color-1: #0ea5e9;
+    /* Sky Blue */
+    --glitch-color-1-rgb: 14, 165, 233;
+    --glitch-color-2: #f97316;
+    /* Orange 500 */
+    --glitch-color-2-rgb: 249, 115, 22;
 
     --profile-image-border-color: var(--primary-accent-color);
     --sideline-color: var(--secondary-accent-color);
-    --link-text-color: var(--secondary-accent-color);
-    --link-hover-text-color: var(--primary-accent-color);
-    
-    --footer-bg: #0A0A0A; 
-    --footer-border-color: #24243E; 
-    --footer-text-color: #A0A0A0; 
-    --footer-heading-color: #F0F0F0;
-    --footer-link-color: #C0C0C0;
-    --footer-link-hover-color: var(--primary-accent-color);
-    --footer-icon-color: #08F7FE;
-    --footer-icon-hover-color: #FA22F5;
-    --footer-subtext-color: #6b7280; 
+    --link-text-color: var(--primary-accent-color);
+    --link-hover-text-color: var(--secondary-accent-color);
 
-    --terrain-bg-p5: #05050A; 
-    --terrain-deep: #7122FA;    
-    --terrain-mid: #FA22F5;     
-    --terrain-high: #08F7FE;    
-    --terrain-peak: #ADF8FF;    
-    
+    --footer-bg: #ffedd5;
+    --footer-border-color: #fed7aa;
+    /* Orange 200 */
+    --footer-text-color: #7c2d12;
+    --footer-heading-color: #9a3412;
+    --footer-link-color: #c2410c;
+    --footer-link-hover-color: #0ea5e9;
+    --footer-icon-color: #c2410c;
+    --footer-icon-hover-color: #0ea5e9;
+    --footer-subtext-color: #9a3412;
+
+    --terrain-bg-p5: #fff7ed;
+    --terrain-deep: #fed7aa;
+    --terrain-mid: #fb923c;
+    --terrain-high: #c2410c;
+    --terrain-peak: #7c2d12;
+
     --dropdown-bg: var(--header-bg);
     --dropdown-border-color: var(--primary-accent-color);
     --dropdown-item-hover-bg: var(--primary-accent-color);
@@ -64,9 +83,9 @@
     --dropdown-text-color: var(--nav-link-color);
     --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
 
-    --event-border-clr-1: #0e4b50;
-    --event-border-clr-2: #2d8f85;
-    --event-border-clr-3: #637c54;
+    --event-border-clr-1: #c2410c;
+    --event-border-clr-2: #fb923c;
+    --event-border-clr-3: #0ea5e9;
 
 }
 
@@ -149,233 +168,259 @@
 }
 
 .theme-deep-neon {
-    --body-bg: #001414; /* darkest caribbean_current 100 */
-    --body-text-color: #e6edf3;
-  
-    --header-bg: rgba(33, 47, 69, 0.7); /* prussian_blue */
-    --sticky-header-bg: rgba(33, 47, 69, 0.85);
-    --header-text-color: #e6edf3;
-    --header-logo-text-color: #0afbff;  /* bright cyan accent */
-    --header-logo-span-color: #c346c3;  /* palatinate highlight */
-  
-    --nav-link-color: #66ecf5;         /* midnight_green 800 */
-    --nav-link-hover-color: #0afbff;
-    --hamburger-color: #66ecf5;
-  
-    --section-bg-odd: #0d131c; /* prussian_blue 200 */
-    --section-bg-even: #021012; /* midnight_green2 100 */
-  
-    --card-bg: rgba(39, 38, 64, 0.5); /* space cadet glass */
-    --card-hover-shadow-color: rgba(10, 251, 255, 0.2);
-  
-    --primary-accent-color: #0afbff; /* neon cyan */
-    --primary-accent-text-color: #051018;
-    --secondary-accent-color: #c346c3; /* violet accent */
-  
+    /* Matte Deep Neon - Softened Cyan/Dark Blue */
+    --body-bg: #0f172a;
+    /* Slate 900 - Soft dark blue instead of black */
+    --body-text-color: #cbd5e1;
+    /* Slate 300 - Soft grey */
+
+    --header-bg: #1e293b;
+    /* Slate 800 */
+    --sticky-header-bg: rgba(30, 41, 59, 0.95);
+    --header-text-color: #e2e8f0;
+    --header-logo-text-color: #38bdf8;
+    /* Sky 400 - Soft Cyan */
+    --header-logo-span-color: #c084fc;
+    /* Purple 400 - Soft Purple */
+
+    --nav-link-color: #94a3b8;
+    /* Slate 400 */
+    --nav-link-hover-color: #38bdf8;
+    --hamburger-color: #38bdf8;
+
+    --section-bg-odd: #1e293b;
+    --section-bg-even: #0f172a;
+
+    --card-bg: #334155;
+    /* Slate 700 */
+    --card-hover-shadow-color: rgba(56, 189, 248, 0.15);
+
+    --primary-accent-color: #38bdf8;
+    /* Sky 400 */
+    --primary-accent-text-color: #0f172a;
+    --secondary-accent-color: #a78bfa;
+    /* Violet 400 */
+
     --button-outline-border-color: var(--secondary-accent-color);
     --button-outline-text-color: var(--secondary-accent-color);
     --button-outline-hover-bg-color: var(--secondary-accent-color);
     --button-outline-hover-text-color: var(--body-bg);
-  
-    --terminal-bg: rgba(20, 69, 82, 0.8); /* midnight_green3 */
-    --terminal-border-color: #0afbff;
-    --terminal-text-color: #c3dce9;
-    --terminal-text-color-rgb: 195, 220, 233;
-    --terminal-glow-color: #66ecf5;
-  
-    --glitch-color-1: #0afbff;
-    --glitch-color-1-rgb: 10, 251, 255;
-    --glitch-color-2: #c346c3;
-    --glitch-color-2-rgb: 195, 70, 195;
-  
+
+    --terminal-bg: rgba(30, 41, 59, 0.9);
+    --terminal-border-color: #38bdf8;
+    --terminal-text-color: #bae6fd;
+    /* Sky 200 */
+    --terminal-text-color-rgb: 186, 230, 253;
+    --terminal-glow-color: #7dd3fc;
+
+    --glitch-color-1: #38bdf8;
+    --glitch-color-1-rgb: 56, 189, 248;
+    --glitch-color-2: #c084fc;
+    --glitch-color-2-rgb: 192, 132, 252;
+
     --profile-image-border-color: var(--primary-accent-color);
     --sideline-color: var(--secondary-accent-color);
-  
-    --link-text-color: #66ecf5;
-    --link-hover-text-color: #0afbff;
-  
-    --footer-bg: rgba(33, 47, 69, 0.7);
-    --footer-border-color: #316987;
-    --footer-text-color: #cbd5e1;
-    --footer-heading-color: #c346c3;
-    --footer-link-color: #66ecf5;
-    --footer-link-hover-color: #0afbff;
-    --footer-icon-color: #c346c3;
-    --footer-icon-hover-color: #66ecf5;
-    --footer-subtext-color: #87b9d4;
-  
-    --terrain-bg-p5: #040e10;
-    --terrain-deep: #0b171e;
-    --terrain-mid: #10232d;
-    --terrain-high: #316987; /* charcoal 600 */
-    --terrain-peak: #703880; /* dark_purple2 600 */
-  
+
+    --link-text-color: #38bdf8;
+    --link-hover-text-color: #7dd3fc;
+
+    --footer-bg: #0f172a;
+    --footer-border-color: #1e293b;
+    --footer-text-color: #94a3b8;
+    --footer-heading-color: #c084fc;
+    --footer-link-color: #38bdf8;
+    --footer-link-hover-color: #7dd3fc;
+    --footer-icon-color: #c084fc;
+    --footer-icon-hover-color: #a78bfa;
+    --footer-subtext-color: #64748b;
+
+    --terrain-bg-p5: #020617;
+    --terrain-deep: #0f172a;
+    --terrain-mid: #1e293b;
+    --terrain-high: #38bdf8;
+    --terrain-peak: #c084fc;
+
     --dropdown-bg: var(--header-bg);
     --dropdown-border-color: var(--primary-accent-color);
     --dropdown-item-hover-bg: var(--primary-accent-color);
     --dropdown-item-hover-text-color: var(--primary-accent-text-color);
     --dropdown-text-color: var(--nav-link-color);
-  
+
     --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 25%, transparent);
-  
-    --event-border-clr-1: #0afbff;
-    --event-border-clr-2: #66ecf5;
-    --event-border-clr-3: #c346c3;
-  
-    --primary-gradient: linear-gradient(120deg, #4d194d 0%, #3e1f47 25%, #212f45 60%, #006466 100%);
-    --primary-gradient_right: linear-gradient(90deg, #4d194d, #006466);
-  
-    --glass-backdrop: saturate(150%) blur(12px);
-  }
-  
-  /* optional helper */
-  .theme-deep-ocean .card {
-    backdrop-filter: var(--glass-backdrop);
-    -webkit-backdrop-filter: var(--glass-backdrop);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    box-shadow: 0 12px 36px -12px var(--card-hover-shadow-color);
-  }
-  
-.theme-neon-sunset {
-    --body-bg: #0d001a; --body-text-color: #f0e6ff; 
-    --header-height: 70px;
-    --header-bg: #2a0040; --sticky-header-bg: rgba(42, 0, 64, 0.95);
-    --header-text-color: #f0e6ff; --header-logo-text-color: #ffffff; --header-logo-span-color: #ff3f80; 
-    --nav-link-color: #e0cff0; --nav-link-hover-color: #ff3f80; --hamburger-color: #ff3f80;
-    --section-bg-odd: #2a0040; --section-bg-even: #0d001a;
-    --card-bg: #3c005a; --card-hover-shadow-color: rgba(255, 63, 128, 0.3);
-    --primary-accent-color: #ff3f80; --primary-accent-text-color: #ffffff;
-    --secondary-accent-color: #ff8c42; 
-    --button-outline-border-color: var(--primary-accent-color); --button-outline-text-color: var(--primary-accent-color);
-    --button-outline-hover-bg-color: var(--primary-accent-color); --button-outline-hover-text-color: #ffffff;
 
-    --terminal-bg: rgba(15, 0, 25, 0.9);
-    --terminal-border-color: #ff3f80; 
-    --terminal-text-color: #ff8c42;   
-    --terminal-text-color-rgb: 255, 140, 66;
-    --terminal-glow-color: #ff8c42;
-    --glitch-color-1: #ff3f80;        
-    --glitch-color-1-rgb: 255, 63, 128;
-    --glitch-color-2: #f0e6ff;        
-    --glitch-color-2-rgb: 240, 230, 255;
+    --event-border-clr-1: #38bdf8;
+    --event-border-clr-2: #7dd3fc;
+    --event-border-clr-3: #c084fc;
+
+    --primary-gradient: linear-gradient(120deg, #1e1b4b 0%, #0f172a 100%);
+    --primary-gradient_right: linear-gradient(90deg, #1e1b4b, #0f172a);
+    --glass-backdrop: blur(10px);
+}
+
+/* optional helper */
+.theme-deep-neon .card {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.theme-neon-sunset {
+    /* Matte Sunset - Deep Indigo/Soft Pink/Orange */
+    --body-bg: #2e1065;
+    /* Violet 950 - Deep soft indigo */
+    --body-text-color: #e9d5ff;
+    /* Purple 100 */
+
+    --header-height: 70px;
+    --header-bg: #4c1d95;
+    /* Violet 900 */
+    --sticky-header-bg: rgba(76, 29, 149, 0.95);
+    --header-text-color: #e9d5ff;
+    --header-logo-text-color: #fbcfe8;
+    /* Pink 200 */
+    --header-logo-span-color: #f472b6;
+    /* Pink 400 */
+
+    --nav-link-color: #c4b5fd;
+    /* Violet 300 */
+    --nav-link-hover-color: #f472b6;
+    --hamburger-color: #f472b6;
+
+    --section-bg-odd: #4c1d95;
+    --section-bg-even: #2e1065;
+
+    --card-bg: #5b21b6;
+    /* Violet 800 */
+    --card-hover-shadow-color: rgba(244, 114, 182, 0.2);
+
+    --primary-accent-color: #f472b6;
+    /* Pink 400 */
+    --primary-accent-text-color: #2e1065;
+    --secondary-accent-color: #fb923c;
+    /* Orange 400 */
+
+    --button-outline-border-color: var(--primary-accent-color);
+    --button-outline-text-color: var(--primary-accent-color);
+    --button-outline-hover-bg-color: var(--primary-accent-color);
+    --button-outline-hover-text-color: #ffffff;
+
+    --terminal-bg: rgba(46, 16, 101, 0.9);
+    --terminal-border-color: #f472b6;
+    --terminal-text-color: #fdba74;
+    /* Orange 300 */
+    --terminal-text-color-rgb: 253, 186, 116;
+    --terminal-glow-color: #fbcfe8;
+
+    --glitch-color-1: #f472b6;
+    --glitch-color-1-rgb: 244, 114, 182;
+    --glitch-color-2: #e9d5ff;
+    --glitch-color-2-rgb: 233, 213, 255;
 
     --profile-image-border-color: var(--primary-accent-color);
     --sideline-color: var(--secondary-accent-color);
-    --link-text-color: var(--secondary-accent-color); --link-hover-text-color: var(--primary-accent-color);
-    --footer-bg: #1c002e; --footer-border-color: #3c005a;
-    --footer-text-color: #c0b0d0; --footer-heading-color: #f0e6ff;
-    --footer-link-color: #e0cff0; --footer-link-hover-color: var(--primary-accent-color);
-    --footer-icon-color: #ff8c42; --footer-icon-hover-color: #ff3f80;
-    --footer-subtext-color: #a090b0;
-    --terrain-bg-p5: #07000D; --terrain-deep: #3c005a;     
-    --terrain-mid: #ff3f80; --terrain-high: #ff8c42; --terrain-peak: #ffcc99;     
+
+    --link-text-color: var(--secondary-accent-color);
+    --link-hover-text-color: var(--primary-accent-color);
+
+    --footer-bg: #2e1065;
+    --footer-border-color: #5b21b6;
+    --footer-text-color: #c4b5fd;
+    --footer-heading-color: #fbcfe8;
+    --footer-link-color: #e9d5ff;
+    --footer-link-hover-color: var(--primary-accent-color);
+    --footer-icon-color: #fb923c;
+    --footer-icon-hover-color: #f472b6;
+    --footer-subtext-color: #a78bfa;
+
+    --terrain-bg-p5: #1e1b4b;
+    --terrain-deep: #4c1d95;
+    --terrain-mid: #f472b6;
+    --terrain-high: #fb923c;
+    --terrain-peak: #fbcfe8;
 
     --dropdown-bg: var(--header-bg);
     --dropdown-border-color: var(--primary-accent-color);
     --dropdown-item-hover-bg: var(--primary-accent-color);
     --dropdown-item-hover-text-color: var(--primary-accent-text-color);
     --dropdown-text-color: var(--nav-link-color);
+
     --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
-    --event-border-clr-1: #ff3f80;
-    --event-border-clr-2: #ff8c42;
-    --event-border-clr-3: #f0e6ff;
-    
+
+    --event-border-clr-1: #f472b6;
+    --event-border-clr-2: #fb923c;
+    --event-border-clr-3: #e9d5ff;
 }
 
 
 .theme-forest-canopy {
-    --body-bg: #0D1F12; --body-text-color: #D0EAD7;
-    --header-bg: #1B3A24; --sticky-header-bg: rgba(27, 58, 36, 0.95);
-    --header-text-color: #D0EAD7; --header-logo-text-color: #D0EAD7; --header-logo-span-color: #77DD77;
-    --nav-link-color: #A2D5AC; --nav-link-hover-color: #77DD77; --hamburger-color: #77DD77;
-    --section-bg-odd: #1B3A24; --section-bg-even: #0D1F12;
-    --card-bg: #284B32; --card-hover-shadow-color: rgba(119, 221, 119, 0.3);
-    --primary-accent-color: #77DD77; --primary-accent-text-color: #0D1F12;
-    --secondary-accent-color: #C1F0C1;
-    --button-outline-border-color: var(--secondary-accent-color); --button-outline-text-color: var(--secondary-accent-color);
-    --button-outline-hover-bg-color: var(--secondary-accent-color); --button-outline-hover-text-color: #0D1F12;
-    --terminal-bg: rgba(15, 35, 20, 0.9); --terminal-border-color: #77DD77; --terminal-text-color: #B2F5C3;
-    --terminal-text-color-rgb: 178, 245, 195; --terminal-glow-color: #B2F5C3;
-    --glitch-color-1: #77DD77; --glitch-color-1-rgb: 119, 221, 119;
-    --glitch-color-2: #A2D5AC; --glitch-color-2-rgb: 162, 213, 172;
-    --profile-image-border-color: var(--primary-accent-color); --sideline-color: var(--secondary-accent-color);
-    --link-text-color: var(--secondary-accent-color); --link-hover-text-color: var(--primary-accent-color);
-    --footer-bg: #0A1C10; --footer-border-color: #284B32; --footer-text-color: #A2D5AC;
-    --footer-heading-color: #D0EAD7; --footer-link-color: #A2D5AC; --footer-link-hover-color: var(--primary-accent-color);
-    --footer-icon-color: #77DD77; --footer-icon-hover-color: #C1F0C1;
-    --footer-subtext-color: #88B798;
-    --terrain-bg-p5: #051008; --terrain-deep: #1B3A24; --terrain-mid: #284B32; --terrain-high: #77DD77; --terrain-peak: #D0EAD7;
-    --dropdown-bg: var(--header-bg); --dropdown-border-color: var(--primary-accent-color);
-    --dropdown-item-hover-bg: var(--primary-accent-color); --dropdown-item-hover-text-color: var(--primary-accent-text-color);
-    --dropdown-text-color: var(--nav-link-color);
-    --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
-    --event-border-clr-1: #284B32;
-    --event-border-clr-2: #77DD77;
-    --event-border-clr-3: #C1F0C1;
-    
-}
+    /* Matte Canopy - Warm Deep Green */
+    --body-bg: #052e16;
+    /* Emerald 950 - Deepest warm green */
+    --body-text-color: #ecfdf5;
+    /* Emerald 50 - Soft white */
 
-.theme-forest-moss {
-    --body-bg: #1a0f1f;
-    --body-text-color: #f5eaf8;
+    --header-bg: #064e3b;
+    /* Emerald 900 */
+    --sticky-header-bg: rgba(6, 78, 59, 0.95);
+    --header-text-color: #ecfdf5;
+    --header-logo-text-color: #34d399;
+    /* Emerald 400 */
+    --header-logo-span-color: #fbbf24;
+    /* Amber 400 - Warm sunlight */
 
-    --header-bg: #3c383e;
-    --sticky-header-bg: rgba(60, 56, 62, 0.95);
-    --header-text-color: #f5eaf8;
-    --header-logo-text-color: #E7AB79;
-    --header-logo-span-color: #E7AB79;
+    --nav-link-color: #6ee7b7;
+    /* Emerald 300 */
+    --nav-link-hover-color: #34d399;
+    --hamburger-color: #34d399;
 
-    --nav-link-color: #E7AB79;
-    --nav-link-hover-color: #f5eaf8;
-    --hamburger-color: #E7AB79;
+    --section-bg-odd: #064e3b;
+    --section-bg-even: #052e16;
 
-    --section-bg-odd: #382b3c;
-    --section-bg-even: #363c2f;
+    --card-bg: #065f46;
+    /* Emerald 800 */
+    --card-hover-shadow-color: rgba(52, 211, 153, 0.2);
 
-    --card-bg: #345039;
-    --card-hover-shadow-color: rgba(231, 171, 121, 0.2);
-
-    --primary-accent-color: #E7AB79;
-    --primary-accent-text-color: #1a0f1f;
-    --secondary-accent-color: #f5eaf8;
+    --primary-accent-color: #34d399;
+    /* Emerald 400 */
+    --primary-accent-text-color: #022c22;
+    --secondary-accent-color: #fbbf24;
+    /* Amber 400 */
 
     --button-outline-border-color: var(--secondary-accent-color);
     --button-outline-text-color: var(--secondary-accent-color);
     --button-outline-hover-bg-color: var(--secondary-accent-color);
-    --button-outline-hover-text-color: var(--body-bg);
+    --button-outline-hover-text-color: #022c22;
 
-    --terminal-bg: rgba(60, 56, 62, 0.85);
-    --terminal-border-color: #E7AB79;
-    --terminal-text-color: #f5eaf8;
-    --terminal-text-color-rgb: 245, 234, 248;
-    --terminal-glow-color: #E7AB79;
+    --terminal-bg: rgba(6, 78, 59, 0.9);
+    --terminal-border-color: #34d399;
+    --terminal-text-color: #a7f3d0;
+    /* Emerald 200 */
+    --terminal-text-color-rgb: 167, 243, 208;
+    --terminal-glow-color: #6ee7b7;
 
-    --glitch-color-1: #E7AB79;
-    --glitch-color-1-rgb: 231, 171, 121;
-    --glitch-color-2: #345039;
-    --glitch-color-2-rgb: 52, 80, 57;
+    --glitch-color-1: #34d399;
+    --glitch-color-1-rgb: 52, 211, 153;
+    --glitch-color-2: #a7f3d0;
+    --glitch-color-2-rgb: 167, 243, 208;
 
     --profile-image-border-color: var(--primary-accent-color);
     --sideline-color: var(--secondary-accent-color);
+    --link-text-color: var(--secondary-accent-color);
+    --link-hover-text-color: var(--primary-accent-color);
 
-    --link-text-color: var(--primary-accent-color);
-    --link-hover-text-color: var(--secondary-accent-color);
+    --footer-bg: #022c22;
+    --footer-border-color: #064e3b;
+    --footer-text-color: #6ee7b7;
+    --footer-heading-color: #d1fae5;
+    --footer-link-color: #34d399;
+    --footer-link-hover-color: #10b981;
+    --footer-icon-color: #34d399;
+    --footer-icon-hover-color: #d1fae5;
+    --footer-subtext-color: #047857;
 
-    --footer-bg: #3c383e;
-    --footer-border-color: #345039;
-    --footer-text-color: #f5eaf8;
-    --footer-heading-color: #E7AB79;
-    --footer-link-color: #E7AB79;
-    --footer-link-hover-color: #f5eaf8;
-    --footer-icon-color: #E7AB79;
-    --footer-icon-hover-color: #f5eaf8;
-    --footer-subtext-color: #f5eaf8;
-
-    --terrain-bg-p5: #382b3c;
-    --terrain-deep: #345039;
-    --terrain-mid: #E7AB79;
-    --terrain-high: #f5eaf8;
-    --terrain-peak: #ffffff;
+    --terrain-bg-p5: #022c22;
+    --terrain-deep: #064e3b;
+    --terrain-mid: #065f46;
+    --terrain-high: #34d399;
+    --terrain-peak: #fbbf24;
 
     --dropdown-bg: var(--header-bg);
     --dropdown-border-color: var(--primary-accent-color);
@@ -385,54 +430,61 @@
 
     --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
 
-    --event-border-clr-1: #E7AB79;
-    --event-border-clr-2: #f5eaf8;
-    --event-border-clr-3: #345039;
-
-    --primary-gradient: linear-gradient(to bottom, #382b3c, #363c2f);
-    --primary-gradient_right: linear-gradient(to right, #382b3c, #363c2f);
+    --event-border-clr-1: #065f46;
+    --event-border-clr-2: #34d399;
+    --event-border-clr-3: #d1fae5;
 }
 
+.theme-forest-moss {
+    /* Matte Moss - Earthy Brown/Green */
+    --body-bg: #1c1917;
+    /* Stone 900 */
+    --body-text-color: #e7e5e4;
+    /* Stone 200 */
 
-.theme-tron-legacy {
-    --body-bg: #0d0d0d; /* deep grid black */
-    --body-text-color: #00eaff;
+    --header-bg: #292524;
+    /* Stone 800 */
+    --sticky-header-bg: rgba(41, 37, 36, 0.95);
+    --header-text-color: #e7e5e4;
+    --header-logo-text-color: #84cc16;
+    /* Lime 500 - Moss Green */
+    --header-logo-span-color: #a3e635;
+    /* Lime 400 */
 
-    --header-bg: #0f0f0f;
-    --sticky-header-bg: rgba(15, 15, 15, 0.95);
-    --header-text-color: #00eaff;
-    --header-logo-text-color: #00eaff;
-    --header-logo-span-color: #ff6600; /* glowing orange */
+    --nav-link-color: #a8a29e;
+    /* Stone 400 */
+    --nav-link-hover-color: #84cc16;
+    --hamburger-color: #84cc16;
 
-    --nav-link-color: #00eaff;
-    --nav-link-hover-color: #ffffff;
-    --hamburger-color: #00eaff;
+    --section-bg-odd: #292524;
+    --section-bg-even: #1c1917;
 
-    --section-bg-odd: #121212;
-    --section-bg-even: #181818;
+    --card-bg: #44403c;
+    /* Stone 700 */
+    --card-hover-shadow-color: rgba(132, 204, 22, 0.2);
 
-    --card-bg: #1a1a1a;
-    --card-hover-shadow-color: rgba(0, 234, 255, 0.35);
-
-    --primary-accent-color: #00eaff;
-    --primary-accent-text-color: #0d0d0d;
-    --secondary-accent-color: #ff6600;
+    --primary-accent-color: #84cc16;
+    /* Lime 500 */
+    --primary-accent-text-color: #1c1917;
+    --secondary-accent-color: #f5f5f4;
+    /* Stone 100 */
 
     --button-outline-border-color: var(--secondary-accent-color);
     --button-outline-text-color: var(--secondary-accent-color);
     --button-outline-hover-bg-color: var(--secondary-accent-color);
-    --button-outline-hover-text-color: #0d0d0d;
+    --button-outline-hover-text-color: var(--body-bg);
 
-    --terminal-bg: rgba(0, 10, 15, 0.9);
-    --terminal-border-color: #00eaff;
-    --terminal-text-color: #00eaff;
-    --terminal-text-color-rgb: 0, 234, 255;
-    --terminal-glow-color: #00eaff;
+    --terminal-bg: rgba(41, 37, 36, 0.9);
+    --terminal-border-color: #84cc16;
+    --terminal-text-color: #d9f99d;
+    /* Lime 200 */
+    --terminal-text-color-rgb: 217, 249, 157;
+    --terminal-glow-color: #bef264;
 
-    --glitch-color-1: #00eaff;
-    --glitch-color-1-rgb: 0, 234, 255;
-    --glitch-color-2: #ff6600;
-    --glitch-color-2-rgb: 255, 102, 0;
+    --glitch-color-1: #84cc16;
+    --glitch-color-1-rgb: 132, 204, 22;
+    --glitch-color-2: #44403c;
+    --glitch-color-2-rgb: 68, 64, 60;
 
     --profile-image-border-color: var(--primary-accent-color);
     --sideline-color: var(--secondary-accent-color);
@@ -440,21 +492,110 @@
     --link-text-color: var(--primary-accent-color);
     --link-hover-text-color: var(--secondary-accent-color);
 
-    --footer-bg: #0f0f0f;
-    --footer-border-color: #1e1e1e;
-    --footer-text-color: #00eaff;
-    --footer-heading-color: #ffffff;
-    --footer-link-color: #00eaff;
-    --footer-link-hover-color: #ff6600;
-    --footer-icon-color: #00eaff;
-    --footer-icon-hover-color: #ff6600;
-    --footer-subtext-color: #777;
+    --footer-bg: #292524;
+    --footer-border-color: #44403c;
+    --footer-text-color: #a8a29e;
+    --footer-heading-color: #84cc16;
+    --footer-link-color: #d9f99d;
+    --footer-link-hover-color: #bef264;
+    --footer-icon-color: #84cc16;
+    --footer-icon-hover-color: #a3e635;
+    --footer-subtext-color: #78716c;
 
-    --terrain-bg-p5: #0d1a1a;
-    --terrain-deep: #002b36;
-    --terrain-mid: #005266;
-    --terrain-high: #00eaff;
-    --terrain-peak: #ff6600;
+    --terrain-bg-p5: #0c0a09;
+    --terrain-deep: #1c1917;
+    --terrain-mid: #44403c;
+    --terrain-high: #84cc16;
+    --terrain-peak: #ecfccb;
+
+    --dropdown-bg: var(--header-bg);
+    --dropdown-border-color: var(--primary-accent-color);
+    --dropdown-item-hover-bg: var(--primary-accent-color);
+    --dropdown-item-hover-text-color: var(--primary-accent-text-color);
+    --dropdown-text-color: var(--nav-link-color);
+
+    --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
+
+    --event-border-clr-1: #84cc16;
+    --event-border-clr-2: #d9f99d;
+    --event-border-clr-3: #44403c;
+
+    --primary-gradient: linear-gradient(to bottom, #292524, #1c1917);
+    --primary-gradient_right: linear-gradient(to right, #292524, #1c1917);
+}
+
+.theme-tron-legacy {
+    /* Matte Tron - Dark Cyan/Grey */
+    --body-bg: #111827;
+    /* Gray 900 */
+    --body-text-color: #e5e7eb;
+    /* Gray 200 */
+
+    --header-bg: #1f2937;
+    /* Gray 800 */
+    --sticky-header-bg: rgba(31, 41, 55, 0.95);
+    --header-text-color: #e5e7eb;
+    --header-logo-text-color: #22d3ee;
+    /* Cyan 400 */
+    --header-logo-span-color: #f97316;
+    /* Orange 500 */
+
+    --nav-link-color: #9ca3af;
+    /* Gray 400 */
+    --nav-link-hover-color: #22d3ee;
+    --hamburger-color: #22d3ee;
+
+    --section-bg-odd: #1f2937;
+    --section-bg-even: #111827;
+
+    --card-bg: #374151;
+    /* Gray 700 */
+    --card-hover-shadow-color: rgba(34, 211, 238, 0.2);
+
+    --primary-accent-color: #22d3ee;
+    /* Cyan 400 */
+    --primary-accent-text-color: #111827;
+    --secondary-accent-color: #f97316;
+    /* Orange 500 */
+
+    --button-outline-border-color: var(--secondary-accent-color);
+    --button-outline-text-color: var(--secondary-accent-color);
+    --button-outline-hover-bg-color: var(--secondary-accent-color);
+    --button-outline-hover-text-color: #111827;
+
+    --terminal-bg: rgba(31, 41, 55, 0.9);
+    --terminal-border-color: #22d3ee;
+    --terminal-text-color: #67e8f9;
+    /* Cyan 300 */
+    --terminal-text-color-rgb: 103, 232, 249;
+    --terminal-glow-color: #22d3ee;
+
+    --glitch-color-1: #22d3ee;
+    --glitch-color-1-rgb: 34, 211, 238;
+    --glitch-color-2: #f97316;
+    --glitch-color-2-rgb: 249, 115, 22;
+
+    --profile-image-border-color: var(--primary-accent-color);
+    --sideline-color: var(--secondary-accent-color);
+
+    --link-text-color: var(--primary-accent-color);
+    --link-hover-text-color: var(--secondary-accent-color);
+
+    --footer-bg: #1f2937;
+    --footer-border-color: #374151;
+    --footer-text-color: #9ca3af;
+    --footer-heading-color: #f3f4f6;
+    --footer-link-color: #22d3ee;
+    --footer-link-hover-color: #f97316;
+    --footer-icon-color: #22d3ee;
+    --footer-icon-hover-color: #f97316;
+    --footer-subtext-color: #6b7280;
+
+    --terrain-bg-p5: #030712;
+    --terrain-deep: #111827;
+    --terrain-mid: #374151;
+    --terrain-high: #22d3ee;
+    --terrain-peak: #f97316;
 
     --dropdown-bg: var(--header-bg);
     --dropdown-border-color: var(--primary-accent-color);
@@ -464,9 +605,9 @@
 
     --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 25%, transparent);
 
-    --event-border-clr-1: #00eaff;
-    --event-border-clr-2: #ff6600;
-    --event-border-clr-3: #1affff;
+    --event-border-clr-1: #22d3ee;
+    --event-border-clr-2: #f97316;
+    --event-border-clr-3: #67e8f9;
 }
 
 .theme-matte-dust {
@@ -781,3 +922,177 @@
     --primary-gradient_right: linear-gradient(to right, #fffaf8, #fef4f2);
 }
 
+
+.theme-calm-breeze {
+    --body-bg: #f0f9ff;
+    /* Sky 50 */
+    --body-text-color: #334155;
+    /* Slate 700 */
+
+    --header-bg: #e0f2fe;
+    /* Sky 100 */
+    --sticky-header-bg: rgba(224, 242, 254, 0.95);
+    --header-text-color: #334155;
+    --header-logo-text-color: #0369a1;
+    /* Sky 700 */
+    --header-logo-span-color: #0ea5e9;
+    /* Sky 500 */
+
+    --nav-link-color: #475569;
+    /* Slate 600 */
+    --nav-link-hover-color: #0284c7;
+    /* Sky 600 */
+    --hamburger-color: #0ea5e9;
+
+    --section-bg-odd: #e0f2fe;
+    --section-bg-even: #f0f9ff;
+
+    --card-bg: #ffffff;
+    --card-hover-shadow-color: rgba(14, 165, 233, 0.15);
+
+    --primary-accent-color: #0ea5e9;
+    --primary-accent-text-color: #ffffff;
+    --secondary-accent-color: #64748b;
+    /* Slate 500 */
+
+    --button-outline-border-color: var(--primary-accent-color);
+    --button-outline-text-color: var(--primary-accent-color);
+    --button-outline-hover-bg-color: var(--primary-accent-color);
+    --button-outline-hover-text-color: #ffffff;
+
+    --terminal-bg: rgba(240, 249, 255, 0.9);
+    --terminal-border-color: #0ea5e9;
+    --terminal-text-color: #334155;
+    --terminal-text-color-rgb: 51, 65, 85;
+    --terminal-glow-color: #bae6fd;
+
+    --glitch-color-1: #38bdf8;
+    --glitch-color-1-rgb: 56, 189, 248;
+    --glitch-color-2: #0284c7;
+    --glitch-color-2-rgb: 2, 132, 199;
+
+    --profile-image-border-color: var(--primary-accent-color);
+    --sideline-color: var(--secondary-accent-color);
+
+    --link-text-color: var(--primary-accent-color);
+    --link-hover-text-color: var(--header-logo-text-color);
+
+    --footer-bg: #e0f2fe;
+    --footer-border-color: #bae6fd;
+    --footer-text-color: #475569;
+    --footer-heading-color: #0369a1;
+    --footer-link-color: #0ea5e9;
+    --footer-link-hover-color: #0284c7;
+    --footer-icon-color: #0ea5e9;
+    --footer-icon-hover-color: #0284c7;
+    --footer-subtext-color: #64748b;
+
+    --terrain-bg-p5: #f0f9ff;
+    --terrain-deep: #bae6fd;
+    --terrain-mid: #7dd3fc;
+    --terrain-high: #38bdf8;
+    --terrain-peak: #0ea5e9;
+
+    --dropdown-bg: var(--header-bg);
+    --dropdown-border-color: var(--primary-accent-color);
+    --dropdown-item-hover-bg: var(--primary-accent-color);
+    --dropdown-item-hover-text-color: var(--primary-accent-text-color);
+    --dropdown-text-color: var(--nav-link-color);
+
+    --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
+
+    --event-border-clr-1: #0ea5e9;
+    --event-border-clr-2: #38bdf8;
+    --event-border-clr-3: #7dd3fc;
+
+    --primary-gradient: linear-gradient(to bottom, #f0f9ff, #e0f2fe);
+    --primary-gradient_right: linear-gradient(to right, #f0f9ff, #e0f2fe);
+}
+
+.theme-warm-paper {
+    --body-bg: #fdfbf7;
+    /* Stone 50 */
+    --body-text-color: #44403c;
+    /* Stone 700 */
+
+    --header-bg: #f5f5f4;
+    /* Stone 100 */
+    --sticky-header-bg: rgba(245, 245, 244, 0.95);
+    --header-text-color: #44403c;
+    --header-logo-text-color: #78350f;
+    /* Amber 900 */
+    --header-logo-span-color: #d97706;
+    /* Amber 600 */
+
+    --nav-link-color: #78716c;
+    /* Stone 500 */
+    --nav-link-hover-color: #b45309;
+    /* Amber 700 */
+    --hamburger-color: #d97706;
+
+    --section-bg-odd: #f5f5f4;
+    --section-bg-even: #fdfbf7;
+
+    --card-bg: #ffffff;
+    --card-hover-shadow-color: rgba(217, 119, 6, 0.15);
+
+    --primary-accent-color: #d97706;
+    /* Amber 600 */
+    --primary-accent-text-color: #ffffff;
+    --secondary-accent-color: #a8a29e;
+    /* Stone 400 */
+
+    --button-outline-border-color: var(--primary-accent-color);
+    --button-outline-text-color: var(--primary-accent-color);
+    --button-outline-hover-bg-color: var(--primary-accent-color);
+    --button-outline-hover-text-color: #ffffff;
+
+    --terminal-bg: rgba(253, 251, 247, 0.9);
+    --terminal-border-color: #d97706;
+    --terminal-text-color: #44403c;
+    --terminal-text-color-rgb: 68, 64, 60;
+    --terminal-glow-color: #fcd34d;
+
+    --glitch-color-1: #fbbf24;
+    --glitch-color-1-rgb: 251, 191, 36;
+    --glitch-color-2: #b45309;
+    --glitch-color-2-rgb: 180, 83, 9;
+
+    --profile-image-border-color: var(--primary-accent-color);
+    --sideline-color: var(--secondary-accent-color);
+
+    --link-text-color: var(--primary-accent-color);
+    --link-hover-text-color: var(--header-logo-text-color);
+
+    --footer-bg: #f5f5f4;
+    --footer-border-color: #e7e5e4;
+    --footer-text-color: #57534e;
+    /* Stone 600 */
+    --footer-heading-color: #78350f;
+    --footer-link-color: #d97706;
+    --footer-link-hover-color: #b45309;
+    --footer-icon-color: #d97706;
+    --footer-icon-hover-color: #b45309;
+    --footer-subtext-color: #a8a29e;
+
+    --terrain-bg-p5: #fdfbf7;
+    --terrain-deep: #e7e5e4;
+    --terrain-mid: #fcd34d;
+    --terrain-high: #d97706;
+    --terrain-peak: #92400e;
+
+    --dropdown-bg: var(--header-bg);
+    --dropdown-border-color: var(--primary-accent-color);
+    --dropdown-item-hover-bg: var(--primary-accent-color);
+    --dropdown-item-hover-text-color: var(--primary-accent-text-color);
+    --dropdown-text-color: var(--nav-link-color);
+
+    --mobile-menu-divider-color: color-mix(in srgb, var(--nav-link-color) 20%, transparent);
+
+    --event-border-clr-1: #b45309;
+    --event-border-clr-2: #d97706;
+    --event-border-clr-3: #fbbf24;
+
+    --primary-gradient: linear-gradient(to bottom, #fdfbf7, #f5f5f4);
+    --primary-gradient_right: linear-gradient(to right, #fdfbf7, #f5f5f4);
+}
