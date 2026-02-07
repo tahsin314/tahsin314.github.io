@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tahsin Mostafiz - Portfolio</title>
+    <link rel="icon" href="assets/img/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- User's CSS Paths -->
     <link rel="stylesheet" href="assets/css/themes.css">
     <link rel="stylesheet" href="assets/css/styles.css"> <!-- Corrected from styles.css to style.css -->
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/terminal/css/style.css"> 
-    <link rel="stylesheet" href="assets/css/terrain.css"> <!-- Removing it messes up the theme names so don't touch it! -->
+    <link rel="stylesheet" href="assets/terminal/css/style.css">
+    <link rel="stylesheet" href="assets/css/terrain.css">
+    <!-- Removing it messes up the theme names so don't touch it! -->
     <link rel="stylesheet" href="assets/css/header.css"> <!-- Added user's header.css -->
     <link rel="stylesheet" href="assets/css/timeline.css">
     <!-- External Libraries CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=VT323&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <!-- User's Footer HTML (Static) -->
@@ -30,168 +34,256 @@
         <!-- Theme dropdown button will be injected here by JS -->
     </div>
     <!-- Custom styles for interactive cards -->
-    
+
 </head>
+
 <body class="theme-default" id="dynamic_header">
-  <!-- Page Header -->
-  <section class="section section-narrow-2" id="header_section">
-    <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
-        <img src="assets/img/aurora_florida.jpg" alt="Aurora in Florida!" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
-            Important Life Events of My Life
+    <!-- Page Header -->
+    <section class="section section-narrow-2" id="header_section">
+        <div class="page-head" style="position: relative; overflow: hidden; height: 300px;">
+            <img src="assets/img/aurora_florida.jpg" alt="Aurora in Florida!"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 48px; font-weight: bold; font-family: 'Noto Sans Bengali', sans-serif; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">
+                Important Life Events of My Life
+            </div>
         </div>
-    </div>
-  </section>
-  <div class="timeline-container">
-    <div class="timeline-line"></div>
+    </section>
+    <div class="timeline-container">
+        <div class="timeline-line"></div>
 
-    <!-- Event 1 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">May 03, 2024</div>
-            <div class="event-content">
-                <div class="title" style="color: var(--nav-link-color); transition: color 0.5s;">Graduated with a Masters Degree!</div>
-                <div class="description">I graduated with a Masters degree in the ECE department of University of Florida. Lost a lot of blood, broke several several bones and went through tremendous physical and mental pain during this time. I am so proud that I did not quit.</div>
-                <img src="assets/img/grad_pic.jpg" alt="Graduation Picture">
+        <!-- Event 1 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">May 03, 2024</div>
+                <div class="event-content">
+                    <div class="title" style="color: var(--nav-link-color); transition: color 0.5s;">Graduated with a
+                        Masters Degree!</div>
+                    <div class="description">I graduated with a Masters degree in the ECE department of University of
+                        Florida. Lost a lot of blood, broke several several bones and went through tremendous physical
+                        and mental pain during this time. I am so proud that I did not quit.</div>
+                    <img src="assets/img/grad_pic.jpg" alt="Graduation Picture">
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 2 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">July 24, 2023</div>
-            <div class="event-content">
-                <div class="title">Married the Most Amazing Girl in the Whole World!</div>
-                <div class="description">The title says it all! Her name is Trina, the love of my life.</div>
-                <img src="assets/img/A3A08892.jpg" alt="Wedding Picture">
+        <!-- Event 2 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">July 24, 2023</div>
+                <div class="event-content">
+                    <div class="title">Married the Most Amazing Girl in the Whole World!</div>
+                    <div class="description">The title says it all! Her name is Trina, the love of my life.</div>
+                    <img src="assets/img/A3A08892.jpg" alt="Wedding Picture">
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Event 3 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date" >January 2021</div>
-            <div class="event-content">
-                <div class="title">Joined FICS Lab as a Graduate Research Assistant</div>
-                <div class="description">I started working under the supervision of Professor <a href="https://faculty.eng.ufl.edu/navid-asadi/people/">Navid Asadi</a> in the <a href="https://fics.institute.ufl.edu/">FICS Lab</a> in the department of <a href="https://www.ece.ufl.edu/">ECE, University of Florida</a>. I worked on projects regarding physical assurance for AI and package security.</div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Event 4 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-             <div class="event-date">December 2019</div>
-            <div class="event-content">
-                <div class="title">Joined AI Samurai Japan Limited</div>
-                <div class="description">AI Samurai Japan Limited is a sister concern of <a href="https://www.chowagiken.co.jp/">Chowagiken Company Limited</a> Japan, a startup born from Hokkaido University laboratories with the mission of "Putting research into practical use and making it useful to society". They are focused on employing cutting-edge AI tools into practical uses. I worked in this company as a Machine Learning Engineer.</div>
+        <!-- Event 3 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">January 2021</div>
+                <div class="event-content">
+                    <div class="title">Joined FICS Lab as a Graduate Research Assistant</div>
+                    <div class="description">I started working under the supervision of Professor <a
+                            href="https://faculty.eng.ufl.edu/navid-asadi/people/">Navid Asadi</a> in the <a
+                            href="https://fics.institute.ufl.edu/">FICS Lab</a> in the department of <a
+                            href="https://www.ece.ufl.edu/">ECE, University of Florida</a>. I worked on projects
+                        regarding physical assurance for AI and package security.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 5 -->
-    <div class="event-wrapper">
-        <div class="event-card">
-             <div class="event-date">February 2017</div>
-            <div class="event-content">
-                <div class="title">Graduated in EEE from BUET</div>
-                <div class="description">I completed my graduation from the Electrical and Electronic Engineering (EEE) department of Bangladesh University of Engineering and Technology (BUET) in February 2017.</div>
+        <!-- Event 4 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">December 2019</div>
+                <div class="event-content">
+                    <div class="title">Joined AI Samurai Japan Limited</div>
+                    <div class="description">AI Samurai Japan Limited is a sister concern of <a
+                            href="https://www.chowagiken.co.jp/">Chowagiken Company Limited</a> Japan, a startup born
+                        from Hokkaido University laboratories with the mission of "Putting research into practical use
+                        and making it useful to society". They are focused on employing cutting-edge AI tools into
+                        practical uses. I worked in this company as a Machine Learning Engineer.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 6 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">August 2020</div>
-            <div class="event-content">
-                <div class="title">SIIM-ISIC Melanoma Classification 2020</div>
-                <div class="description">The objective of this competition was to identify melanoma in images of skin lesions. This was a binary classification problem where we had to predict whether the melanoma condition in a provided image is benign or malignant. Our combined effort got us <b>253rd</b> position (<b>top 8%</b>) on the Private Leaderboard among 3,314 teams. This was my first bronze medal in any Kaggle competition and second medal overall. My detailed analysis and codes are available <a href="https://github.com/tahsin314/Melanoma_Classification_2020">here</a> in my GitHub repo. A lot of credit goes to my amazing team partners <a href="http://innat.github.io/">Mohammad Innat</a> and <a href="https://github.com/udday2014">Uday Kamal</a>. Innat's well-explained solution is available <a href="https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175721">here</a>.</div>
+        <!-- Event 5 -->
+        <div class="event-wrapper">
+            <div class="event-card">
+                <div class="event-date">February 2017</div>
+                <div class="event-content">
+                    <div class="title">Graduated in EEE from BUET</div>
+                    <div class="description">I completed my graduation from the Electrical and Electronic Engineering
+                        (EEE) department of Bangladesh University of Engineering and Technology (BUET) in February 2017.
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Event 7 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">February 2020</div>
-            <div class="event-content">
-                <div class="title">Web Application Project Got Accepted at SIIM</div>
-                <div class="description">Intracranial Hemorrhage (ICH), which refers to bleeding inside the cranium, is a serious health problem requiring rapid and intensive medical intervention. In case of an emergency, it is necessary to urgently diagnose the subtype of IC from brain Computed Tomography (CT) scans. However, in hospital emergency rooms in low-resource countries, a skilled radiologist is almost non-existent, and an emergency medical officer has to make this urgent and critical decision. This may lead to missed diagnosis, especially in the case of subarachnoid hemorrhage which often shows subtle changes in the CT image. In this work, we have developed a web-based AI tool for generating colorful heatmaps over the grayscale anatomical 2D CT image slices identifying the possible regions of the subtype of acute IC. The tool can be used by radiologists for AI-based assistance for making a more accurate and faster diagnosis. Our <a href="https://github.com/tahsin314/Intracranial_Hemorrhage_Web_App">Web Application for Intracranial Hemorrhage Detection</a> got accepted at the <a href="https://siim.org/default.aspx">Society for Imaging Informatics in Medicine (SIIM) 2020</a> Conference. Currently, the project is being supported by <a href="https://brainstation-23.com/">BrainStation 23</a>. They have deployed a web tool called <a href="https://www.radassist.net/">RadAssist</a> using our deep learning model. This project was supervised by <a href="http://bme.buet.ac.bd/?teams=dr-taufiq-hasan">Dr. Taufiq Hasan</a> and <a href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/2936930/paul-nagy">Dr. Paul Nagy</a>.</div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Event 8 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">October 2019</div>
-            <div class="event-content">
-                <div class="title">Joined mHealth Lab</div>
-                <div class="description"><a href="https://mhealth.buet.ac.bd/">mHealth Lab</a> is working towards developing biomedical signal processing and machine learning algorithms for remote health monitoring, and prototyping innovative mHealth devices for improving people’s health, overall well-being, and quality of life. This lab is founded and maintained by the <a href="http://bme.buet.ac.bd/">Biomedical Engineering Department</a> of BUET. I worked as a Research Assistant (RA) there.</div>
+        <!-- Event 6 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">August 2020</div>
+                <div class="event-content">
+                    <div class="title">SIIM-ISIC Melanoma Classification 2020</div>
+                    <div class="description">The objective of this competition was to identify melanoma in images of
+                        skin lesions. This was a binary classification problem where we had to predict whether the
+                        melanoma condition in a provided image is benign or malignant. Our combined effort got us
+                        <b>253rd</b> position (<b>top 8%</b>) on the Private Leaderboard among 3,314 teams. This was my
+                        first bronze medal in any Kaggle competition and second medal overall. My detailed analysis and
+                        codes are available <a href="https://github.com/tahsin314/Melanoma_Classification_2020">here</a>
+                        in my GitHub repo. A lot of credit goes to my amazing team partners <a
+                            href="http://innat.github.io/">Mohammad Innat</a> and <a
+                            href="https://github.com/udday2014">Uday Kamal</a>. Innat's well-explained solution is
+                        available <a
+                            href="https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/175721">here</a>.
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 9 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">August 2019</div>
-            <div class="event-content">
-                <div class="title">APTOS 2019 Blindness Detection Competition</div>
-                <div class="description">Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina). It can be cured if treated at an early stage; otherwise, it could lead to permanent blindness. Detection of the stage of diabetic retinopathy is a challenging task even for doctors. <a href="https://aravind.org/" target="_blank">Aravind Eye Hospital</a> in India collected thousands of retinopathy images and hosted <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/" target="_blank">this</a> competition for the detection of the level of DR in these images. In this competition, we secured the position 37 on the Private and 55 among 2,943 teams on the Public leaderboard. Our model scored <b>0.829</b> on the public <a href="https://www.kaggle.com/c/aptos2019-blindness-detection/leaderboard" target="_blank">LB</a> and <b>0.926</b> on the Private LB. Codes are available <a href="https://github.com/tahsin314/40th_place_solution_aptos2019-blindness-detection" target="_blank">here</a>.</div>
+        <!-- Event 7 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">February 2020</div>
+                <div class="event-content">
+                    <div class="title">Web Application Project Got Accepted at SIIM</div>
+                    <div class="description">Intracranial Hemorrhage (ICH), which refers to bleeding inside the cranium,
+                        is a serious health problem requiring rapid and intensive medical intervention. In case of an
+                        emergency, it is necessary to urgently diagnose the subtype of IC from brain Computed Tomography
+                        (CT) scans. However, in hospital emergency rooms in low-resource countries, a skilled
+                        radiologist is almost non-existent, and an emergency medical officer has to make this urgent and
+                        critical decision. This may lead to missed diagnosis, especially in the case of subarachnoid
+                        hemorrhage which often shows subtle changes in the CT image. In this work, we have developed a
+                        web-based AI tool for generating colorful heatmaps over the grayscale anatomical 2D CT image
+                        slices identifying the possible regions of the subtype of acute IC. The tool can be used by
+                        radiologists for AI-based assistance for making a more accurate and faster diagnosis. Our <a
+                            href="https://github.com/tahsin314/Intracranial_Hemorrhage_Web_App">Web Application for
+                            Intracranial Hemorrhage Detection</a> got accepted at the <a
+                            href="https://siim.org/default.aspx">Society for Imaging Informatics in Medicine (SIIM)
+                            2020</a> Conference. Currently, the project is being supported by <a
+                            href="https://brainstation-23.com/">BrainStation 23</a>. They have deployed a web tool
+                        called <a href="https://www.radassist.net/">RadAssist</a> using our deep learning model. This
+                        project was supervised by <a href="http://bme.buet.ac.bd/?teams=dr-taufiq-hasan">Dr. Taufiq
+                            Hasan</a> and <a
+                            href="https://www.hopkinsmedicine.org/profiles/results/directory/profile/2936930/paul-nagy">Dr.
+                            Paul Nagy</a>.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 10 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">June 2019</div>
-            <div class="event-content">
-                <div class="title">Got Admitted to Masters Program</div>
-                <div class="description">I got myself admitted to the Masters Program of EEE Department, BUET in June 2019. I took courses on <i>Modern Power System</i>, <i>Optical Fiber</i>, <i>Biomedical Signal Processing</i>, and <i>Digital Image Processing</i>.</div>
+        <!-- Event 8 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">October 2019</div>
+                <div class="event-content">
+                    <div class="title">Joined mHealth Lab</div>
+                    <div class="description"><a href="https://mhealth.buet.ac.bd/">mHealth Lab</a> is working towards
+                        developing biomedical signal processing and machine learning algorithms for remote health
+                        monitoring, and prototyping innovative mHealth devices for improving people’s health, overall
+                        well-being, and quality of life. This lab is founded and maintained by the <a
+                            href="http://bme.buet.ac.bd/">Biomedical Engineering Department</a> of BUET. I worked as a
+                        Research Assistant (RA) there.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 11 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">December 2018</div>
-            <div class="event-content">
-                <div class="title">Published Research Article on Pathology Extraction from EHR</div>
-                <div class="description">Extraction of relevant pathological terms from radiology reports is important for correct image label generation and disease population studies. We published a paper titled <b>Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</b> where we compared the performance of some known application program interfaces (APIs) for the task of thoracic abnormality extraction from radiology reports. We explored several medical domain-specific annotation tools like Medical Text Indexer (MTI) with Non-MEDLINE and MeSH On Demand (MOD) options and generic Natural Language Understanding (NLU) API provided by the IBM cloud. Our results showed that although MTI and MOD are intended for extracting medical terms, their performance is worse compared to generic extraction APIs like IBM NLU. Finally, we trained a DNN-based Named Entity Recognition (NER) model to extract the key concept words from radiology reports. Our model outperformed the medical-specific and generic API performance by a large margin. Our results demonstrated the inadequacy of generic APIs for pathology extraction tasks and established the importance of domain-specific model training for improved results. The paper is available <a href="https://arxiv.org/abs/1812.02305" target="_blank">here</a>.</div>
+        <!-- Event 9 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">August 2019</div>
+                <div class="event-content">
+                    <div class="title">APTOS 2019 Blindness Detection Competition</div>
+                    <div class="description">Diabetic retinopathy is a diabetes complication that affects eyes. It's
+                        caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye
+                        (retina). It can be cured if treated at an early stage; otherwise, it could lead to permanent
+                        blindness. Detection of the stage of diabetic retinopathy is a challenging task even for
+                        doctors. <a href="https://aravind.org/" target="_blank">Aravind Eye Hospital</a> in India
+                        collected thousands of retinopathy images and hosted <a
+                            href="https://www.kaggle.com/c/aptos2019-blindness-detection/" target="_blank">this</a>
+                        competition for the detection of the level of DR in these images. In this competition, we
+                        secured the position 37 on the Private and 55 among 2,943 teams on the Public leaderboard. Our
+                        model scored <b>0.829</b> on the public <a
+                            href="https://www.kaggle.com/c/aptos2019-blindness-detection/leaderboard"
+                            target="_blank">LB</a> and <b>0.926</b> on the Private LB. Codes are available <a
+                            href="https://github.com/tahsin314/40th_place_solution_aptos2019-blindness-detection"
+                            target="_blank">here</a>.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <!-- Event 12 -->
-    <div class="event-wrapper">
-        <div class="event-card" data-expandable="true">
-            <div class="event-date">March 2017</div>
-            <div class="event-content">
-                <div class="title">Joined Semion Limited</div>
-                <div class="description">Semion Limited is a startup founded by <a href="https://www.linkedin.com/in/khalid-ashraf-2b8a4a33/" target="_blank">Dr. Khalid Ashraf</a>. The primary goal of this company is to create and promote services in the health sector through digitization of patient and their associated data management. The digitization process is backed up by tremendous technological advancement and customization through constant research and development. They also develop artificial intelligence-based algorithms for automating abnormality detection and assisting doctors. I worked as a <b>Machine Learning Researcher</b> there.</div>
+        <!-- Event 10 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">June 2019</div>
+                <div class="event-content">
+                    <div class="title">Got Admitted to Masters Program</div>
+                    <div class="description">I got myself admitted to the Masters Program of EEE Department, BUET in
+                        June 2019. I took courses on <i>Modern Power System</i>, <i>Optical Fiber</i>, <i>Biomedical
+                            Signal Processing</i>, and <i>Digital Image Processing</i>.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-     <!-- Event 13 -->
-    <div class="event-wrapper">
-        <div class="event-card">
-            <div class="event-date">February 2013 - June 2015 </div>
-            <div class="event-content">
-                <div class="title">Worked as a Writer and Editor at Zero2Inf</div>
-                <div class="description">I worked as a non-paid Writer and Editor at <a href="http://bn.z2i.org/" target="_blank"><i>Zero2Infinity</i></a>, a monthly science magazine, from March 2013 to June 2015.</div>
+        <!-- Event 11 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">December 2018</div>
+                <div class="event-content">
+                    <div class="title">Published Research Article on Pathology Extraction from EHR</div>
+                    <div class="description">Extraction of relevant pathological terms from radiology reports is
+                        important for correct image label generation and disease population studies. We published a
+                        paper titled <b>Pathology Extraction from Chest X-Ray Radiology Reports: A Performance Study</b>
+                        where we compared the performance of some known application program interfaces (APIs) for the
+                        task of thoracic abnormality extraction from radiology reports. We explored several medical
+                        domain-specific annotation tools like Medical Text Indexer (MTI) with Non-MEDLINE and MeSH On
+                        Demand (MOD) options and generic Natural Language Understanding (NLU) API provided by the IBM
+                        cloud. Our results showed that although MTI and MOD are intended for extracting medical terms,
+                        their performance is worse compared to generic extraction APIs like IBM NLU. Finally, we trained
+                        a DNN-based Named Entity Recognition (NER) model to extract the key concept words from radiology
+                        reports. Our model outperformed the medical-specific and generic API performance by a large
+                        margin. Our results demonstrated the inadequacy of generic APIs for pathology extraction tasks
+                        and established the importance of domain-specific model training for improved results. The paper
+                        is available <a href="https://arxiv.org/abs/1812.02305" target="_blank">here</a>.</div>
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
-<script src="contents/header_footer.js"></script>
-  </body>
+        <!-- Event 12 -->
+        <div class="event-wrapper">
+            <div class="event-card" data-expandable="true">
+                <div class="event-date">March 2017</div>
+                <div class="event-content">
+                    <div class="title">Joined Semion Limited</div>
+                    <div class="description">Semion Limited is a startup founded by <a
+                            href="https://www.linkedin.com/in/khalid-ashraf-2b8a4a33/" target="_blank">Dr. Khalid
+                            Ashraf</a>. The primary goal of this company is to create and promote services in the health
+                        sector through digitization of patient and their associated data management. The digitization
+                        process is backed up by tremendous technological advancement and customization through constant
+                        research and development. They also develop artificial intelligence-based algorithms for
+                        automating abnormality detection and assisting doctors. I worked as a <b>Machine Learning
+                            Researcher</b> there.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Event 13 -->
+        <div class="event-wrapper">
+            <div class="event-card">
+                <div class="event-date">February 2013 - June 2015 </div>
+                <div class="event-content">
+                    <div class="title">Worked as a Writer and Editor at Zero2Inf</div>
+                    <div class="description">I worked as a non-paid Writer and Editor at <a href="http://bn.z2i.org/"
+                            target="_blank"><i>Zero2Infinity</i></a>, a monthly science magazine, from March 2013 to
+                        June 2015.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="contents/header_footer.js"></script>
+</body>
 
 </html>

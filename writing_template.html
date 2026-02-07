@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [EDIT] Update Title -->
+    <title>Article Title - Tahsin Mostafiz</title>
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/terminal/css/style.css">
+    <link rel="stylesheet" href="assets/css/terrain.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Noto+Sans+Bengali:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        /* Article Specific Styles */
+        .article-content {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            font-size: 1.125rem;
+            /* 18px for better readability */
+            color: var(--body-text-color);
+        }
+
+        .article-content h2 {
+            font-family: 'Share Tech Mono', monospace;
+            /* Tech feel for headers */
+            font-size: 1.75rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--header-text-color);
+            border-bottom: 1px solid var(--secondary-accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-accent-color);
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content a {
+            color: var(--secondary-accent-color);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            transition: color 0.2s;
+        }
+
+        .article-content a:hover {
+            color: var(--primary-accent-color);
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--secondary-accent-color);
+            padding-left: 1rem;
+            font-style: italic;
+            margin: 1.5rem 0;
+            background: var(--bg-hover);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .article-meta {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--secondary-accent-color);
+        }
+
+        .bengali-text {
+            font-family: 'Noto Sans Bengali', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="theme-default" id="dynamic_header">
+
+    <!-- Header will be injected by main.js/header_footer.js -->
+
+    <!-- HERO SECTION -->
+    <section class="relative h-64 md:h-80 flex items-center justify-center overflow-hidden bg-gray-900 border-b-2"
+        style="border-color: var(--primary-accent-color);">
+        <!-- [EDIT] Hero Background Image (Optional) -->
+        <div class="absolute inset-0 z-0 opacity-40"
+            style="background-image: url('assets/img/aurora_florida.jpg'); background-size: cover; background-position: center;">
+        </div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <!-- [EDIT] Article Title -->
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg"
+                style="font-family: 'Share Tech Mono', monospace; text-shadow: 0 0 10px rgba(0,0,0,0.8);">
+                Article Title Goes Here
+            </h1>
+
+            <!-- Meta Info -->
+            <div class="article-meta flex flex-wrap justify-center gap-4 uppercase tracking-wider">
+                <!-- [EDIT] Date & Location -->
+                <span><i class="far fa-calendar-alt mr-2"></i> Oct 24, 2026</span>
+                <span><i class="fas fa-map-marker-alt mr-2"></i> Dhaka, Bangladesh</span>
+                <span><i class="fas fa-tag mr-2"></i> Technology</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT SECTION -->
+    <section class="py-12 md:py-16 transition-colors duration-500" style="background-color: var(--section-bg-even);">
+        <div class="container mx-auto px-6 max-w-3xl">
+
+            <div class="bg-white/5 p-8 md:p-12 rounded-lg shadow-xl backdrop-blur-sm border"
+                style="background-color: var(--card-bg); border-color: var(--card-border, transparent);">
+
+                <article class="article-content">
+                    <!-- [EDIT] Content Starts Here -->
+
+                    <p class="lead text-xl mb-8 font-light italic opacity-90">
+                        This is the lead paragraph. It summarizes the article or provides an engaging hook. You can use
+                        it to set the tone.
+                    </p>
+
+                    <h2>Introduction</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <h3>Subheading Level 3</h3>
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Visit my <a href="#">GitHub Profile</a> to see the code.
+                    </p>
+
+                    <ul>
+                        <li>Key point number one about the topic.</li>
+                        <li>Another important detail that needs listing.</li>
+                        <li>Final thought in this list.</li>
+                    </ul>
+
+                    <blockquote>
+                        "This is a pull quote. Use it to highlight a key takeaway or a memorable sentence from the
+                        text."
+                    </blockquote>
+
+                    <p class="bengali-text">
+                        এখানে বাংলা টেক্সট লিখতে পারবেন। ফন্ট অটোমেটিক্যালি 'Noto Sans Bengali' ব্যবহার করবে।
+                    </p>
+
+                    <!-- [EDIT] Content Ends Here -->
+                </article>
+
+                <!-- Navigation / Footer of Article -->
+                <div class="mt-12 pt-8 border-t border-gray-700 flex justify-between items-center article-meta">
+                    <a href="blog.html" class="hover:text-white transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i> Back to Writings
+                    </a>
+                    <div class="flex gap-4">
+                        <!-- Share Buttons (Optional) -->
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="contents/header_footer.js"></script>
+    <div id="theme-switcher-placeholder" class="mr-4 relative"></div>
+</body>
+
+</html>

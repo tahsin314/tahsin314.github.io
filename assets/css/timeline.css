@@ -1,349 +1,377 @@
 @property --gradient-angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-  }
-  
-  @keyframes rotation {
-    0% {
-      --gradient-angle: 0deg;
-    }
-    100% {
-      --gradient-angle: 360deg;
-    }
-  }
-  
-  .timeline-body {
-    background-color: var(--section-bg-even);
-    transition: background-color 0.5s ease;
-  }
-  
-  .timeline-container {
-    position: relative;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-  }
-  
-  /* The main continuous timeline spine */
-  .timeline-container::after {
-    content: '';
-    position: absolute;
-    width: 5px;
-    background-color: var(--nav-link-hover-color, #4a4a4a);
-    top: 75px; /* Adjust to start near the first event's dot */
-    bottom: 75px; /* Adjust to end near the last event's dot */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0; /* Sits behind the dots but on the same layer as the curves */
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotation {
+  0% {
+    --gradient-angle: 0deg;
   }
 
-  /* Hide the old center line */
-  .timeline-line {
-    display: none;
+  100% {
+    --gradient-angle: 360deg;
   }
-  
-  /* Each event-wrapper is a node on the timeline */
-  .event-wrapper {
-    position: relative;
-    display: flex;
-    margin-bottom: 80px;
-  }
-  
-  /* Alternate left/right card alignment */
-  .event-wrapper:nth-child(odd) {
-    justify-content: flex-start;
-  }
-  .event-wrapper:nth-child(even) {
-    justify-content: flex-end;
-  }
-  
-  /* New element to hide the central spine behind the event's curves */
-  .event-wrapper::after {
-    content: '';
-    position: absolute;
-    top: -4.5px; /* Match the vertical position of the curves */
-    bottom: -4.5px; /* Match the vertical position of the curves */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 10px; /* Must be wider than the spine's width (5px) */
-    background-color: var(--section-bg-even);
-    z-index: 1; /* Place it above the spine, but below the curves */
-  }
+}
 
-  /* Curved branch lines connecting cards to center */
-  .event-wrapper::before {
-    content: "";
-    position: absolute;
-    top: -4.5px;
-    bottom: -4.5px;
-    width: 50%;
-    border: 5px solid var(--nav-link-hover-color, #4a4a4a);
-    z-index: 2; /* Above the patch */
-  }
-  
-  .event-wrapper:nth-child(odd)::before {
-    left: 0;
-    border-width: 5px 0 5px 5px;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  .event-wrapper:nth-child(even)::before {
-    right: 0;
-    border-width: 5px 5px 5px 0;
-    border-radius: 0 50px 50px 0;
-  }
-  
-  .event-wrapper:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-  .event-wrapper:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-  .event-wrapper:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
-  
-  /* Event Card Styles */
-  .event-card {
-    width: calc(50% - 50px);
-    max-width: 550px;
-    background: transparent;
-    border-radius: 18px;
-    opacity: 0;
-    transform: translateY(30px) scale(1);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    position: relative; 
-    z-index: 3; /* Above the curves */
-  }
-  
-  .event-card.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .event-content {
-    padding: 30px;
-    position: relative;
-    border-radius: 12px;
-    background: var(--card-bg, rgba(30, 30, 30, 0.8));
-    z-index: 1;
-  }
-  
-  /* Glowing Gradient Border and Glow */
-  .event-card::before,
-  .event-card::after {
-    content: "";
-    position: absolute;
-    inset: -3px;
-    border-radius: 18px;
-    background: conic-gradient(
-      from var(--gradient-angle),
+.timeline-body {
+  background-color: var(--section-bg-even);
+  transition: background-color 0.5s ease;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* The main continuous timeline spine */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: var(--nav-link-hover-color, #4a4a4a);
+  top: 75px;
+  /* Adjust to start near the first event's dot */
+  bottom: 75px;
+  /* Adjust to end near the last event's dot */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  /* Sits behind the dots but on the same layer as the curves */
+}
+
+/* Hide the old center line */
+.timeline-line {
+  display: none;
+}
+
+/* Each event-wrapper is a node on the timeline */
+.event-wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+/* Alternate left/right card alignment */
+.event-wrapper:nth-child(odd) {
+  justify-content: flex-start;
+}
+
+.event-wrapper:nth-child(even) {
+  justify-content: flex-end;
+}
+
+/* New element to hide the central spine behind the event's curves */
+.event-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -4.5px;
+  /* Match the vertical position of the curves */
+  bottom: -4.5px;
+  /* Match the vertical position of the curves */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  /* Must be wider than the spine's width (5px) */
+  background-color: var(--section-bg-even);
+  z-index: 1;
+  /* Place it above the spine, but below the curves */
+}
+
+/* Curved branch lines connecting cards to center */
+.event-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -4.5px;
+  bottom: -4.5px;
+  width: 50%;
+  border: 5px solid var(--nav-link-hover-color, #4a4a4a);
+  z-index: 2;
+  /* Above the patch */
+}
+
+.event-wrapper:nth-child(odd)::before {
+  left: 0;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+.event-wrapper:nth-child(even)::before {
+  right: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+.event-wrapper:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.event-wrapper:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+.event-wrapper:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Event Card Styles */
+.event-card {
+  width: calc(50% - 50px);
+  max-width: 550px;
+  background: transparent;
+  border-radius: 18px;
+  opacity: 0;
+  transform: translateY(30px) scale(1);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  position: relative;
+  z-index: 3;
+  /* Above the curves */
+}
+
+.event-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.event-content {
+  padding: 30px;
+  position: relative;
+  border-radius: 12px;
+  background: var(--card-bg, rgba(30, 30, 30, 0.8));
+  z-index: 1;
+}
+
+/* Glowing Gradient Border and Glow */
+.event-card::before,
+.event-card::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 18px;
+  background: conic-gradient(from var(--gradient-angle),
       var(--event-border-clr-1),
       var(--event-border-clr-2),
       var(--event-border-clr-3),
       var(--event-border-clr-2),
-      var(--event-border-clr-1)
-    );
-    animation: rotation 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-  }
-  .event-card::after {
-    filter: blur(3.5rem);
-    z-index: -2;
-  }
-  .event-card::before {
-    z-index: -1;
-  }
-  
-  .event-card:hover {
-    transform: translateY(0) scale(1.02);
-  }
-  .event-card:hover::before,
-  .event-card:hover::after {
-    opacity: 1;
-  }
-  
-  /* Date Pill */
-  .event-date {
-    position: absolute;
-    top: 20px;
-    background-color: var(--nav-link-hover-color, #ffd369);
-    color: #1a1a1a;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-  .event-wrapper:nth-child(odd) .event-date {
-    right: -35px;
-  }
-  .event-wrapper:nth-child(even) .event-date {
-    left: -35px;
-  }
-  
-  /* Optional: Add timeline dot */
-  .event-date::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 999px;
-    border: 3px solid var(--nav-link-hover-color, #4a4a4a);
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3; /* Above the curves */
-  }
-  .event-wrapper:nth-child(odd) .event-date::before {
-    left: -45px;
-  }
-  .event-wrapper:nth-child(even) .event-date::before {
-    right: -45px;
-  }
-  
-  /* Title + Description */
-  .event-card .title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--nav-link-color, #fff);
-    margin-top: 25px;
-    margin-bottom: 12px;
-  }
-  
-  .event-card .description {
-    font-size: 1rem;
-    color: var(--nav-link-color, #ccc);
-    line-height: 1.7;
-    position: relative;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-  }
-  
-  /* Expandable content logic */
-  .event-card.expandable .event-content {
-    cursor: pointer;
-  }
-  .event-card.expandable .description {
-    max-height: 120px;
-  }
-  .event-card.expandable .description.expanded {
-    max-height: 1000px;
-  }
-  .event-card.expandable .description:not(.expanded)::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to top, var(--card-bg, rgba(30, 30, 30, 1)) 20%, transparent);
-    pointer-events: none;
-  }
-  
-  /* Optional Image inside Card */
-  .event-card img {
-    margin-top: 20px;
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .event-wrapper,
-    .event-wrapper:nth-child(even) {
-      justify-content: center;
-      margin-bottom: 60px;
-    }
-  
-    .event-card {
-      width: 95%;
-      max-width: none;
-    }
-  
-    .event-date {
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .event-wrapper:nth-child(odd) .event-date,
-    .event-wrapper:nth-child(even) .event-date {
-      left: 50%;
-      right: auto;
-    }
-  
-    .event-content {
-      padding-top: 40px;
-    }
-  
-    /* On mobile, hide the timeline lines for a simpler stacked view */
-    .event-wrapper::before,
-    .event-wrapper::after,
-    .timeline-container::after {
-      display: none;
-    }
-  }
+      var(--event-border-clr-1));
+  animation: rotation 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
 
-   /* Styles for expandable cards */
-   .event-card[data-expandable="true"] {
-    cursor: pointer;
+.event-card::after {
+  filter: blur(3.5rem);
+  z-index: -2;
+}
+
+.event-card::before {
+  z-index: -1;
+}
+
+.event-card:hover {
+  transform: translateY(0) scale(1.02);
+}
+
+.event-card:hover::before,
+.event-card:hover::after {
+  opacity: 1;
+}
+
+/* Date Pill */
+.event-date {
+  position: absolute;
+  top: 20px;
+  background-color: var(--nav-link-hover-color, #ffd369);
+  color: #1a1a1a;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.event-wrapper:nth-child(odd) .event-date {
+  right: -35px;
+}
+
+.event-wrapper:nth-child(even) .event-date {
+  left: -35px;
+}
+
+/* Optional: Add timeline dot */
+.event-date::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  border: 3px solid var(--nav-link-hover-color, #4a4a4a);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  /* Above the curves */
+}
+
+.event-wrapper:nth-child(odd) .event-date::before {
+  left: -45px;
+}
+
+.event-wrapper:nth-child(even) .event-date::before {
+  right: -45px;
+}
+
+/* Title + Description */
+.event-card .title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--nav-link-color, #fff);
+  margin-top: 25px;
+  margin-bottom: 12px;
 }
 
 .event-card .description {
-    position: relative;
-    overflow: hidden;
-    transition: max-height 0.7s ease-in-out;
+  font-size: 1rem;
+  color: var(--nav-link-color, #ccc);
+  line-height: 1.7;
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Expandable content logic */
+.event-card.expandable .event-content {
+  cursor: pointer;
+}
+
+.event-card.expandable .description {
+  max-height: 120px;
+}
+
+.event-card.expandable .description.expanded {
+  max-height: 1000px;
+}
+
+.event-card.expandable .description:not(.expanded)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to top, var(--card-bg, rgba(30, 30, 30, 1)) 20%, transparent);
+  pointer-events: none;
+}
+
+/* Optional Image inside Card */
+.event-card img {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .event-wrapper,
+  .event-wrapper:nth-child(even) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  .event-card {
+    width: 95%;
+    max-width: none;
+  }
+
+  .event-date {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .event-wrapper:nth-child(odd) .event-date,
+  .event-wrapper:nth-child(even) .event-date {
+    left: 50%;
+    right: auto;
+  }
+
+  .event-content {
+    padding-top: 40px;
+  }
+
+  /* On mobile, hide the timeline lines for a simpler stacked view */
+  .event-wrapper::before,
+  .event-wrapper::after,
+  .timeline-container::after {
+    display: none;
+  }
+}
+
+/* Styles for expandable cards */
+.event-card[data-expandable="true"] {
+  cursor: pointer;
+}
+
+.event-card .description {
+  position: relative;
+  overflow: hidden;
+  transition: max-height 0.7s ease-in-out;
 }
 
 /* Style for links within event descriptions to make them stand out */
 .event-card .description a {
   color: var(--link-text-color);
   text-decoration: underline;
-  font-weight: 600; /* Make links a bit bolder */
+  font-weight: 600;
+  /* Make links a bit bolder */
   transition: opacity 0.2s ease-in-out;
 }
 
 .event-card .description a:hover {
-  opacity: 0.8; /* Subtle hover effect */
+  opacity: 0.8;
+  /* Subtle hover effect */
 }
 
 .event-card:not(.expanded)[data-expandable="true"] .description {
-    max-height: 60px; /* Adjust this value to control how much text is shown initially */
+  max-height: 60px;
+  /* Adjust this value to control how much text is shown initially */
 }
 
 /* Fade-out effect for truncated text */
 .event-card:not(.expanded)[data-expandable="true"] .description::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background: linear-gradient(to bottom, transparent, var(--card-bg));
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, transparent, var(--card-bg));
 }
 
 .event-card.expanded .description {
-    max-height: 1000px; /* A large value to allow full expansion */
+  max-height: 1000px;
+  /* A large value to allow full expansion */
 }
 
 .event-card .event-content img {
-    transition: opacity 0.7s ease-in-out, max-height 0.7s ease-in-out;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
+  transition: opacity 0.7s ease-in-out, max-height 0.7s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
 }
 
 .event-card.expanded .event-content img {
-    opacity: 1;
-    max-height: 500px; /* Adjust as needed */
-    margin-top: 1rem;
+  opacity: 1;
+  max-height: 500px;
+  /* Adjust as needed */
+  margin-top: 1rem;
 }
