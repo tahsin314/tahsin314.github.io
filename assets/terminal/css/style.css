@@ -1,10 +1,10 @@
 /* Terminal Simulation Styles */
 .terminal-content {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 1.2rem;
-  /* Reduced from 1.35rem for balance */
+  font-family: 'Orbitron', monospace;
+  font-size: 1rem;
+  /* Reduced from 1.2rem */
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   line-height: 1.4;
   text-align: left;
   width: 100%;
@@ -15,11 +15,10 @@
   /* Tech Glow (Sharp & Bright Core) */
   text-shadow: 0 0 1px var(--terminal-glow-color);
   filter: brightness(1.2);
-  color: #E0FFF4;
-  /* High Contrast Frozen Cyan */
+  color: var(--terminal-text-color);
 
-  /* Restoring Glitch Effect */
-  animation: slight-glitch 5s infinite;
+  /* Robust Glitch Effect */
+  animation: text-glitch 3s infinite linear alternate-reverse;
 }
 
 .terminal-line {
@@ -28,33 +27,75 @@
   word-break: break-word;
 }
 
-/* Subtle Glitch Animation */
-@keyframes slight-glitch {
+/* Robust Text Glitch Animation */
+@keyframes text-glitch {
   0% {
+    text-shadow: 2px 0 var(--glitch-color-1), -2px 0 var(--glitch-color-2);
     transform: translate(0, 0);
   }
 
-  98% {
+  2% {
+    text-shadow: 2px 0 var(--glitch-color-1), -2px 0 var(--glitch-color-2);
+    transform: translate(-2px, 0);
+  }
+
+  4% {
+    text-shadow: 2px 0 var(--glitch-color-1), -2px 0 var(--glitch-color-2);
+    transform: translate(2px, 0);
+  }
+
+  5% {
+    text-shadow: none;
     transform: translate(0, 0);
-    opacity: 1;
   }
 
-  98.5% {
-    transform: translate(1px, 0);
-    opacity: 0.9;
+  15% {
+    text-shadow: none;
+    transform: translate(0, 0);
   }
 
-  99% {
+  16% {
+    text-shadow: -2px 0 var(--glitch-color-1), 2px 0 var(--glitch-color-2);
+    transform: translate(1px, 1px);
+  }
+
+  17% {
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  50% {
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  51% {
+    text-shadow: 2px 0 var(--glitch-color-1), -2px 0 var(--glitch-color-2);
     transform: translate(-1px, 0);
-    opacity: 0.8;
   }
 
-  99.5% {
+  52% {
+    text-shadow: none;
     transform: translate(0, 0);
-    opacity: 1;
+  }
+
+  85% {
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  86% {
+    text-shadow: -1px 0 var(--glitch-color-1), 1px 0 var(--glitch-color-2);
+    transform: translate(1px, -1px);
+  }
+
+  87% {
+    text-shadow: none;
+    transform: translate(0, 0);
   }
 
   100% {
+    text-shadow: none;
     transform: translate(0, 0);
   }
 }

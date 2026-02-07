@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const config = {
         typingSpeed: 20, // Faster typing
         bootSpeed: 40, // High speed data stream
-        prompt: "guest@tahsin314:~$",
+        prompt: "guest@tahsin314.github.io:~$",
         command: "cat bio.txt"
     };
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "I am an AI and machine learning researcher specializing in deep learning for medical imaging.",
         "Currently pursuing a Ph.D. at UT Arlington (PRIMAL Lab).",
         "Interests: 3D Computer Vision, Robotics, Sequence Modeling.",
-        "Fun fact: I cook great Bengali food when I'm not procrastinating on research!"
+        "Fun fact: I love to binge-watch series and cook food (anything but research!)."
     ];
 
     class TerminalSimulation {
@@ -73,25 +73,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         printRobot() {
-            // Simple ASCII Robot
+            // Robot Emoji
             const robotArt = [
-                "      d[o_0]b",
-                "       |( )|",
-                "       d   b",
-                "      ROBOT_V1"
+                "🤖 ROBOT_V1 ONLINE"
             ];
-            robotArt.forEach(line => this.addLine(line.replace(/ /g, '&nbsp;'), "system-msg"));
+            robotArt.forEach(line => {
+                const div = document.createElement('div');
+                div.className = 'terminal-line system-msg';
+                div.style.fontSize = '3rem'; // Make emoji big
+                div.style.marginBottom = '1rem';
+                div.innerHTML = line;
+                this.container.appendChild(div);
+                this.scrollToBottom();
+            });
         }
 
         printHandshake() {
-            // Simple ASCII Handshake/Spark
+            // Handshake Emoji
             const handArt = [
-                "      ( ^_^)/",
-                "      <|   |",
-                "       |   |",
-                "      HELLO!"
+                "🤝 HELLO HUMAN"
             ];
-            handArt.forEach(line => this.addLine(line.replace(/ /g, '&nbsp;'), "success-msg"));
+            handArt.forEach(line => {
+                const div = document.createElement('div');
+                div.className = 'terminal-line success-msg';
+                div.style.fontSize = '3rem'; // Make emoji big
+                div.style.marginBottom = '1rem';
+                div.innerHTML = line;
+                this.container.appendChild(div);
+                this.scrollToBottom();
+            });
         }
 
         async runSpinner(text) {
