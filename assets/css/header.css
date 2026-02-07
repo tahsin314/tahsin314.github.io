@@ -110,7 +110,7 @@
     right: 0;
     margin-top: 0.5rem;
     background-color: var(--header-bg);
-    /* Use theme header bg */
+    /* Ensure it uses the opaque header background color */
     border: 1px solid var(--nav-link-color);
     border-radius: 0.375rem;
     padding: 0.5rem 0;
