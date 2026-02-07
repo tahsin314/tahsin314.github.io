@@ -1,22 +1,4 @@
-/* :root or your theme-specific root selector */
-:root {
-    /* ... your existing variables ... */
-    --header-bg: #your_header_background_color;
-    /* e.g., #1f2937 (gray-800) for dark theme */
-    --footer-bg: var(--header-bg);
-    /* To match header */
-    --body-text-color: #your_body_text_color;
-    /* e.g., #e5e7eb (gray-200) for dark theme text */
-    --footer-text-color: var(--body-text-color);
-    --primary-accent-color: #your_accent_color;
-    /* e.g., #34d399 (emerald-400) */
-    --link-text-color: var(--primary-accent-color);
-    --header-logo-span-color: var(--primary-accent-color);
-    --profile-image-border-color: var(--primary-accent-color);
-    --hamburger-color: var(--body-text-color);
-    --mobile-menu-divider-color: #your_divider_color;
-    /* e.g., #374151 (gray-700) for dark theme */
-}
+/* Header Styles */
 
 /* Styling for navigation links (if not already sufficiently styled by Tailwind theme) */
 .nav-link {
