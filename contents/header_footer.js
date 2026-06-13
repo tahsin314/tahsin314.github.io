@@ -66,6 +66,7 @@ const headerContent = `
                 </div>
                 <ul id="primary-menu" class="hidden md:flex space-x-1"> 
                     <li class="current-menu-item"><a href="https://tahsin314.github.io"><span style="color:var(--nav-link-color);">Home</span></a></li>
+                    <li><a href="https://tahsin314.github.io/index.html#news"><span style="color:var(--nav-link-color);">News</span></a></li>
                     <li><a href="https://tahsin314.github.io/index.html#publications"><span style="color:var(--nav-link-color);">Publications</span></a></li>
                     <li><a href="https://tahsin314.github.io/index.html#projects"><span style="color:var(--nav-link-color);">Projects</span></a></li>
                     <li><a href="https://tahsin314.github.io/timeline.html"><span style="color:var(--nav-link-color);">Timeline</span></a></li>
@@ -78,6 +79,7 @@ const headerContent = `
     <!-- Mobile Menu Dropdown -->
     <ul id="mobile-menu" class="hidden flex-col items-center w-full bg-gray-800 text-sm font-medium md:hidden py-4 space-y-3" style="background-color: var(--header-bg); color: var(--header-text-color);">
         <li class="current-menu-item"><a href="https://tahsin314.github.io"><span style="color:var(--nav-link-color);">Home</span></a></li>
+        <li><a href="https://tahsin314.github.io/index.html#news"><span style="color:var(--nav-link-color);">News</span></a></li>
         <li><a href="https://tahsin314.github.io/index.html#publications"><span style="color:var(--nav-link-color);">Publications</span></a></li>
         <li><a href="https://tahsin314.github.io/index.html#projects"><span style="color:var(--nav-link-color);">Projects</span></a></li>
         <li><a href="https://tahsin314.github.io/timeline.html"><span style="color:var(--nav-link-color);">Timeline</span></a></li>
