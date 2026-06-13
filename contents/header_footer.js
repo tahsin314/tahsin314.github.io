@@ -6,7 +6,7 @@ const footerContent = `
                 <div class="w-full md:w-8/12 lg:w-1/2"> 
                     <div class="heading-with-sub mb-12"> 
                         <h3 class="title sans-font mb-8"> 
-                            <a href="index.html" title="Home" style="font-size:30px; color:var(--footer-heading-color);">Tahsin Mostafiz</a>
+                            <a href="https://tahsin314.github.io/" title="Home" style="font-size:30px; color:var(--footer-heading-color);">Tahsin Mostafiz</a>
                         </h3>
                         <h4 class="text-center text-base" style="color:var(--footer-text-color);"> 
                             Contact me via <a href="mailto:tahsinmostafiz314@gmail.com" style="color:var(--footer-link-color); font-weight:600;" class="hover:underline">

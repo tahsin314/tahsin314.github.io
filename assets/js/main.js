@@ -51,22 +51,20 @@ function initMobileMenu() {
 
 function initProjectFilter() {
     const grid = document.querySelector('#container-projects');
-    if (grid && typeof Isotope !== 'undefined') {
-        const iso = new Isotope(grid, {
-            itemSelector: '.project-item',
-            layoutMode: 'fitRows'
-        });
-
+    if (grid) {
         document.querySelectorAll('.project-toolbar button').forEach(btn => {
             btn.addEventListener('click', () => {
                 const filter = btn.getAttribute('data-filter');
-                iso.arrange({ filter });
+                grid.querySelectorAll('.project-item').forEach(item => {
+                    const visible = filter === '*' || item.matches(filter);
+                    item.hidden = !visible;
+                });
                 document.querySelectorAll('.project-toolbar button').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
             });
         });
     } else {
-        console.warn("Isotope not found or container missing.");
+        console.warn("Project container missing.");
     }
 }
 

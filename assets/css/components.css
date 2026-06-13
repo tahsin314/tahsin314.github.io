@@ -28,3 +28,93 @@
     width: 100%; box-sizing: border-box; 
 }
 .project-item:hover, #publications li[itemscope]:hover { box-shadow: 0 0 15px var(--card-hover-shadow-color); }
+
+/* Spacious project gallery and consistent readable card typography. */
+#container-projects {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.project-item {
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    min-height: 370px;
+    overflow: hidden;
+    padding-top: 13.5rem !important;
+    border: 1px solid color-mix(in srgb, var(--body-text-color) 16%, transparent);
+}
+
+.project-item[hidden] { display: none !important; }
+.project-item:first-child { grid-column: 1 / -1; min-height: 440px; padding-top: 18.5rem !important; }
+
+.project-item::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 12rem;
+    background: var(--project-image, linear-gradient(135deg, var(--section-bg-odd), var(--section-bg-even))) center/cover no-repeat;
+    border-bottom: 1px solid color-mix(in srgb, var(--body-text-color) 18%, transparent);
+    transition: transform .35s ease, filter .35s ease;
+}
+
+.project-item:first-child::before { height: 17rem; }
+.project-item:hover::before { transform: scale(1.025); filter: saturate(1.06); }
+.project-item > div { position: relative; z-index: 1; height: 100%; }
+.project-item h3 { color: var(--body-text-color) !important; font-size: 1.15rem; line-height: 1.35; }
+.project-item p { color: var(--body-text-color) !important; opacity: .86 !important; font-size: .94rem !important; line-height: 1.65; }
+.project-item i { color: var(--primary-accent-color) !important; }
+.project-item .btn-custom-outline { margin-top: auto; }
+
+.project-item:nth-child(1) { --project-image: linear-gradient(90deg, rgba(8,18,13,.1), rgba(8,18,13,.68)), url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=82&w=1600"); }
+.project-item:nth-child(2) { --project-image: url("../img/projects/sort.jpg"); }
+.project-item:nth-child(3) { --project-image: url("../img/publications/lymph_node.png"); }
+.project-item:nth-child(4) { --project-image: url("../img/publications/wearable_icu.png"); }
+.project-item:nth-child(5) { --project-image: url("../img/publications/hardware_evha.png"); }
+.project-item:nth-child(6) { --project-image: linear-gradient(135deg, var(--section-bg-odd), var(--primary-accent-color)); }
+.project-item:nth-child(7) { --project-image: url("../img/publications/cxr_nlp.png"); }
+.project-item:nth-child(8) { --project-image: url("../img/publications/pain_class.png"); }
+.project-item:nth-child(9) { --project-image: url("../img/publications/hardware_evha.png"); }
+.project-item:nth-child(10) { --project-image: url("../img/projects/car_racing.jpg"); }
+.project-item:nth-child(11) { --project-image: linear-gradient(135deg, var(--secondary-accent-color), var(--section-bg-odd)); }
+.project-item:nth-child(12),
+.project-item:nth-child(13) { --project-image: url("../img/grad_pic.jpg"); }
+
+#news article h3,
+#news article p,
+#publications h3,
+#publications p,
+#education h3,
+#education p {
+    color: var(--body-text-color) !important;
+    opacity: 1 !important;
+}
+
+.news-launch-card {
+    display: grid;
+    grid-template-columns: minmax(280px, .8fr) minmax(0, 1.2fr);
+    gap: 0;
+    overflow: hidden;
+    padding: 0 !important;
+    border: 1px solid color-mix(in srgb, var(--body-text-color) 16%, transparent);
+}
+
+.news-launch-card__photo {
+    min-height: 320px;
+    background:
+        linear-gradient(180deg, transparent 35%, rgba(7, 15, 11, .7)),
+        url("https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=82&w=1200") center/cover;
+}
+
+.news-launch-card__content { padding: clamp(1.5rem, 4vw, 3rem); align-self: center; }
+
+@media (max-width: 760px) {
+    #container-projects { grid-template-columns: 1fr; }
+    .project-item:first-child { grid-column: auto; }
+    .project-toolbar > div { display: grid !important; grid-template-columns: repeat(2, 1fr); gap: .65rem; width: 100%; }
+    .project-toolbar button { padding: .72rem .65rem; }
+    .news-launch-card { grid-template-columns: 1fr; }
+    .news-launch-card__photo { min-height: 230px; }
+}
