@@ -25,11 +25,20 @@ const footerContent = `
                                 </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <a href="https://clustrmaps.com/site/1c22o" title="Visit tracker">
-                                <img src="https://clustrmaps.com/map_v2.png?cl=a45d45&w=800&t=tt&d=Jo6MEuju2fMWNwRzj2QLXu5fzvGT-G_NVZN9xWS_YVk&co=382b3c" alt="ClustrMaps visitor tracker map" style="margin-top: 20px; display: block; margin-left:auto; margin-right:auto; max-width:100%; width:auto; border-radius: 8px;" />
-                            </a>
-                        </div>
+                        <div style="text-align: center; margin-top: 20px;">
+                        <a 
+                            href="https://mapmyvisitors.com/web/1c5v5" 
+                            title="Visit tracker"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img 
+                            src="https://mapmyvisitors.com/map.png?cl=d68a36&w=a&t=tt&d=d2-9GfXbNZ_CT16pVbPIUgTFUp-1XfNBsc7byNJ2bas&co=294254"
+                            alt="MapMyVisitors visitor tracker map"
+                            style="max-width: 100%; height: auto; border-radius: 8px;"
+                            >
+  </a>
+</div>
                         <p class="text-xs mt-6" style="color: var(--footer-subtext-color);">© <span id="footer-year"></span> Tahsin Mostafiz. All rights reserved.</p>
                         <p class="text-xs mt-1" style="color: var(--footer-subtext-color);">Styled with Tailwind CSS. Terrain animation powered by p5.js.</p>
                     </div>
